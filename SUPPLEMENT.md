@@ -1,4 +1,4 @@
-# Supplement to TACT: A Pragmatic Approach to Qualitative Analysis in SE Research Using an AI Council
+# Supplement to TACT: A Pragmatic Approach to Qualitative Analysis with a Traceable AI Council
 
 Rudrajit Choudhuri, Christian Bird, Carmen Badea, Anita Sarma
 

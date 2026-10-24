@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use TACT, please cite the paper and this software."
-title: "TACT: A Pragmatic Approach to Qualitative Analysis in SE Research Using an AI Council"
+title: "TACT: A Pragmatic Approach to Qualitative Analysis with a Traceable AI Council"
 type: software
 authors:
   - family-names: Choudhuri
@@ -29,7 +29,7 @@ keywords:
   - software engineering
 preferred-citation:
   type: article
-  title: "TACT: A Pragmatic Approach to Qualitative Analysis in SE Research Using an AI Council"
+  title: "TACT: A Pragmatic Approach to Qualitative Analysis with a Traceable AI Council"
   authors:
     - family-names: Choudhuri
       given-names: Rudrajit

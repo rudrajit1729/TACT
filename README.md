@@ -10,8 +10,8 @@ TACT comes in two variants: **TACT-Lite**, the core AI council procedure, and **
 adversaries (models from other model families that critique each model's output) and a decision model
 that surfaces high-uncertainty code assignments.
 
-This repository holds everything the paper *TACT: A Pragmatic Approach to Qualitative Analysis in SE
-Research Using an AI Council* releases: the prompts, the scripts for every stage, the
+This repository holds everything the paper *TACT: A Pragmatic Approach to Qualitative Analysis with a Traceable AI
+Council* releases: the prompts, the scripts for every stage, the
 validation corpus with its mapping, scoring and reliability scripts, and the paper's supplement
 ([SUPPLEMENT.md](SUPPLEMENT.md)).
 
@@ -201,7 +201,7 @@ Please cite the paper (see also `CITATION.cff`):
 ```bibtex
 @unpublished{choudhuri2026tact,
   author = {Choudhuri, Rudrajit and Bird, Christian and Badea, Carmen and Sarma, Anita},
-  title  = {{TACT}: A Pragmatic Approach to Qualitative Analysis in {SE} Research Using an {AI} Council},
+  title  = {{TACT}: A Pragmatic Approach to Qualitative Analysis with a Traceable {AI} Council},
   year   = {2026},
   note   = {Manuscript under review}
 }

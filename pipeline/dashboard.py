@@ -233,6 +233,8 @@ def status_badge(code, summ, decisions):
         floor = "%g" % float(M.cfg.t["alpha_drop"])
         if d == "drop":
             return '<span class="status low"><span class="ic" aria-hidden="true">&#x2715;</span>below %s, dropped by the researchers</span>' % floor
+        if d == "keep":
+            return '<span class="status ok"><span class="ic" aria-hidden="true">&#x2713;</span>below %s, kept by the researchers</span>' % floor
         if d == "refine":
             return '<span class="status pend"><span class="ic" aria-hidden="true">&#x21bb;</span>below %s, refine and recode</span>' % floor
         return '<span class="status pend"><span class="ic" aria-hidden="true">?</span>below %s, %s</span>' % (
@@ -387,7 +389,7 @@ def build() -> str:
                 len(rs.get("codes_dropped_alpha_below_floor") or []), "" if len(rs.get("codes_dropped_alpha_below_floor") or []) == 1 else "s", floor))
             for x in rd["decisions"]:
                 a('<li><b>%s %s</b> (alpha %s) <b>%s</b>%s</li>' % (esc(x["id"]), esc(x["label"]), fmt(x["alpha"]),
-                                                                   "refined" if x["op"] == "refine" else "dropped", (": " + esc(x["reason"])) if x["reason"] else ""))
+                                                                   {"refine": "refined", "keep": "kept"}.get(x["op"], "dropped"), (": " + esc(x["reason"])) if x["reason"] else ""))
             a('</ul><p class="note">That round is archived in <code>%s/</code>. The whole corpus was then recoded with codebook %s; '
               'the figures on this page are from that recode.</p>' % (esc(rd["archived_to"]), esc(rd["to_version"])))
         a('<h3>Codes below %s and the researchers\' decision</h3>' % floor)
@@ -403,7 +405,7 @@ def build() -> str:
                 esc(c.get("definition")), ("<dt>Include</dt><dd>%s</dd>" % esc(c["include"])) if c.get("include") else "",
                 ("<dt>Exclude</dt><dd>%s</dd>" % esc(c["exclude"])) if c.get("exclude") else "",
                 ("<b>%s</b>%s%s" % (esc(dd["decision"]), (": " + esc(dd["reason"])) if dd.get("reason") else "", (" (%s)" % esc(dd["decided_by"])) if dd.get("decided_by") else ""))
-                if dd else OPTIONS.get("below_threshold_decision_html") or "Pending: the researchers refine and recode, or drop (<code>human.py low-alpha</code>)."))
+                if dd else OPTIONS.get("below_threshold_decision_html") or "Pending: the researchers refine and recode, drop, or keep with a stated reason (<code>human.py low-alpha</code>)."))
         a('<h3>Codes at or above %s</h3><p>%s</p>' % (high, esc(", ".join("%s %s" % (c, labels.get(c, "")) for c in hi) or "none")))
         if len(d["conds"]) > 1:
             names = {"L": "TACT-Lite coding", "LJ": "screened, v0", "LJA": "after adversaries, v1", "LA": "after adversaries, v1"}

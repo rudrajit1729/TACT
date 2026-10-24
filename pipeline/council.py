@@ -1342,12 +1342,12 @@ def low_alpha_decisions() -> dict:
     out = OrderedDict()
     for r in read_csv(p):
         cid, dec = (r.get("code") or "").strip(), (r.get("decision") or "").strip().lower()
-        if cid and dec in ("drop", "refine"):
+        if cid and dec in ("drop", "refine", "keep"):
             out[cid] = OrderedDict([("decision", dec), ("reason", (r.get("reason") or "").strip()),
                                     ("decided_by", (r.get("decided_by") or "").strip())] +
                                    [(k, (r.get(k) or "").strip()) for k in ("new_label", "new_definition", "new_include", "new_exclude")])
         elif cid:
-            print("   ! low-alpha decision for %s is %r; use drop or refine" % (cid, r.get("decision")))
+            print("   ! low-alpha decision for %s is %r; use drop, refine or keep" % (cid, r.get("decision")))
     return out
 
 
@@ -1421,7 +1421,7 @@ def status_steps() -> list:
     low = summ.get("codes_dropped_alpha_below_floor") or []
     dec = low_alpha_decisions()
     refine_pending = [c for c in low if dec.get(c, {}).get("decision") == "refine"]
-    S.append(step("low-alpha", "STOP 5: codes below alpha %s (refine and recode, or drop)" % cfg.t["alpha_drop"],
+    S.append(step("low-alpha", "STOP 5: codes below alpha %s (refine and recode, drop, or keep with a stated reason)" % cfg.t["alpha_drop"],
                   bool(summ) and all(c in dec for c in low) and ex("human", "06_low_alpha"), "human", ["human.py", "low-alpha"],
                   ("%d code(s) below the floor: %s. The researchers decide, per code." % (len(low), ", ".join(low))) if low else "No code below the floor.",
                   ["human/06_low_alpha/README.md", "human/06_low_alpha/low_alpha_codes.md", "human/06_low_alpha/decisions_TEMPLATE.csv"],

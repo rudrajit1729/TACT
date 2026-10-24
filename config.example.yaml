@@ -93,7 +93,7 @@ thresholds:
   min_quotes: 3                          # representative quotes from distinct units (or n_participants if fewer)
   consensus: 2                           # AI coders (of 3) that must assign a code for it to reach consensus
   alpha_drop: 0.7                        # Krippendorff's alpha threshold: codes below it go back to the researchers
-                                         # (refine and recode, or drop); 0.7 suits exploratory studies, raise it (e.g. 0.8) for conservative conclusions
+                                         # (refine and recode, drop, or keep with a stated reason); 0.7 suits exploratory studies, raise it (e.g. 0.8) for conservative conclusions
   alpha_high: 0.80
   screening_tau: 0.10                    # [Full] each AI coder sees the codes scoring at least this ...
   screening_top_k: 5                     # [Full] ... and never fewer than the top 5 ...

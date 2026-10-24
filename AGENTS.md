@@ -311,7 +311,7 @@ python3 pipeline/human.py CFG low-alpha
 ```
 **STOP 5.** If any code is below the alpha threshold, tell the user: the researchers read
 `human/06_low_alpha/low_alpha_codes.md` (each code's definition and every unit the AI coders disagreed
-on) and decide, per code, `drop` or `refine`, in `human/06_low_alpha/decisions.csv` (copy
+on) and decide, per code, `drop`, `refine` or `keep` (with a reason), in `human/06_low_alpha/decisions.csv` (copy
 `decisions_TEMPLATE.csv`; a refined code needs `new_definition`, and `new_label`, `new_include`,
 `new_exclude` where they change). You may help them write the file; you may not decide for them. Then:
 ```bash

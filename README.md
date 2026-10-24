@@ -28,7 +28,8 @@ without seeing each other's output. Stages 1 to 3 develop the codebook; Stages 4
 how much it must be de-identified, and fix the analysis thresholds: the minimum number of distinct
 respondents whose responses must support a code, and the minimum agreement among the AI coders on
 each code, measured with Krippendorff's alpha. A code whose alpha falls below the threshold returns to
-the researchers, who either refine its definition and have the AI coders recode it, or drop the code,
+the researchers, who either refine its definition and have the AI coders recode it, drop the code, or
+keep it with a stated reason,
 and report the decision. For TACT-Full, they also fix the decision model's thresholds. They state each
 research question and what they want to learn from it in the prompts. *A program* then splits the
 corpus into units, de-identifies them and gives each a unique identifier, attaches each respondent's
@@ -106,7 +107,7 @@ The researchers fix these in Stage 0, before any model runs (`config.example.yam
 | Setting | Default | Where it acts |
 |---|---|---|
 | Minimum respondents per code | 3 distinct respondents | Stage 2: a program drops codes with fewer and lists them for human review |
-| Krippendorff's alpha threshold | 0.7 (raise it, e.g. to 0.8, for conservative conclusions) | Stage 5: codes below it return to the researchers, who refine and recode, or drop |
+| Krippendorff's alpha threshold | 0.7 (raise it, e.g. to 0.8, for conservative conclusions) | Stage 5: codes below it return to the researchers, who refine and recode, drop, or keep with a stated reason |
 | Batch size | 25 units (20 to 50 recommended) | Stage 4: units per AI coder call |
 | Consensus | 2 of 3 AI coders | Stage 5: a code that reaches it on a unit enters the coded corpus |
 | Blind-pass sample | 10% of units, at least 50 and at most 150, stratified by question | Stage 3: coded by at least two researchers before any model output |

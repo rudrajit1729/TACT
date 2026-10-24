@@ -74,7 +74,7 @@ they cannot choose them after seeing results.
 | Setting | Default | Where it acts |
 |---|---|---|
 | Minimum respondents per code | 3 distinct respondents | Stage 2: a program drops codes with fewer and lists them for human review |
-| Krippendorff's alpha threshold | 0.7 (raise it, e.g. to 0.8, for conservative conclusions) | Stage 5: codes below it return to the researchers, who refine and recode, or drop |
+| Krippendorff's alpha threshold | 0.7 (raise it, e.g. to 0.8, for conservative conclusions) | Stage 5: codes below it return to the researchers, who refine and recode, drop, or keep with a stated reason |
 | Batch size | 25 units (20 to 50 recommended) | Stage 4: units per AI coder call |
 | Consensus | 2 of 3 AI coders | Stage 5: a code that reaches it on a unit enters the coded corpus |
 | Blind-pass sample | 10% of units, at least 50 and at most 150, stratified by question | Stage 3: coded by at least two researchers before any model output |
@@ -137,7 +137,7 @@ $n_0 = 10$, $n_1 = 8$), so $D_o = 6/18 = 0.3333$, $D_e = 160/306 = 0.5229$ and $
 For code Y, $o_{00} = 7$, $o_{01} = o_{10} = 1$, $o_{11} = 9$, so $D_o = 0.1111$ and
 $\alpha(Y) = 0.7875$. Pairwise kappa for X is 0.3333 (A, B), 0.6667 (A, C) and 0 (B, C); for Y it is
 1, 0.6667 and 0.6667. Six (unit, code) pairs reach consensus: X on u1, u2 and u4, and Y on u2, u3 and
-u6. Code X falls below the alpha threshold and returns to the researchers. If AI coder C had never seen
+u6. Code X falls below the alpha threshold and returns to the researchers, who refine and recode it, drop it, or keep it with a stated reason. If AI coder C had never seen
 u6, its value there would be missing rather than 0, and $\alpha(X)$ would be 0.3333. Running
 `python3 supplement/b_example.py` prints:
 

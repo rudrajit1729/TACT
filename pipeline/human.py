@@ -19,7 +19,7 @@ the researchers need and reads back what they return.
                     units coded ISSUE or UNCOVERED, and (Full) the high-uncertainty assignments
   low-alpha         human/06_low_alpha/: every code with Krippendorff's alpha below the floor, with its
                     definition and the units the coders disagreed on; the researchers return decisions.csv
-                    (refine and recode, or drop), which consensus, the report and the dashboard read
+                    (refine and recode, drop, or keep with a stated reason), which consensus, the report and the dashboard read
 
 Standard library (+ openpyxl if installed, for .xlsx).
 """
@@ -528,7 +528,7 @@ def cmd_spot_check(args):
 
 
 # --------------------------------------------------------------------------- low-alpha decision
-LOW_ALPHA_README = """# Codes below the alpha threshold: refine and recode, or drop
+LOW_ALPHA_README = """# Codes below the alpha threshold: refine and recode, drop, or keep with a stated reason
 
 **Who:** the researchers (at least two), together.
 
@@ -538,6 +538,8 @@ stands it cannot support a finding. For each one, decide (and report the decisio
 
 - **drop**: the code is excluded from the results and listed, with its definition and agreement
   counts, in the supplement (`results/{cond}/reliability_report.md`).
+- **keep**: the code stays in the codebook and the results unchanged; give the reason, which the
+  reports and the dashboard show beside the code's alpha.
 - **refine**: you rewrite the definition (and include / exclude) so coders can apply it; the
   codebook gets a new version and the WHOLE corpus is recoded with it (a code is never recoded on
   part of the corpus). Codes you drop are removed from the new version.
@@ -548,7 +550,7 @@ disagreed on, with each coder's codes and rationale.
 ## When you have decided
 
 1. Copy `decisions_TEMPLATE.csv` to `decisions.csv` in this folder and fill one row per code:
-   `decision` is `drop` or `refine`; for `refine`, fill `new_definition` (and `new_label`,
+   `decision` is `drop`, `refine` or `keep`; for `refine`, fill `new_definition` (and `new_label`,
    `new_include`, `new_exclude` where they change); give a `reason` and who decided.
 2. `python3 pipeline/council.py --config CONFIG consensus` records the decisions in the reports.
 3. If any code is refined: `python3 pipeline/council.py --config CONFIG refine` archives this coding
@@ -612,7 +614,7 @@ def cmd_low_alpha(args):
                                  encoding="utf-8")
     print("low-alpha (%s): %d code(s) below %s%s -> %s. %s"
           % (cond, len(low), K.cfg.t["alpha_drop"], (" (" + ", ".join(low) + ")") if low else "", d,
-             "STOP: the researchers decide, per code, refine and recode or drop." if low else "Nothing to decide."))
+             "STOP: the researchers decide, per code, refine and recode, drop, or keep with a stated reason." if low else "Nothing to decide."))
     return 0
 
 

@@ -10,7 +10,7 @@ Stage 5: consensus, per-code reliability, survival, and the drop rule.
   distribution   median, minimum, maximum, number below 0.7, number at or above 0.80; no interval on
                  the median
   alpha rule     codes with alpha below `thresholds.alpha_drop` (0.7) on the reliability units go back
-                 to the researchers (refine and recode, or drop); until they decide, the codes are held
+                 to the researchers (refine and recode, drop, or keep with a stated reason); until they decide, the codes are held
                  out of the results and listed, with definitions and agreement counts; codes whose alpha
                  is undefined (no variation) are listed beside them
   high-uncertainty (TACT-Full) consensus assignments the decision model scored below
@@ -263,7 +263,7 @@ def run(*, rows, coders, problems, corpus, book, cfg, rel_units, out: Path, labe
         c = books[cid]
         prevalence.append(OrderedDict([
             ("code", cid), ("rq", c.get("rq", "")), ("label", c["label"]),
-            ("status", "retained" if cid in retained else "held out: alpha below %.2f, returned to the researchers" % floor if cid in dropped
+            ("status", "retained" if cid in retained else "kept by the researchers: alpha below %.2f" % floor if cid in dropped and (low_alpha_decisions or {}).get(cid, {}).get("decision") == "keep" else "held out: alpha below %.2f, returned to the researchers" % floor if cid in dropped
                        else "held out: alpha undefined"),
             ("n_units", len(by_code[cid])), ("pct_units", pct(len(by_code[cid]), len(base))),
             ("n_high_uncertainty", len(flagged[cid])), ("n_high_uncertainty_unreviewed", len(unreviewed[cid])),
@@ -318,7 +318,7 @@ def run(*, rows, coders, problems, corpus, book, cfg, rel_units, out: Path, labe
         ("n_high_uncertainty_unreviewed", sum(len(v) for v in unreviewed.values())),
         ("n_high_uncertainty_removed_at_review", len([p for p in removed if p[1] in subst and p[0] not in issue_units])),
         ("high_uncertainty_below", t.get("high_uncertainty_below") if uncertain else None),
-        ("low_alpha_decisions", OrderedDict((c, (low_alpha_decisions or {}).get(c, {}).get("decision", "pending: the researchers decide (refine and recode, or drop)"))
+        ("low_alpha_decisions", OrderedDict((c, (low_alpha_decisions or {}).get(c, {}).get("decision", "pending: the researchers decide (refine and recode, drop, or keep with a stated reason)"))
                                             for c in dropped)),
         ("per_coder", per_coder),
         ("integrity", OrderedDict([("invalid_codes_used_and_dropped", bad),
@@ -415,7 +415,7 @@ def report_md(s, rel, book, cfg, decisions=None) -> str:
         if code in s["codes_dropped_alpha_below_floor"]:
             L.append("- Researchers' decision: %s" % (("**%s**%s%s" % (dd["decision"], (": " + dd["reason"]) if dd.get("reason") else "",
                                                                        (" (%s)" % dd["decided_by"]) if dd.get("decided_by") else ""))
-                                                       if dd else "pending (refine and recode, or drop)"))
+                                                       if dd else "pending (refine and recode, drop, or keep with a stated reason)"))
         else:
             L.append("- Alpha undefined (no variation among the coders on the reliability units); not reported.")
         L.append("- alpha %s; assigned by any coder on %d units, at consensus on %d, unanimously on %d" % (

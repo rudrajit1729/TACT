@@ -1,0 +1,2163 @@
+{
+ "codebook": [
+  {
+   "id": "RQ1.4-C1",
+   "rq": "RQ1.4",
+   "label": "Code completion",
+   "definition": "Copilot generates or completes statements, lines, functions, classes, or other source code from the surrounding code context."
+  },
+  {
+   "id": "RQ1.4-C2",
+   "rq": "RQ1.4",
+   "label": "Comment-to-code",
+   "definition": "Copilot implements functionality from a natural-language comment or pseudocode description."
+  },
+  {
+   "id": "RQ1.4-C3",
+   "rq": "RQ1.4",
+   "label": "Algorithms and data processing",
+   "definition": "Copilot implements algorithms, calculations, collection operations, data transformations, or query logic."
+  },
+  {
+   "id": "RQ1.4-C4",
+   "rq": "RQ1.4",
+   "label": "Integration and configuration",
+   "definition": "Copilot generates configuration, API integration, authentication, database, deployment, or framework-specific code."
+  },
+  {
+   "id": "RQ1.4-C5",
+   "rq": "RQ1.4",
+   "label": "Documentation and explanation",
+   "definition": "Copilot produces comments, documentation, summaries, or explanations of code."
+  },
+  {
+   "id": "RQ1.4-C6",
+   "rq": "RQ1.4",
+   "label": "Testing and correction",
+   "definition": "Copilot generates tests, debugging changes, fixes, or automated code corrections."
+  },
+  {
+   "id": "RQ1.4-C7",
+   "rq": "RQ1.4",
+   "label": "Non-code artifacts",
+   "definition": "Copilot generates text-like artifacts such as diagrams, translations, or commit messages."
+  },
+  {
+   "id": "RQ1.5-C1",
+   "rq": "RQ1.5",
+   "label": "Implement functionality",
+   "definition": "Copilot is used to build a requested feature or solve a programming task."
+  },
+  {
+   "id": "RQ1.5-C2",
+   "rq": "RQ1.5",
+   "label": "Troubleshoot code",
+   "definition": "Copilot is used to diagnose an error, repair code, or propose a workaround."
+  },
+  {
+   "id": "RQ1.5-C3",
+   "rq": "RQ1.5",
+   "label": "Learn and understand",
+   "definition": "Copilot is used to learn a language or API, understand generated code, or obtain an explanation."
+  },
+  {
+   "id": "RQ1.5-C4",
+   "rq": "RQ1.5",
+   "label": "Accelerate repetitive work",
+   "definition": "Copilot is used to reduce effort on boilerplate, repetitive edits, or routine coding."
+  },
+  {
+   "id": "RQ1.5-C5",
+   "rq": "RQ1.5",
+   "label": "Evaluate AI capability",
+   "definition": "Copilot is deliberately tested or compared to assess its ability, trustworthiness, or usefulness."
+  },
+  {
+   "id": "RQ1.5-C6",
+   "rq": "RQ1.5",
+   "label": "Discover code or APIs",
+   "definition": "Copilot is used as an alternative to documentation, search, IntelliSense, or manual API discovery."
+  },
+  {
+   "id": "RQ1.5-C7",
+   "rq": "RQ1.5",
+   "label": "Create supporting artifacts",
+   "definition": "Copilot is used to create documentation, tests, diagrams, translations, or other development artifacts."
+  },
+  {
+   "id": "RQ2.1-C1",
+   "rq": "RQ2.1",
+   "label": "Saves time and effort",
+   "definition": "Copilot reduces implementation time, typing, searching, or repetitive manual work."
+  },
+  {
+   "id": "RQ2.1-C2",
+   "rq": "RQ2.1",
+   "label": "Produces working solutions",
+   "definition": "Copilot supplies code that solves the stated problem or works after little modification."
+  },
+  {
+   "id": "RQ2.1-C3",
+   "rq": "RQ2.1",
+   "label": "Context-aware assistance",
+   "definition": "Copilot infers useful completions from comments, nearby code, naming patterns, or coding style."
+  },
+  {
+   "id": "RQ2.1-C4",
+   "rq": "RQ2.1",
+   "label": "Broad environment support",
+   "definition": "Copilot is valued for assisting across multiple languages, editors, frameworks, or task types."
+  },
+  {
+   "id": "RQ2.1-C5",
+   "rq": "RQ2.1",
+   "label": "Supports learning",
+   "definition": "Copilot helps users, especially novices, discover approaches or understand unfamiliar programming concepts."
+  },
+  {
+   "id": "RQ2.1-C6",
+   "rq": "RQ2.1",
+   "label": "Generates substantial code",
+   "definition": "Copilot can produce complete functions or multi-step implementations from short prompts."
+  },
+  {
+   "id": "RQ2.2-C1",
+   "rq": "RQ2.2",
+   "label": "Incorrect or fabricated output",
+   "definition": "Copilot suggests code, APIs, imports, properties, or syntax that is wrong, nonexistent, incomplete, or unsuitable."
+  },
+  {
+   "id": "RQ2.2-C2",
+   "rq": "RQ2.2",
+   "label": "Requires verification",
+   "definition": "Generated code is opaque or untrusted and must be understood, tested, corrected, or checked against documentation."
+  },
+  {
+   "id": "RQ2.2-C3",
+   "rq": "RQ2.2",
+   "label": "Intrusive suggestions",
+   "definition": "Automatic suggestions are distracting, verbose, noisy, or interfere with the user's editing flow."
+  },
+  {
+   "id": "RQ2.2-C4",
+   "rq": "RQ2.2",
+   "label": "IDE and extension conflicts",
+   "definition": "Copilot conflicts with editor behavior, IntelliSense, snippets, extensions, keyboard shortcuts, or other completions."
+  },
+  {
+   "id": "RQ2.2-C5",
+   "rq": "RQ2.2",
+   "label": "Authentication and access",
+   "definition": "Installation, authorization, account selection, subscription access, or repeated sign-in prevents Copilot use."
+  },
+  {
+   "id": "RQ2.2-C6",
+   "rq": "RQ2.2",
+   "label": "Network and certificate barriers",
+   "definition": "VPNs, proxies, firewalls, DNS, SSL inspection, or self-signed certificates disrupt Copilot connectivity."
+  },
+  {
+   "id": "RQ2.2-C7",
+   "rq": "RQ2.2",
+   "label": "Compatibility limitations",
+   "definition": "Copilot is unavailable or unreliable for a particular editor, platform, architecture, language, file type, or software version."
+  },
+  {
+   "id": "RQ2.2-C8",
+   "rq": "RQ2.2",
+   "label": "Reliability and performance",
+   "definition": "Copilot crashes, hangs, disappears, stops suggesting, consumes resources, or breaks after an update."
+  },
+  {
+   "id": "RQ2.2-C9",
+   "rq": "RQ2.2",
+   "label": "Limited user control",
+   "definition": "Users cannot adequately control triggering, acceptance granularity, formatting, scope, or other completion behavior."
+  },
+  {
+   "id": "RQ2.2-C10",
+   "rq": "RQ2.2",
+   "label": "Privacy and security risk",
+   "definition": "Use raises concerns about sending proprietary code, exposing secrets, telemetry, retention, or generated credentials."
+  },
+  {
+   "id": "RQ2.2-C11",
+   "rq": "RQ2.2",
+   "label": "Limited context or output range",
+   "definition": "Copilot lacks sufficient project context, returns only short suggestions, or provides too few useful alternatives."
+  },
+  {
+   "id": "RQ2.2-C12",
+   "rq": "RQ2.2",
+   "label": "Poor documentation and discoverability",
+   "definition": "Copilot settings, commands, behavior, or generated APIs are undocumented or difficult to discover."
+  },
+  {
+   "id": "RQ2.2-C13",
+   "rq": "RQ2.2",
+   "label": "Cost and restricted availability",
+   "definition": "Payment, trials, waitlists, licensing, or limited preview access restricts adoption."
+  },
+  {
+   "id": "RQ2.3-C1",
+   "rq": "RQ2.3",
+   "label": "Partial acceptance",
+   "definition": "Users expect controls to accept a suggestion by word, line, or selected portion rather than all or nothing."
+  },
+  {
+   "id": "RQ2.3-C2",
+   "rq": "RQ2.3",
+   "label": "On-demand and scoped activation",
+   "definition": "Users expect manual triggering and selective enablement by project, language, context, or content type."
+  },
+  {
+   "id": "RQ2.3-C3",
+   "rq": "RQ2.3",
+   "label": "Style and format configuration",
+   "definition": "Users expect configurable quotes, line endings, completion length, and adherence to project conventions."
+  },
+  {
+   "id": "RQ2.3-C4",
+   "rq": "RQ2.3",
+   "label": "Broader platform support",
+   "definition": "Users expect Copilot to support additional IDEs, operating systems, architectures, languages, and notebook environments."
+  },
+  {
+   "id": "RQ2.3-C5",
+   "rq": "RQ2.3",
+   "label": "Robust enterprise connectivity",
+   "definition": "Users expect reliable authentication and first-class support for proxies, VPNs, corporate certificates, and restricted networks."
+  },
+  {
+   "id": "RQ2.3-C6",
+   "rq": "RQ2.3",
+   "label": "Seamless IDE coexistence",
+   "definition": "Users expect Copilot to coexist with IntelliSense, extensions, snippets, keybindings, and native editing behavior without conflicts."
+  },
+  {
+   "id": "RQ2.3-C7",
+   "rq": "RQ2.3",
+   "label": "Project context and personalization",
+   "definition": "Users expect multi-file project awareness, organizational knowledge, customization, or fine-tuning."
+  },
+  {
+   "id": "RQ2.3-C8",
+   "rq": "RQ2.3",
+   "label": "Higher output quality",
+   "definition": "Users expect suggestions that compile, use current APIs, satisfy requirements, and require less correction."
+  },
+  {
+   "id": "RQ2.3-C9",
+   "rq": "RQ2.3",
+   "label": "Extension and UI APIs",
+   "definition": "Users expect APIs or hooks for integrating, capturing, rendering, or extending Copilot-style completions."
+  },
+  {
+   "id": "RQ2.3-C10",
+   "rq": "RQ2.3",
+   "label": "Privacy controls",
+   "definition": "Users expect local, self-hosted, opt-in, or organizational controls over source-code transmission and retention."
+  },
+  {
+   "id": "RQ2.3-C11",
+   "rq": "RQ2.3",
+   "label": "Richer suggestion navigation",
+   "definition": "Users expect reliable multiline completions, multiple alternatives, and convenient next/previous navigation."
+  },
+  {
+   "id": "RQ2.3-C12",
+   "rq": "RQ2.3",
+   "label": "Expanded assistant functions",
+   "definition": "Users expect integrated chat, explanation, documentation, testing, diagramming, or correction capabilities."
+  }
+ ],
+ "assignments": [
+  {
+   "uid": "U001",
+   "codes": []
+  },
+  {
+   "uid": "U002",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U003",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C2",
+    "RQ2.2-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U004",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U005",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U006",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C2",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U007",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U008",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C6",
+    "RQ2.1-C4"
+   ]
+  },
+  {
+   "uid": "U009",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U010",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U011",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C6",
+    "RQ2.2-C12",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U012",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U013",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U014",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U015",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C13",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U016",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U017",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C5",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U018",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C5",
+    "RQ2.1-C1",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U019",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U020",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U021",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U022",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U023",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U024",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U025",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U026",
+   "codes": [
+    "RQ2.1-C3",
+    "RQ2.2-C9",
+    "RQ2.3-C3"
+   ]
+  },
+  {
+   "uid": "U027",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U028",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U029",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U030",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U031",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U032",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ1.5-C1",
+    "RQ2.2-C1",
+    "RQ2.2-C2",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U033",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U034",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U035",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U036",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U037",
+   "codes": []
+  },
+  {
+   "uid": "U038",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C6",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U039",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C6",
+    "RQ2.2-C13",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U040",
+   "codes": [
+    "RQ2.2-C5"
+   ]
+  },
+  {
+   "uid": "U041",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C13",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U042",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C1",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U043",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U044",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U045",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U046",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U047",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ1.5-C1",
+    "RQ2.1-C2",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U048",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U049",
+   "codes": [
+    "RQ2.2-C10",
+    "RQ2.3-C10"
+   ]
+  },
+  {
+   "uid": "U050",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C9",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U051",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C6"
+   ]
+  },
+  {
+   "uid": "U052",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C4",
+    "RQ2.1-C6"
+   ]
+  },
+  {
+   "uid": "U053",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U054",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U055",
+   "codes": [
+    "RQ2.2-C1",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U056",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ2.2-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U057",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U058",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C1",
+    "RQ2.2-C1",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U059",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U060",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C5",
+    "RQ2.2-C1",
+    "RQ2.2-C2",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U061",
+   "codes": [
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U062",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C9",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U063",
+   "codes": [
+    "RQ1.4-C6",
+    "RQ1.5-C2",
+    "RQ2.1-C1",
+    "RQ2.3-C12"
+   ]
+  },
+  {
+   "uid": "U064",
+   "codes": [
+    "RQ2.2-C13",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U065",
+   "codes": [
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U066",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U067",
+   "codes": [
+    "RQ2.2-C11",
+    "RQ2.3-C11"
+   ]
+  },
+  {
+   "uid": "U068",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ2.2-C1",
+    "RQ2.2-C2",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U069",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C6"
+   ]
+  },
+  {
+   "uid": "U070",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U071",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U072",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U073",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.2-C8",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U074",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C7",
+    "RQ2.2-C8",
+    "RQ2.2-C13"
+   ]
+  },
+  {
+   "uid": "U075",
+   "codes": []
+  },
+  {
+   "uid": "U076",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U077",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C7",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U078",
+   "codes": [
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U079",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C3",
+    "RQ2.1-C2",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U080",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2",
+    "RQ2.1-C6"
+   ]
+  },
+  {
+   "uid": "U081",
+   "codes": [
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U082",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U083",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C6",
+    "RQ2.1-C4"
+   ]
+  },
+  {
+   "uid": "U084",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U085",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U086",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ1.5-C1",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U087",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U088",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1",
+    "RQ2.3-C3"
+   ]
+  },
+  {
+   "uid": "U089",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U090",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U091",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U092",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U093",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ2.1-C2",
+    "RQ2.1-C6",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U094",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U095",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U096",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U097",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.2-C11",
+    "RQ2.3-C7",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U098",
+   "codes": [
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U099",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U100",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.2-C11",
+    "RQ2.3-C11"
+   ]
+  },
+  {
+   "uid": "U101",
+   "codes": [
+    "RQ2.2-C10",
+    "RQ2.3-C2",
+    "RQ2.3-C10"
+   ]
+  },
+  {
+   "uid": "U102",
+   "codes": [
+    "RQ2.2-C5"
+   ]
+  },
+  {
+   "uid": "U103",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U104",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C5",
+    "RQ2.1-C2",
+    "RQ2.1-C6"
+   ]
+  },
+  {
+   "uid": "U105",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C9",
+    "RQ2.3-C2",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U106",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U107",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.2-C8",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U108",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C9",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U109",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.2-C9",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U110",
+   "codes": [
+    "RQ2.1-C4",
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U111",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U112",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C9",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U113",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U114",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U115",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U116",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C1",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U117",
+   "codes": [
+    "RQ2.2-C10",
+    "RQ2.2-C11",
+    "RQ2.3-C10"
+   ]
+  },
+  {
+   "uid": "U118",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C6",
+    "RQ2.2-C8",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U119",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U120",
+   "codes": [
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U121",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.1-C4"
+   ]
+  },
+  {
+   "uid": "U122",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C4",
+    "RQ2.1-C1",
+    "RQ2.1-C3"
+   ]
+  },
+  {
+   "uid": "U123",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C3",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U124",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C2",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U125",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C3",
+    "RQ2.1-C2",
+    "RQ2.1-C5",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U126",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U127",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U128",
+   "codes": [
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U129",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U130",
+   "codes": [
+    "RQ1.4-C7",
+    "RQ1.5-C4"
+   ]
+  },
+  {
+   "uid": "U131",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.1-C2"
+   ]
+  },
+  {
+   "uid": "U132",
+   "codes": [
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U133",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ1.5-C6",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U134",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U135",
+   "codes": [
+    "RQ2.2-C11",
+    "RQ2.3-C7"
+   ]
+  },
+  {
+   "uid": "U136",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U137",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C3",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U138",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C2",
+    "RQ2.2-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U139",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1",
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U140",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C6",
+    "RQ2.1-C4"
+   ]
+  },
+  {
+   "uid": "U141",
+   "codes": [
+    "RQ1.4-C7",
+    "RQ2.2-C1",
+    "RQ2.3-C4",
+    "RQ2.3-C12"
+   ]
+  },
+  {
+   "uid": "U142",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U143",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U144",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.4-C3",
+    "RQ1.5-C4",
+    "RQ2.1-C1",
+    "RQ2.1-C6",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U145",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C1",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U146",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.1-C4"
+   ]
+  },
+  {
+   "uid": "U147",
+   "codes": [
+    "RQ1.4-C3",
+    "RQ1.5-C1",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U148",
+   "codes": [
+    "RQ2.2-C1",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U149",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U150",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U151",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U152",
+   "codes": [
+    "RQ2.2-C8",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U153",
+   "codes": [
+    "RQ2.2-C1",
+    "RQ2.2-C11"
+   ]
+  },
+  {
+   "uid": "U154",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ1.5-C3",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U155",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C1",
+    "RQ2.2-C2",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U156",
+   "codes": [
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U157",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8",
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U158",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U159",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U160",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U161",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ2.2-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U162",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U163",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C5",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U164",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U165",
+   "codes": [
+    "RQ1.5-C2",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U166",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U167",
+   "codes": [
+    "RQ2.2-C5"
+   ]
+  },
+  {
+   "uid": "U168",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U169",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U170",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U171",
+   "codes": [
+    "RQ2.2-C12",
+    "RQ2.3-C3"
+   ]
+  },
+  {
+   "uid": "U172",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C13",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U173",
+   "codes": [
+    "RQ2.2-C4"
+   ]
+  },
+  {
+   "uid": "U174",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U175",
+   "codes": [
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U176",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C11"
+   ]
+  },
+  {
+   "uid": "U177",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U178",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U179",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U180",
+   "codes": [
+    "RQ2.1-C4",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U181",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C1",
+    "RQ2.1-C3"
+   ]
+  },
+  {
+   "uid": "U182",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U183",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U184",
+   "codes": [
+    "RQ1.4-C6",
+    "RQ2.2-C1",
+    "RQ2.2-C7"
+   ]
+  },
+  {
+   "uid": "U185",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U186",
+   "codes": [
+    "RQ2.2-C8",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U187",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U188",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U189",
+   "codes": [
+    "RQ1.5-C3",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U190",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ2.2-C6",
+    "RQ2.2-C7"
+   ]
+  },
+  {
+   "uid": "U191",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U192",
+   "codes": [
+    "RQ1.5-C2",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U193",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U194",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.2-C11",
+    "RQ2.3-C11"
+   ]
+  },
+  {
+   "uid": "U195",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U196",
+   "codes": [
+    "RQ2.1-C3"
+   ]
+  },
+  {
+   "uid": "U197",
+   "codes": [
+    "RQ2.2-C1",
+    "RQ2.2-C4"
+   ]
+  },
+  {
+   "uid": "U198",
+   "codes": [
+    "RQ1.5-C2",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U199",
+   "codes": [
+    "RQ1.4-C5",
+    "RQ1.4-C6",
+    "RQ2.2-C1",
+    "RQ2.2-C8",
+    "RQ2.3-C8",
+    "RQ2.3-C12"
+   ]
+  },
+  {
+   "uid": "U200",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C1",
+    "RQ2.1-C3"
+   ]
+  },
+  {
+   "uid": "U201",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U202",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U203",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U204",
+   "codes": [
+    "RQ1.4-C2",
+    "RQ1.5-C1",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U205",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U206",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U207",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U208",
+   "codes": [
+    "RQ2.3-C4",
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U209",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U210",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U211",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U212",
+   "codes": []
+  },
+  {
+   "uid": "U213",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U214",
+   "codes": [
+    "RQ2.2-C10",
+    "RQ2.3-C2",
+    "RQ2.3-C10"
+   ]
+  },
+  {
+   "uid": "U215",
+   "codes": [
+    "RQ2.2-C11",
+    "RQ2.3-C7"
+   ]
+  },
+  {
+   "uid": "U216",
+   "codes": [
+    "RQ1.4-C5",
+    "RQ2.2-C7",
+    "RQ2.2-C8",
+    "RQ2.3-C12"
+   ]
+  },
+  {
+   "uid": "U217",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U218",
+   "codes": [
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U219",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C3"
+   ]
+  },
+  {
+   "uid": "U220",
+   "codes": [
+    "RQ2.2-C11",
+    "RQ2.3-C11"
+   ]
+  },
+  {
+   "uid": "U221",
+   "codes": [
+    "RQ1.5-C2",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U222",
+   "codes": []
+  },
+  {
+   "uid": "U223",
+   "codes": [
+    "RQ2.3-C2",
+    "RQ2.3-C10"
+   ]
+  },
+  {
+   "uid": "U224",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U225",
+   "codes": [
+    "RQ1.4-C5",
+    "RQ1.5-C7",
+    "RQ2.3-C12"
+   ]
+  },
+  {
+   "uid": "U226",
+   "codes": [
+    "RQ1.5-C2",
+    "RQ2.2-C1",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U227",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U228",
+   "codes": [
+    "RQ2.2-C10",
+    "RQ2.3-C10"
+   ]
+  },
+  {
+   "uid": "U229",
+   "codes": [
+    "RQ2.2-C3",
+    "RQ2.2-C9",
+    "RQ2.3-C2"
+   ]
+  },
+  {
+   "uid": "U230",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U231",
+   "codes": [
+    "RQ2.2-C1",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U232",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U233",
+   "codes": [
+    "RQ2.2-C7",
+    "RQ2.2-C8"
+   ]
+  },
+  {
+   "uid": "U234",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U235",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U236",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U237",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U238",
+   "codes": [
+    "RQ1.5-C2",
+    "RQ2.2-C1"
+   ]
+  },
+  {
+   "uid": "U239",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C11"
+   ]
+  },
+  {
+   "uid": "U240",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U241",
+   "codes": [
+    "RQ1.4-C1",
+    "RQ2.2-C3"
+   ]
+  },
+  {
+   "uid": "U242",
+   "codes": [
+    "RQ1.5-C2",
+    "RQ2.2-C1",
+    "RQ2.3-C8"
+   ]
+  },
+  {
+   "uid": "U243",
+   "codes": [
+    "RQ1.4-C7",
+    "RQ1.5-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U244",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U245",
+   "codes": [
+    "RQ2.2-C5",
+    "RQ2.2-C7",
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U246",
+   "codes": []
+  },
+  {
+   "uid": "U247",
+   "codes": [
+    "RQ2.3-C9"
+   ]
+  },
+  {
+   "uid": "U248",
+   "codes": [
+    "RQ2.2-C6",
+    "RQ2.3-C5"
+   ]
+  },
+  {
+   "uid": "U249",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.2-C12"
+   ]
+  },
+  {
+   "uid": "U250",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C11"
+   ]
+  },
+  {
+   "uid": "U251",
+   "codes": [
+    "RQ2.3-C4"
+   ]
+  },
+  {
+   "uid": "U252",
+   "codes": []
+  },
+  {
+   "uid": "U253",
+   "codes": [
+    "RQ2.2-C4",
+    "RQ2.2-C9",
+    "RQ2.3-C1",
+    "RQ2.3-C6"
+   ]
+  },
+  {
+   "uid": "U254",
+   "codes": [
+    "RQ1.4-C4",
+    "RQ1.5-C1",
+    "RQ2.2-C1",
+    "RQ2.2-C2"
+   ]
+  },
+  {
+   "uid": "U255",
+   "codes": [
+    "RQ2.2-C9",
+    "RQ2.3-C1"
+   ]
+  },
+  {
+   "uid": "U256",
+   "codes": [
+    "RQ1.5-C4",
+    "RQ2.1-C3"
+   ]
+  }
+ ]
+}

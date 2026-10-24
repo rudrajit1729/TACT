@@ -1,0 +1,139 @@
+# TACT (bounded AI council): run configuration.
+# Copy to config.yaml and edit. Every relative path is resolved against this file's folder.
+# The same file serves both variants: set `mode`. Settings marked [Full] are ignored in TACT-Lite.
+# Fix the thresholds below in preparation (Stage 0), before any model runs.
+
+mode: lite                      # lite (TACT-Lite) | full (TACT-Full)
+workspace: runs/my-study        # every artifact of the run is saved here
+
+study:
+  corpus_csv: data/corpus.csv   # columns: uid, text; optional: context, respondent, question, stratum, link
+                                # (respondent: who wrote the unit, when one respondent wrote several units)
+  # Words the prompts use for one unit and the people who wrote it.
+  unit_name: response
+  unit_name_plural: responses
+  respondent_name: respondent
+  respondent_name_plural: respondents
+  # One or two sentences the AI analysts read about the corpus (what a unit is, how it was collected).
+  corpus_description: >
+    Answers of software developers to an open-ended survey question, one answer per unit, de-identified.
+  # The extraction rule every role applies.
+  scope_rule: "Code only what a respondent states in the unit."
+  # Optional phrase used in the decision-model question (Full), with a leading space, e.g. " about code review".
+  topic_phrase: ""
+  # One discovery call per question per AI analyst. `rationale` (optional) says what the question means.
+  research_questions:
+    - id: RQ1
+      text: "What difficulties do developers report when reviewing AI-generated code?"
+      rationale: "Problems, difficulties or risks the respondent describes in their own review work."
+    - id: RQ2
+      text: "What support do developers want for reviewing AI-generated code?"
+
+# Data problems get issue codes instead of being dropped (Stage 4). Defaults from the method:
+issue_codes:
+  ISSUE_WRONG_FIELD: "The text answers another field or question and cannot be coded as supplied."
+  ISSUE_BACK_REFERENCE: "The unit only refers to missing material (for example 'same as above') and lacks enough content."
+  ISSUE_NON_RESPONSE: "Blank, 'N/A', 'no comment', an unreadable fragment, or another non-answer."
+
+# Roles -> model family. Three AI analysts and three AI coders from three model families. Adversaries [Full]
+# rotate by default (A is critiqued by C's family, B by A's, C by B's; the same for AI coders 1, 2, 3); override with
+# `adversaries: {A: gpt, ...}` and `coding_adversaries: {"1": gemini, ...}`.
+roles:
+  analysts: {A: claude, B: gpt, C: gemini}
+  reconciler: claude
+  reconciliation_adversary: gpt          # [Full] another family than the reconciler
+  coders: {"1": claude, "2": gpt, "3": gemini}
+
+# Family -> backend and model id. Backends: claude_cli | codex_cli | anthropic_api | openai_api |
+# gemini_api | command | manual | replay. API keys are read from the environment variable NAMED in api_key_env;
+# never put a key in this file. SETUP.md shows how to set up each family (CLI login or API key);
+# `python3 pipeline/council.py --config config.yaml doctor` checks what is ready.
+models:
+  claude:
+    backend: claude_cli                  # `claude -p`, no tools, no MCP servers
+    model: claude-opus-5                 # replace with the model you use
+  gpt:
+    backend: codex_cli                   # `codex exec`, read-only sandbox
+    model: gpt-5.6-terra                 # replace with the model you use
+  gemini:
+    backend: gemini_api
+    model: REPLACE_WITH_GEMINI_MODEL_ID
+    api_key_env: GEMINI_API_KEY
+    # reduced_generation_config: {thinkingConfig: {thinkingBudget: 0}}   # optional, for reduced-reasoning calls
+  # Other examples:
+  # claude:  {backend: anthropic_api, model: claude-opus-5, api_key_env: ANTHROPIC_API_KEY}
+  # gpt:     {backend: openai_api, model: REPLACE, api_key_env: OPENAI_API_KEY}
+  # local:   {backend: openai_api, model: REPLACE, base_url: "http://localhost:8000/v1", api_key_env: LOCAL_KEY, reasoning_param: false}
+  # agent:   {backend: manual, model: REPLACE, answered_by: "the model the agent runs on"}   # prompts saved to <workspace>/manual/
+  # replay:  {backend: replay, replay_dir: replay, model: REPLACE}   # answers from replies recorded with `council.py export-replies`
+
+# Discovery and reconciliation run at each model's default reasoning; every other call runs reduced.
+reasoning:
+  default_stages: [discovery, discovery-repair, discovery-answer, reconcile, reconcile-answer]
+  reduced_effort: low
+
+# [Full] Calibrated yes/no decision model, used only at coding: screening before coding (the codes each AI
+# coder sees per unit) and, after consensus, flagging high-uncertainty assignments for the researchers.
+# Not used in discovery, at reconciliation or by the coding adversaries. Without a TypeSafe key:
+# `enabled: false` (Full without it) or `backend: manual`; see SETUP.md, section 3.
+decision_model:
+  enabled: true
+  backend: typesafe                      # typesafe | command | manual (requests in <workspace>/manual/) | replay (needs replay_dir)
+  endpoint: https://api.typesafe.ai/v1/systemone
+  model: jev-latest
+  api_key_env: TYPESAFE_API_KEY          # the variable's NAME; the key stays in your environment
+  command: null                          # backend: command -> e.g. ["python3", "my_classifier.py"]
+  state_key: unit_text
+  include_research_question: true
+  workers: 8
+
+thresholds:
+  support_floor: 3                       # minimum distinct respondents per code; codes below it are dropped at
+                                         # reconciliation and listed for possible restoration at human review
+  min_quotes: 3                          # representative quotes from distinct units (or n_participants if fewer)
+  consensus: 2                           # AI coders (of 3) that must assign a code for it to reach consensus
+  alpha_drop: 0.7                        # Krippendorff's alpha threshold: codes below it go back to the researchers
+                                         # (refine and recode, or drop); 0.7 suits exploratory studies, raise it (e.g. 0.8) for conservative conclusions
+  alpha_high: 0.80
+  screening_tau: 0.10                    # [Full] each AI coder sees the codes scoring at least this ...
+  screening_top_k: 5                     # [Full] ... and never fewer than the top 5 ...
+  screening_audit_share: 0.05            # [Full] ... plus a random 5% of the screened-out (unit, code) pairs
+  high_uncertainty_below: 0.25           # [Full] consensus assignments scored below this are flagged as high-uncertainty
+  max_label_words: 14
+
+batch_size: 25                           # units per coding batch; 20 to 50 recommended
+discovery_batch_size: 0                  # 0 = whole corpus per discovery call; N = batches of N units when the corpus exceeds a context window
+max_repairs: 2                           # provenance-check repair rounds per discovery file
+workers: 6                               # concurrent model calls
+
+reconciliation:
+  groups_per_rq: [5, 15]                 # consolidation guide given to the reconciler
+  run_lite_baseline_in_full: true        # [Full] also reconcile discovery v0 (Lite) so the run reports what Full changed
+
+# Stage 0 draws two separate random samples, stratified by question, and records the seed.
+splits:
+  seed: 20260930
+  blind_pass_share: 0.10                 # blind-pass sample: 10% of units ...
+  blind_pass_min: 50                     # ... at least 50 ...
+  blind_pass_max: 150                    # ... at most 150; researchers open-code it before any model output (Stage 3)
+  held_out_share: 0.10                   # held-out sample: at least 10% of units, drawn from the units outside the
+  held_out_min: 0                        # blind-pass sample; optional floor in units. Researchers code it to check the council (Stage 5)
+  strata_columns: [question, stratum, discovery_batch]   # corpus columns; discovery_batch = the unit's discovery batch
+  # validation_development_share: 0     # validation option (opt-in, for validating the method against researchers'
+                                        # labels, as in the paper): > 0 also splits the units into reserved and evaluation units
+
+reliability:
+  units: all                             # units on which per-code alpha is computed
+
+spot_check:
+  random_sample: 50                      # random consensus assignments whose rationales the researchers spot-check
+  seed: 20260930
+
+# USD per million tokens [input, output], for the cost table. Dated list prices; fill in your own.
+prices:
+  claude-opus-5: [5.0, 25.0]
+  gpt-5.6-terra: [2.0, 12.0]
+  jev-latest: [0.042, 0]
+
+# What left the machine, to which vendors, under which consent terms or agreements (reported verbatim).
+data_governance: "REPLACE: e.g. de-identified survey answers sent to Anthropic, OpenAI and Google under ..."

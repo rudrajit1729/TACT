@@ -1,0 +1,274 @@
+{
+ "codes": [
+  {
+   "id": "RQ1.4-C1",
+   "rq": "RQ1.4",
+   "label": "Code completion",
+   "definition": "Copilot generates or completes statements, lines, functions, classes, or other source code from the surrounding code context."
+  },
+  {
+   "id": "RQ1.4-C2",
+   "rq": "RQ1.4",
+   "label": "Comment-to-code",
+   "definition": "Copilot implements functionality from a natural-language comment or pseudocode description."
+  },
+  {
+   "id": "RQ1.4-C3",
+   "rq": "RQ1.4",
+   "label": "Algorithms and data processing",
+   "definition": "Copilot implements algorithms, calculations, collection operations, data transformations, or query logic."
+  },
+  {
+   "id": "RQ1.4-C4",
+   "rq": "RQ1.4",
+   "label": "Integration and configuration",
+   "definition": "Copilot generates configuration, API integration, authentication, database, deployment, or framework-specific code."
+  },
+  {
+   "id": "RQ1.4-C5",
+   "rq": "RQ1.4",
+   "label": "Documentation and explanation",
+   "definition": "Copilot produces comments, documentation, summaries, or explanations of code."
+  },
+  {
+   "id": "RQ1.4-C6",
+   "rq": "RQ1.4",
+   "label": "Testing and correction",
+   "definition": "Copilot generates tests, debugging changes, fixes, or automated code corrections."
+  },
+  {
+   "id": "RQ1.4-C7",
+   "rq": "RQ1.4",
+   "label": "Non-code artifacts",
+   "definition": "Copilot generates text-like artifacts such as diagrams, translations, or commit messages."
+  },
+  {
+   "id": "RQ1.5-C1",
+   "rq": "RQ1.5",
+   "label": "Implement functionality",
+   "definition": "Copilot is used to build a requested feature or solve a programming task."
+  },
+  {
+   "id": "RQ1.5-C2",
+   "rq": "RQ1.5",
+   "label": "Troubleshoot code",
+   "definition": "Copilot is used to diagnose an error, repair code, or propose a workaround."
+  },
+  {
+   "id": "RQ1.5-C3",
+   "rq": "RQ1.5",
+   "label": "Learn and understand",
+   "definition": "Copilot is used to learn a language or API, understand generated code, or obtain an explanation."
+  },
+  {
+   "id": "RQ1.5-C4",
+   "rq": "RQ1.5",
+   "label": "Accelerate repetitive work",
+   "definition": "Copilot is used to reduce effort on boilerplate, repetitive edits, or routine coding."
+  },
+  {
+   "id": "RQ1.5-C5",
+   "rq": "RQ1.5",
+   "label": "Evaluate AI capability",
+   "definition": "Copilot is deliberately tested or compared to assess its ability, trustworthiness, or usefulness."
+  },
+  {
+   "id": "RQ1.5-C6",
+   "rq": "RQ1.5",
+   "label": "Discover code or APIs",
+   "definition": "Copilot is used as an alternative to documentation, search, IntelliSense, or manual API discovery."
+  },
+  {
+   "id": "RQ1.5-C7",
+   "rq": "RQ1.5",
+   "label": "Create supporting artifacts",
+   "definition": "Copilot is used to create documentation, tests, diagrams, translations, or other development artifacts."
+  },
+  {
+   "id": "RQ2.1-C1",
+   "rq": "RQ2.1",
+   "label": "Saves time and effort",
+   "definition": "Copilot reduces implementation time, typing, searching, or repetitive manual work."
+  },
+  {
+   "id": "RQ2.1-C2",
+   "rq": "RQ2.1",
+   "label": "Produces working solutions",
+   "definition": "Copilot supplies code that solves the stated problem or works after little modification."
+  },
+  {
+   "id": "RQ2.1-C3",
+   "rq": "RQ2.1",
+   "label": "Context-aware assistance",
+   "definition": "Copilot infers useful completions from comments, nearby code, naming patterns, or coding style."
+  },
+  {
+   "id": "RQ2.1-C4",
+   "rq": "RQ2.1",
+   "label": "Broad environment support",
+   "definition": "Copilot is valued for assisting across multiple languages, editors, frameworks, or task types."
+  },
+  {
+   "id": "RQ2.1-C5",
+   "rq": "RQ2.1",
+   "label": "Supports learning",
+   "definition": "Copilot helps users, especially novices, discover approaches or understand unfamiliar programming concepts."
+  },
+  {
+   "id": "RQ2.1-C6",
+   "rq": "RQ2.1",
+   "label": "Generates substantial code",
+   "definition": "Copilot can produce complete functions or multi-step implementations from short prompts."
+  },
+  {
+   "id": "RQ2.2-C1",
+   "rq": "RQ2.2",
+   "label": "Incorrect or fabricated output",
+   "definition": "Copilot suggests code, APIs, imports, properties, or syntax that is wrong, nonexistent, incomplete, or unsuitable."
+  },
+  {
+   "id": "RQ2.2-C2",
+   "rq": "RQ2.2",
+   "label": "Requires verification",
+   "definition": "Generated code is opaque or untrusted and must be understood, tested, corrected, or checked against documentation."
+  },
+  {
+   "id": "RQ2.2-C3",
+   "rq": "RQ2.2",
+   "label": "Intrusive suggestions",
+   "definition": "Automatic suggestions are distracting, verbose, noisy, or interfere with the user's editing flow."
+  },
+  {
+   "id": "RQ2.2-C4",
+   "rq": "RQ2.2",
+   "label": "IDE and extension conflicts",
+   "definition": "Copilot conflicts with editor behavior, IntelliSense, snippets, extensions, keyboard shortcuts, or other completions."
+  },
+  {
+   "id": "RQ2.2-C5",
+   "rq": "RQ2.2",
+   "label": "Authentication and access",
+   "definition": "Installation, authorization, account selection, subscription access, or repeated sign-in prevents Copilot use."
+  },
+  {
+   "id": "RQ2.2-C6",
+   "rq": "RQ2.2",
+   "label": "Network and certificate barriers",
+   "definition": "VPNs, proxies, firewalls, DNS, SSL inspection, or self-signed certificates disrupt Copilot connectivity."
+  },
+  {
+   "id": "RQ2.2-C7",
+   "rq": "RQ2.2",
+   "label": "Compatibility limitations",
+   "definition": "Copilot is unavailable or unreliable for a particular editor, platform, architecture, language, file type, or software version."
+  },
+  {
+   "id": "RQ2.2-C8",
+   "rq": "RQ2.2",
+   "label": "Reliability and performance",
+   "definition": "Copilot crashes, hangs, disappears, stops suggesting, consumes resources, or breaks after an update."
+  },
+  {
+   "id": "RQ2.2-C9",
+   "rq": "RQ2.2",
+   "label": "Limited user control",
+   "definition": "Users cannot adequately control triggering, acceptance granularity, formatting, scope, or other completion behavior."
+  },
+  {
+   "id": "RQ2.2-C10",
+   "rq": "RQ2.2",
+   "label": "Privacy and security risk",
+   "definition": "Use raises concerns about sending proprietary code, exposing secrets, telemetry, retention, or generated credentials."
+  },
+  {
+   "id": "RQ2.2-C11",
+   "rq": "RQ2.2",
+   "label": "Limited context or output range",
+   "definition": "Copilot lacks sufficient project context, returns only short suggestions, or provides too few useful alternatives."
+  },
+  {
+   "id": "RQ2.2-C12",
+   "rq": "RQ2.2",
+   "label": "Poor documentation and discoverability",
+   "definition": "Copilot settings, commands, behavior, or generated APIs are undocumented or difficult to discover."
+  },
+  {
+   "id": "RQ2.2-C13",
+   "rq": "RQ2.2",
+   "label": "Cost and restricted availability",
+   "definition": "Payment, trials, waitlists, licensing, or limited preview access restricts adoption."
+  },
+  {
+   "id": "RQ2.3-C1",
+   "rq": "RQ2.3",
+   "label": "Partial acceptance",
+   "definition": "Users expect controls to accept a suggestion by word, line, or selected portion rather than all or nothing."
+  },
+  {
+   "id": "RQ2.3-C2",
+   "rq": "RQ2.3",
+   "label": "On-demand and scoped activation",
+   "definition": "Users expect manual triggering and selective enablement by project, language, context, or content type."
+  },
+  {
+   "id": "RQ2.3-C3",
+   "rq": "RQ2.3",
+   "label": "Style and format configuration",
+   "definition": "Users expect configurable quotes, line endings, completion length, and adherence to project conventions."
+  },
+  {
+   "id": "RQ2.3-C4",
+   "rq": "RQ2.3",
+   "label": "Broader platform support",
+   "definition": "Users expect Copilot to support additional IDEs, operating systems, architectures, languages, and notebook environments."
+  },
+  {
+   "id": "RQ2.3-C5",
+   "rq": "RQ2.3",
+   "label": "Robust enterprise connectivity",
+   "definition": "Users expect reliable authentication and first-class support for proxies, VPNs, corporate certificates, and restricted networks."
+  },
+  {
+   "id": "RQ2.3-C6",
+   "rq": "RQ2.3",
+   "label": "Seamless IDE coexistence",
+   "definition": "Users expect Copilot to coexist with IntelliSense, extensions, snippets, keybindings, and native editing behavior without conflicts."
+  },
+  {
+   "id": "RQ2.3-C7",
+   "rq": "RQ2.3",
+   "label": "Project context and personalization",
+   "definition": "Users expect multi-file project awareness, organizational knowledge, customization, or fine-tuning."
+  },
+  {
+   "id": "RQ2.3-C8",
+   "rq": "RQ2.3",
+   "label": "Higher output quality",
+   "definition": "Users expect suggestions that compile, use current APIs, satisfy requirements, and require less correction."
+  },
+  {
+   "id": "RQ2.3-C9",
+   "rq": "RQ2.3",
+   "label": "Extension and UI APIs",
+   "definition": "Users expect APIs or hooks for integrating, capturing, rendering, or extending Copilot-style completions."
+  },
+  {
+   "id": "RQ2.3-C10",
+   "rq": "RQ2.3",
+   "label": "Privacy controls",
+   "definition": "Users expect local, self-hosted, opt-in, or organizational controls over source-code transmission and retention."
+  },
+  {
+   "id": "RQ2.3-C11",
+   "rq": "RQ2.3",
+   "label": "Richer suggestion navigation",
+   "definition": "Users expect reliable multiline completions, multiple alternatives, and convenient next/previous navigation."
+  },
+  {
+   "id": "RQ2.3-C12",
+   "rq": "RQ2.3",
+   "label": "Expanded assistant functions",
+   "definition": "Users expect integrated chat, explanation, documentation, testing, diagramming, or correction capabilities."
+  }
+ ]
+}

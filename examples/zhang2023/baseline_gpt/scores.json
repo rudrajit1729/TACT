@@ -1,0 +1,17 @@
+{
+ "182_labels": {
+  "recall": 0.6209,
+  "precision": 0.6788,
+  "f1": 0.6485,
+  "matched": "113/182"
+ },
+ "183_labels": {
+  "recall": 0.6175,
+  "precision": 0.6788,
+  "f1": 0.6467,
+  "matched": "113/183"
+ },
+ "n_codes": 45,
+ "cats_per_code": 1.98,
+ "n_unmapped": 7
+}

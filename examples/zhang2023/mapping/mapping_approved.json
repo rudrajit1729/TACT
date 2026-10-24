@@ -1,0 +1,754 @@
+{
+ "mapping": [
+  {
+   "code_id": "T22",
+   "categories": [
+    {
+     "id": "FU01"
+    },
+    {
+     "id": "FU05"
+    },
+    {
+     "id": "FU08"
+    },
+    {
+     "id": "FU11"
+    }
+   ]
+  },
+  {
+   "code_id": "T23",
+   "categories": [
+    {
+     "id": "FU02"
+    }
+   ]
+  },
+  {
+   "code_id": "T24",
+   "categories": [
+    {
+     "id": "FU04"
+    },
+    {
+     "id": "FU05"
+    },
+    {
+     "id": "FU06"
+    },
+    {
+     "id": "FU09"
+    },
+    {
+     "id": "FU10"
+    }
+   ]
+  },
+  {
+   "code_id": "T28",
+   "categories": [
+    {
+     "id": "FU10"
+    }
+   ]
+  },
+  {
+   "code_id": "T31",
+   "categories": [
+    {
+     "id": "FU05"
+    },
+    {
+     "id": "FU09"
+    },
+    {
+     "id": "FU12"
+    },
+    {
+     "id": "FU13"
+    }
+   ]
+  },
+  {
+   "code_id": "T48",
+   "categories": [
+    {
+     "id": "FU08"
+    },
+    {
+     "id": "FU12"
+    }
+   ]
+  },
+  {
+   "code_id": "T55",
+   "categories": [
+    {
+     "id": "FU03"
+    },
+    {
+     "id": "FU07"
+    }
+   ]
+  },
+  {
+   "code_id": "T74",
+   "categories": [
+    {
+     "id": "FU10"
+    }
+   ]
+  },
+  {
+   "code_id": "T01",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU06"
+    }
+   ]
+  },
+  {
+   "code_id": "T03",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU05"
+    }
+   ]
+  },
+  {
+   "code_id": "T13",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU02"
+    }
+   ]
+  },
+  {
+   "code_id": "T15",
+   "categories": []
+  },
+  {
+   "code_id": "T18",
+   "categories": [
+    {
+     "id": "PU01"
+    }
+   ]
+  },
+  {
+   "code_id": "T26",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU04"
+    },
+    {
+     "id": "PU06"
+    },
+    {
+     "id": "PU07"
+    }
+   ]
+  },
+  {
+   "code_id": "T32",
+   "categories": []
+  },
+  {
+   "code_id": "T36",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU05"
+    }
+   ]
+  },
+  {
+   "code_id": "T38",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU04"
+    }
+   ]
+  },
+  {
+   "code_id": "T43",
+   "categories": [
+    {
+     "id": "PU02"
+    },
+    {
+     "id": "PU07"
+    }
+   ]
+  },
+  {
+   "code_id": "T56",
+   "categories": [
+    {
+     "id": "PU03"
+    }
+   ]
+  },
+  {
+   "code_id": "T62",
+   "categories": []
+  },
+  {
+   "code_id": "T67",
+   "categories": [
+    {
+     "id": "PU01"
+    }
+   ]
+  },
+  {
+   "code_id": "T68",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU05"
+    }
+   ]
+  },
+  {
+   "code_id": "T79",
+   "categories": [
+    {
+     "id": "PU01"
+    },
+    {
+     "id": "PU04"
+    }
+   ]
+  },
+  {
+   "code_id": "T11",
+   "categories": [
+    {
+     "id": "BE01"
+    },
+    {
+     "id": "BE02"
+    }
+   ]
+  },
+  {
+   "code_id": "T17",
+   "categories": [
+    {
+     "id": "BE01"
+    },
+    {
+     "id": "BE05"
+    }
+   ]
+  },
+  {
+   "code_id": "T21",
+   "categories": [
+    {
+     "id": "BE01"
+    },
+    {
+     "id": "BE05"
+    }
+   ]
+  },
+  {
+   "code_id": "T41",
+   "categories": [
+    {
+     "id": "BE01"
+    }
+   ]
+  },
+  {
+   "code_id": "T42",
+   "categories": [
+    {
+     "id": "BE01"
+    }
+   ]
+  },
+  {
+   "code_id": "T47",
+   "categories": [
+    {
+     "id": "BE01"
+    }
+   ]
+  },
+  {
+   "code_id": "T52",
+   "categories": [
+    {
+     "id": "BE01"
+    },
+    {
+     "id": "BE02"
+    }
+   ]
+  },
+  {
+   "code_id": "T60",
+   "categories": []
+  },
+  {
+   "code_id": "T71",
+   "categories": [
+    {
+     "id": "BE01"
+    },
+    {
+     "id": "BE03"
+    }
+   ]
+  },
+  {
+   "code_id": "T73",
+   "categories": [
+    {
+     "id": "BE01"
+    },
+    {
+     "id": "BE06"
+    }
+   ]
+  },
+  {
+   "code_id": "T77",
+   "categories": [
+    {
+     "id": "BE01"
+    },
+    {
+     "id": "BE06"
+    }
+   ]
+  },
+  {
+   "code_id": "T87",
+   "categories": [
+    {
+     "id": "BE01"
+    }
+   ]
+  },
+  {
+   "code_id": "T02",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC02"
+    },
+    {
+     "id": "LC09"
+    },
+    {
+     "id": "LC11"
+    }
+   ]
+  },
+  {
+   "code_id": "T04",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC02"
+    },
+    {
+     "id": "LC09"
+    }
+   ]
+  },
+  {
+   "code_id": "T05",
+   "categories": [
+    {
+     "id": "LC03"
+    },
+    {
+     "id": "LC04"
+    },
+    {
+     "id": "LC12"
+    }
+   ]
+  },
+  {
+   "code_id": "T06",
+   "categories": [
+    {
+     "id": "LC04"
+    },
+    {
+     "id": "LC08"
+    }
+   ]
+  },
+  {
+   "code_id": "T07",
+   "categories": [
+    {
+     "id": "LC02"
+    },
+    {
+     "id": "LC09"
+    }
+   ]
+  },
+  {
+   "code_id": "T08",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC06"
+    },
+    {
+     "id": "LC07"
+    }
+   ]
+  },
+  {
+   "code_id": "T10",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC06"
+    },
+    {
+     "id": "LC11"
+    }
+   ]
+  },
+  {
+   "code_id": "T14",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC06"
+    },
+    {
+     "id": "LC07"
+    }
+   ]
+  },
+  {
+   "code_id": "T16",
+   "categories": [
+    {
+     "id": "LC02"
+    },
+    {
+     "id": "LC09"
+    }
+   ]
+  },
+  {
+   "code_id": "T25",
+   "categories": [
+    {
+     "id": "LC02"
+    },
+    {
+     "id": "LC10"
+    }
+   ]
+  },
+  {
+   "code_id": "T29",
+   "categories": [
+    {
+     "id": "LC03"
+    },
+    {
+     "id": "LC06"
+    },
+    {
+     "id": "LC07"
+    }
+   ]
+  },
+  {
+   "code_id": "T34",
+   "categories": [
+    {
+     "id": "LC05"
+    }
+   ]
+  },
+  {
+   "code_id": "T37",
+   "categories": [
+    {
+     "id": "LC03"
+    },
+    {
+     "id": "LC07"
+    },
+    {
+     "id": "LC09"
+    }
+   ]
+  },
+  {
+   "code_id": "T39",
+   "categories": [
+    {
+     "id": "LC01"
+    }
+   ]
+  },
+  {
+   "code_id": "T45",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC06"
+    },
+    {
+     "id": "LC07"
+    }
+   ]
+  },
+  {
+   "code_id": "T51",
+   "categories": [
+    {
+     "id": "LC04"
+    },
+    {
+     "id": "LC12"
+    }
+   ]
+  },
+  {
+   "code_id": "T59",
+   "categories": [
+    {
+     "id": "LC03"
+    }
+   ]
+  },
+  {
+   "code_id": "T65",
+   "categories": [
+    {
+     "id": "LC03"
+    },
+    {
+     "id": "LC07"
+    },
+    {
+     "id": "LC09"
+    }
+   ]
+  },
+  {
+   "code_id": "T69",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC02"
+    },
+    {
+     "id": "LC03"
+    }
+   ]
+  },
+  {
+   "code_id": "T70",
+   "categories": [
+    {
+     "id": "LC03"
+    },
+    {
+     "id": "LC04"
+    }
+   ]
+  },
+  {
+   "code_id": "T80",
+   "categories": [
+    {
+     "id": "LC03"
+    },
+    {
+     "id": "LC04"
+    }
+   ]
+  },
+  {
+   "code_id": "T85",
+   "categories": [
+    {
+     "id": "LC01"
+    },
+    {
+     "id": "LC05"
+    },
+    {
+     "id": "LC10"
+    }
+   ]
+  },
+  {
+   "code_id": "T09",
+   "categories": [
+    {
+     "id": "EF04"
+    },
+    {
+     "id": "EF10"
+    }
+   ]
+  },
+  {
+   "code_id": "T12",
+   "categories": [
+    {
+     "id": "EF01"
+    },
+    {
+     "id": "EF06"
+    }
+   ]
+  },
+  {
+   "code_id": "T19",
+   "categories": [
+    {
+     "id": "EF05"
+    },
+    {
+     "id": "EF10"
+    }
+   ]
+  },
+  {
+   "code_id": "T20",
+   "categories": [
+    {
+     "id": "EF02"
+    },
+    {
+     "id": "EF05"
+    }
+   ]
+  },
+  {
+   "code_id": "T27",
+   "categories": [
+    {
+     "id": "EF08"
+    }
+   ]
+  },
+  {
+   "code_id": "T30",
+   "categories": [
+    {
+     "id": "EF01"
+    }
+   ]
+  },
+  {
+   "code_id": "T33",
+   "categories": [
+    {
+     "id": "EF03"
+    },
+    {
+     "id": "EF04"
+    }
+   ]
+  },
+  {
+   "code_id": "T35",
+   "categories": []
+  },
+  {
+   "code_id": "T44",
+   "categories": []
+  },
+  {
+   "code_id": "T46",
+   "categories": []
+  },
+  {
+   "code_id": "T49",
+   "categories": []
+  },
+  {
+   "code_id": "T50",
+   "categories": [
+    {
+     "id": "EF06"
+    },
+    {
+     "id": "EF07"
+    }
+   ]
+  },
+  {
+   "code_id": "T64",
+   "categories": [
+    {
+     "id": "EF10"
+    }
+   ]
+  },
+  {
+   "code_id": "T72",
+   "categories": [
+    {
+     "id": "EF01"
+    },
+    {
+     "id": "EF02"
+    },
+    {
+     "id": "EF04"
+    }
+   ]
+  },
+  {
+   "code_id": "T83",
+   "categories": []
+  }
+ ]
+}

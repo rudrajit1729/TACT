@@ -1,0 +1,4236 @@
+{
+ "codes": [
+  {
+   "id": "T01",
+   "rq": "RQ1.5",
+   "label": "Keeping Copilot on as the completer while I type, in whatever editor and beside whatever completion list I have",
+   "definition": "A purpose code: the poster uses, recommends or arranges to have Copilot complete the line, expression, function body or text entry they are already typing, including using it as the completion engine next to or in place of the IDE's own member list. The test is that the text reports or recommends this use - not that a completion worked, and not that something about it failed.",
+   "include": "Statements that Copilot suggests or completes code, markup, README text or string entries while typing; accepting, triggering, navigating or cycling inline suggestions, including opening the panel of candidate solutions and choosing among them; recommendations of Copilot as the AI autocompletion to use; choosing or changing an IDE, version or workflow so its suggestions are available where the poster works; and statements assigning Copilot and the IDE's own completer (IntelliSense, Intelephense, a language server, Tabnine) their roles in the poster's own typing, including Copilot being the completion they still rely on.",
+   "exclude": "How much of one offered suggestion to insert goes to T68; a comment, name or pseudocode written as the prompt goes to T36; wanting suggestions silenced or on demand goes to T15; a request that ghost text and the editor's completion list coexist, be told apart or be prioritised goes to T19 (expected feature); a report that the ghost text suppressed or outran the member list, or that a suggested member exists nowhere, goes to T14 or T05 (limitations); a verdict ranking Copilot against IntelliSense or a rival goes to T52 (benefit); a statement that the completion delivered goes to T21; asking it to explain or document existing code goes to T26; reproducing Copilot's grey inline text in one's own extension goes to T62; Copilot missing from an IDE, platform or language goes to T04, T59 or T12.",
+   "positive_examples": [
+    "U129",
+    "U194"
+   ],
+   "negative_examples": [
+    "U044"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U027",
+     "quote": "GitHub Copilot is an AI pair programmer which suggests line completions and entire function bodies as you type."
+    },
+    {
+     "uid": "U188",
+     "quote": "just use tabnine only for popup completions (CTRL+Space) and copilot for inline-suggestions, while you are typing"
+    },
+    {
+     "uid": "U216",
+     "quote": "I see regular Copilot suggestions in my PowerShell code as I type."
+    },
+    {
+     "uid": "U064",
+     "quote": "I recently came across GitHub copilot which finish the code and also give a short explanation of what is happening in the function"
+    },
+    {
+     "uid": "U027",
+     "quote": "GitHub Copilot is an AI pair programmer which suggests line completions and entire function bodies as you type."
+    },
+    {
+     "uid": "U034",
+     "quote": "My VS Code AI or GitHub Copilot I don't know what it is but completed my code"
+    }
+   ],
+   "cited_threads": [
+    "U008",
+    "U027",
+    "U033",
+    "U034",
+    "U038",
+    "U048",
+    "U051",
+    "U064",
+    "U083",
+    "U088",
+    "U115",
+    "U140",
+    "U188",
+    "U200",
+    "U216",
+    "U021",
+    "U026",
+    "U028",
+    "U035",
+    "U042",
+    "U054",
+    "U062",
+    "U067",
+    "U076",
+    "U079",
+    "U081",
+    "U100",
+    "U105",
+    "U108",
+    "U109",
+    "U110",
+    "U111",
+    "U112",
+    "U122",
+    "U129",
+    "U134",
+    "U135",
+    "U139",
+    "U141",
+    "U143",
+    "U146",
+    "U148",
+    "U157",
+    "U162",
+    "U163",
+    "U166",
+    "U169",
+    "U174",
+    "U175",
+    "U176",
+    "U177",
+    "U180",
+    "U181",
+    "U186",
+    "U187",
+    "U190",
+    "U193",
+    "U194",
+    "U197",
+    "U204",
+    "U208",
+    "U209",
+    "U214",
+    "U217",
+    "U218",
+    "U219",
+    "U220",
+    "U223",
+    "U224",
+    "U225",
+    "U229",
+    "U232",
+    "U234",
+    "U235",
+    "U236",
+    "U237",
+    "U239",
+    "U240",
+    "U241",
+    "U243",
+    "U244",
+    "U246",
+    "U247",
+    "U250",
+    "U251",
+    "U253",
+    "U255",
+    "U256",
+    "U023",
+    "U050",
+    "U084",
+    "U096",
+    "U114",
+    "U116",
+    "U127",
+    "U160",
+    "U227",
+    "U249",
+    "U015",
+    "U052",
+    "U063",
+    "U065",
+    "U121",
+    "U133",
+    "U153",
+    "U182",
+    "U215",
+    "U078",
+    "U130",
+    "U055",
+    "U196"
+   ]
+  },
+  {
+   "id": "T02",
+   "rq": "RQ2.2",
+   "label": "A working Copilot stops suggesting, with no error, and fixes are rituals",
+   "definition": "An installation that worked goes dead - after an editor or extension update, or for no visible reason: no icon, empty output channel, 'retrieving suggestions' forever, extensions stuck on activating, while the status still claims it is enabled. With nothing to diagnose, the answers are rituals (sign out and in, reinstall, downgrade, delete the cache, restart), posters repeat them at every launch, and replies report that the same fix did nothing for them.",
+   "include": "'Worked yesterday, gone today' reports, version-mismatch and 'upgrade your extension' errors, silence with no error and no log, long lists of attempts and 'magically it worked' resolutions, sign-out/reinstall/rollback/cache-deletion answers, and comments that a posted fix was partial, intermittent or useless.",
+   "exclude": "First-time sign-in and authorization failures go to 'Signing in, authorizing or activating Copilot fails'; silence only in a particular language or file type goes to 'Suggestions come in some languages and file types but not others'; output that arrives but is stunted goes to 'Suggestions come back one line, repeated, or arrive unclosed'; proxy and certificate causes go to 'Corporate proxies, VPNs and certificates block it'; Labs and Chat panels go to 'Labs and Chat panels never appear or return errors'.",
+   "positive_examples": [
+    "U160",
+    "U118"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U159",
+     "quote": "GitHub Copilot stopped working after it asked to restart vscode for the last update I installed"
+    },
+    {
+     "uid": "U084",
+     "quote": "I remember that some time ago it worked as expected but now it does not."
+    },
+    {
+     "uid": "U074",
+     "quote": "I have been using copilot for a while now, and one fine day on opening VSCode this error appeared."
+    },
+    {
+     "uid": "U084",
+     "quote": "Tried it in different files and languages - works everywhere but not Python!"
+    },
+    {
+     "uid": "U217",
+     "quote": "It is showing me suggestions for JS correctly as advertised there but when I try with Go, I am not getting any suggestions."
+    },
+    {
+     "uid": "U119",
+     "quote": "Once installed it is always \"retrieving suggestions\" forever, after I click refresh. But it never retrieves any."
+    }
+   ],
+   "cited_threads": [
+    "U074",
+    "U082",
+    "U084",
+    "U091",
+    "U120",
+    "U158",
+    "U159",
+    "U160",
+    "U164",
+    "U203",
+    "U207",
+    "U211",
+    "U230",
+    "U233",
+    "U119",
+    "U181",
+    "U190",
+    "U204",
+    "U218",
+    "U227",
+    "U237",
+    "U249",
+    "U011",
+    "U152",
+    "U020",
+    "U023",
+    "U039",
+    "U041",
+    "U087",
+    "U094",
+    "U118",
+    "U149",
+    "U178",
+    "U224",
+    "U025",
+    "U098",
+    "U099",
+    "U106",
+    "U143",
+    "U172",
+    "U217",
+    "U244",
+    "U040",
+    "U050",
+    "U058",
+    "U062",
+    "U066",
+    "U067",
+    "U113",
+    "U129",
+    "U216"
+   ]
+  },
+  {
+   "id": "T03",
+   "rq": "RQ1.5",
+   "label": "Using Copilot with or without checking what it gives",
+   "definition": "A purpose code for how the poster handles output as part of using Copilot: the text states their own practice - they verify suggestions before using or posting them, refuse to use them blind, or tab them in and keep them without understanding. Code it from a statement about the poster's practice, not from a problem report and not from a value claim.",
+   "include": "Statements that the poster checks, tests or reviews Copilot output before using or posting it; refusals to use it unverified; remarks on what verifying costs them, given as the reason for that practice; statements that they accepted and kept code they do not understand.",
+   "exclude": "A reported inability to tell whether the code is right, a disclaimer attached to posted code, or a question to the thread asking what a construct means or whether it is correct goes to T06 (limitation); value presented as conditional on checking goes to T41 (benefit); consulting Copilot about a failing problem goes to T43; the poster's inexperience as the reason for use goes to T38; the argument that docs, textbooks or one's own effort should come first goes to T79; disclosure when answering someone else's question goes to T13.",
+   "positive_examples": [
+    "U079",
+    "U155"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U060",
+     "quote": "I will never take a function that copilot makes and blindly use it unless I know for sure it will work"
+    },
+    {
+     "uid": "U090",
+     "quote": "I really do not understand this enough, and have no idea half of what this code does honestly. It was written by copilot."
+    },
+    {
+     "uid": "U032",
+     "quote": "It looked good, so I pressed TAB."
+    },
+    {
+     "uid": "U144",
+     "quote": "Seems like Copilot is not appropriate when it takes you longer to verify the solution it generated than to write the code yourself."
+    },
+    {
+     "uid": "U060",
+     "quote": "this will really test Copilot's programming ability and it will give me insight into how much I can trust Copilot"
+    },
+    {
+     "uid": "U079",
+     "quote": "out came a solution that worked but I have no idea why or what its doing."
+    }
+   ],
+   "cited_threads": [
+    "U003",
+    "U031",
+    "U032",
+    "U056",
+    "U060",
+    "U068",
+    "U071",
+    "U079",
+    "U090",
+    "U132",
+    "U144",
+    "U155",
+    "U161",
+    "U183",
+    "U022",
+    "U036",
+    "U045",
+    "U057",
+    "U092",
+    "U097",
+    "U103",
+    "U116",
+    "U125",
+    "U137",
+    "U138",
+    "U145",
+    "U150",
+    "U154",
+    "U189",
+    "U196",
+    "U228",
+    "U231",
+    "U242",
+    "U029",
+    "U030",
+    "U123",
+    "U133",
+    "U147"
+   ]
+  },
+  {
+   "id": "T04",
+   "rq": "RQ2.2",
+   "label": "Not available for this IDE, platform, version, machine or container",
+   "definition": "Copilot cannot be installed or made to run where the poster works: no extension for Visual Studio for Mac, SSMS, SAP BAS, Jupyter or arm64, a prerelease Neovim or a Node version required, a dev container or SSH host where it must be reinstalled every time or hangs on activating, a keyring or Pylance missing - and on the same machine and account it suggests happily in VS Code while failing in Visual Studio, Android Studio or on a second computer.",
+   "include": "Statements that an IDE, version, architecture or registry is unsupported or lacks the extension, missing prerequisites and runtime versions, remote/container/WSL installations that do not carry over, and within-thread contrasts between a host or machine where Copilot works and one where it does not.",
+   "exclude": "Having the extension but not being signed in goes to 'Signing in, authorizing or activating Copilot fails'; invite, trial and payment gates go to 'Waitlist, trial, payment and the signed-in account decide who can use it'; settings that exist in VS Code and not elsewhere go to 'Little can be configured, so posters edit JSON, add plugins, patch the extension'.",
+   "positive_examples": [
+    "U015",
+    "U172"
+   ],
+   "negative_examples": [
+    "U025"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U015",
+     "quote": "Github Copilot is currently only available as an extension for Visual Studio Code, with other integrated development environments to potentially follow."
+    },
+    {
+     "uid": "U172",
+     "quote": "I cannot find the extension in the \"manage extensions\" window and when i try to manually install the extension from the website it just fails installing."
+    },
+    {
+     "uid": "U136",
+     "quote": "However, there is no option \"Manage Extensions\" in VS for Mac as shown here."
+    },
+    {
+     "uid": "U027",
+     "quote": "Copilot: Neovim 0.6 prerelease required to support ghost text"
+    },
+    {
+     "uid": "U251",
+     "quote": "As far as I can see the only options currently for copilot/ChatGPT SQL assistance is to generate queries outside of SSMS."
+    },
+    {
+     "uid": "U094",
+     "quote": "But! My VSCode can login in successfully."
+    }
+   ],
+   "cited_threads": [
+    "U015",
+    "U027",
+    "U072",
+    "U115",
+    "U136",
+    "U149",
+    "U172",
+    "U182",
+    "U202",
+    "U243",
+    "U251",
+    "U058",
+    "U094",
+    "U106",
+    "U126",
+    "U244",
+    "U248",
+    "U065",
+    "U078",
+    "U084",
+    "U087",
+    "U091",
+    "U110",
+    "U119",
+    "U121",
+    "U159",
+    "U213",
+    "U227",
+    "U245",
+    "U164",
+    "U180",
+    "U223",
+    "U233",
+    "U040",
+    "U082",
+    "U020"
+   ]
+  },
+  {
+   "id": "T05",
+   "rq": "RQ2.2",
+   "label": "The suggestion was wrong, invented or of no use",
+   "definition": "A limitation: the poster or an answerer reports that what Copilot produced is faulty in content - incorrect, inefficient, covering only part of the task, naming an API, property, option or constant that does not exist, or giving nothing usable when asked about the poster's own bug. The test is a statement in the text that the output was wrong or useless.",
+   "include": "Reports that a Copilot snippet, import, URL, value or option was broken, invented, inefficient or undocumented-and-wrong; accounts of a plausible suggestion accepted on Tab and debugged hours later; statements that Copilot was tried on this problem and produced nothing usable while humans are asked instead.",
+   "exclude": "A suggestion whose shape was right and whose single invented or subtly wrong detail is the point, framed as 'it looked fine', goes to T51; no suggestion arriving at all goes to T02, and output that arrives stunted, repeated or unclosed to T70; code the poster cannot judge or read goes to T06; wanting only part of a correct block goes to T29; Labs, Chat and brush failures go to T69; silence confined to one language goes to T59; the expectation that suggestions be correct and use real identifiers goes to T44 (expected feature); the poster's own checking practice goes to T03 (purpose).",
+   "positive_examples": [
+    "U138",
+    "U155"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U003",
+     "quote": "this was a case of GitHub Copilot getting its suggestion 95% correct, but incorrectly using format('otf'), which caused me to spend an hour debugging this."
+    },
+    {
+     "uid": "U045",
+     "quote": "As I was doing this GitHub copilot suggested final-column. It works in Chrome, but I can't find it documented anywhere"
+    },
+    {
+     "uid": "U068",
+     "quote": "this Input gives the position 3, 1 as a result which is wrong,it must return null"
+    },
+    {
+     "uid": "U155",
+     "quote": "Code suggested by CoPilot actually doesn't work, when you scroll up or down it resets back to Red because of how LazyList works."
+    },
+    {
+     "uid": "U131",
+     "quote": "It doesn't work for all keys starting with $, as you mentioned in the comment to your question, only $gt and $lt."
+    },
+    {
+     "uid": "U165",
+     "quote": "i tried using copilot but it didnt do anything usefull"
+    }
+   ],
+   "cited_threads": [
+    "U003",
+    "U018",
+    "U032",
+    "U045",
+    "U046",
+    "U056",
+    "U068",
+    "U071",
+    "U086",
+    "U092",
+    "U116",
+    "U131",
+    "U132",
+    "U138",
+    "U145",
+    "U155",
+    "U183",
+    "U225",
+    "U231",
+    "U254",
+    "U153",
+    "U165",
+    "U192",
+    "U198",
+    "U221",
+    "U226",
+    "U238",
+    "U022",
+    "U060",
+    "U150",
+    "U161",
+    "U199",
+    "U055",
+    "U141",
+    "U242"
+   ]
+  },
+  {
+   "id": "T06",
+   "rq": "RQ2.2",
+   "label": "No way to tell whether the code is right, and no way to read what it does",
+   "definition": "A limitation the poster reports about Copilot output they hold: they cannot establish that it is correct, or cannot read it. The test is a stated inability or cost in the text - untested code carrying a disclaimer, a request that a human confirm it, a remark that verifying costs more than writing, an admission of not understanding accepted code, or a question to the thread asking what a Copilot-written construct means, whether it is safe, or where it is documented.",
+   "include": "Statements of caution or distrust and disclaimers on posted Copilot code, requests for someone to confirm correctness, verification-burden remarks, admissions of not understanding accepted code or not finding documentation for it, questions to the thread asking what kept Copilot code means or why it works, pushback on Copilot-generated answers, posters treating Copilot's agreement as confirmation, and the claim that the front-page advertising encourages that trust.",
+   "exclude": "Output already shown to be wrong, invented or of no use goes to T05, and the 'looked right, one invented detail' case to T51; the poster's own habit of verifying or of keeping code unverified, given as how they use Copilot, goes to T03 (purpose); value presented as conditional on checking by the poster or the thread goes to T41 (benefit); the wish for output one can verify or understand is coded here and not as an expected feature; worry about what the service does with the code goes to T34; the amount of code inserted goes to T29; an explanation asked of Copilot itself goes to T26 or T50.",
+   "positive_examples": [
+    "U079",
+    "U144"
+   ],
+   "negative_examples": [
+    "U055"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U060",
+     "quote": "I will never take a function that copilot makes and blindly use it unless I know for sure it will work"
+    },
+    {
+     "uid": "U029",
+     "quote": "Disclaimer: this code was written by Github Copilot with minimal supervision."
+    },
+    {
+     "uid": "U097",
+     "quote": "GitHub Copilot doesn’t actually test the code it suggests, so the code may not even compile or run."
+    },
+    {
+     "uid": "U133",
+     "quote": "Just a word of caution, the function might not be 100% accurate and so you'll still need to check over it."
+    },
+    {
+     "uid": "U161",
+     "quote": "I would never expect Copilot to generate the correct code under any circumstance."
+    },
+    {
+     "uid": "U123",
+     "quote": "i wrote following in github copilot and it suggeted me following pice of code and i'm not sure if that's what i need"
+    }
+   ],
+   "cited_threads": [
+    "U029",
+    "U030",
+    "U031",
+    "U036",
+    "U060",
+    "U097",
+    "U123",
+    "U133",
+    "U161",
+    "U032",
+    "U045",
+    "U068",
+    "U079",
+    "U090",
+    "U116",
+    "U125",
+    "U132",
+    "U137",
+    "U150",
+    "U154",
+    "U155",
+    "U183",
+    "U017",
+    "U093",
+    "U144",
+    "U242",
+    "U145",
+    "U057"
+   ]
+  },
+  {
+   "id": "T07",
+   "rq": "RQ2.2",
+   "label": "Signing in, authorizing or activating Copilot fails",
+   "definition": "The extension will not come up: 'User not authorized', 'could not connect to server', 'login to GitHub failed', device-code flows that never complete, sign-in prompts at every launch, missing commands. The same message covers both a user with no access yet and a user with access whose token request fails, so the remedy differs by which applies.",
+   "include": "Any stated failure to authenticate, authorize or activate Copilot in VS Code, Visual Studio or a JetBrains IDE, repeated or looping login prompts, and answers that branch on whether the poster has already been invited or approved.",
+   "exclude": "Access that depends on an invite, trial or bill goes to 'Waitlist, trial, payment and the signed-in account decide who can use it'; failures traced to a proxy or certificate go to 'Corporate proxies, VPNs and certificates block it'; an install that worked and then stopped goes to 'A working Copilot stops suggesting, with no error, and fixes are rituals'.",
+   "positive_examples": [
+    "U040",
+    "U211"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U041",
+     "quote": "GitHub Copilot could not connect to server. Extension activation failed: \"User not authorized\""
+    },
+    {
+     "uid": "U040",
+     "quote": "very time I launch VS Code, I am asked to Sign in to GitHub to enable GitHub Copilot suggestions. regardless of doing that many times."
+    },
+    {
+     "uid": "U158",
+     "quote": "The problem seems to be that no matter what I do I cannot get the pop up to authorise copilot to appear when installing the extension again."
+    },
+    {
+     "uid": "U011",
+     "quote": "command 'github.copilot.generate' not found"
+    },
+    {
+     "uid": "U023",
+     "quote": "copilot stop showing suggestions"
+    },
+    {
+     "uid": "U040",
+     "quote": "very time I launch VS Code, I am asked to Sign in to GitHub to enable GitHub Copilot suggestions."
+    }
+   ],
+   "cited_threads": [
+    "U011",
+    "U020",
+    "U023",
+    "U040",
+    "U041",
+    "U059",
+    "U069",
+    "U074",
+    "U077",
+    "U087",
+    "U094",
+    "U102",
+    "U118",
+    "U152",
+    "U158",
+    "U167",
+    "U168",
+    "U178",
+    "U179",
+    "U201",
+    "U211",
+    "U224",
+    "U039",
+    "U244",
+    "U185"
+   ]
+  },
+  {
+   "id": "T08",
+   "rq": "RQ2.2",
+   "label": "Copilot's Tab and Ctrl+Enter collide with other keys, or can't be typed",
+   "definition": "The keys Copilot claims are already taken: Tab means indent, next snippet stop or accept-IntelliSense, Ctrl+Enter runs a notebook cell, and Alt/Option + [ or ] types a bracket on non-US keyboards. Posters get an indent instead of the suggestion, the suggestion instead of an indent, or nothing at all, and the outcome depends on an invisible precedence order they must rebind to escape.",
+   "include": "Reports of pressing Tab, Enter, Ctrl+Enter or the next/previous-suggestion shortcut and getting the wrong outcome, of a Copilot keybinding clashing with another extension, notebook or snippet handler, of the accept key being unrebindable, and of documented shortcuts being untypable on Mac, German or Czech layouts.",
+   "exclude": "The suggestion widget being hidden or replaced goes to 'Suggestions appear unasked and push the editor's own completion list aside'; wanting only part of a suggestion goes to 'Accept inserts the whole block when only one line was wanted'; brackets and quotes no longer auto-closing goes to 'Copilot overrides editor settings and breaks typing'.",
+   "positive_examples": [
+    "U054",
+    "U042"
+   ],
+   "negative_examples": [
+    "U055"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U054",
+     "quote": "And I press \"Tab\" to accept the suggestion, Vs Code adds a tab in the code"
+    },
+    {
+     "uid": "U235",
+     "quote": "The expected output is that I should be able to accept copilot inline suggestions by pressing tab, enter, or space."
+    },
+    {
+     "uid": "U234",
+     "quote": "I want to assign another key for this and leave the TAB for inserings actual TABs in the code."
+    },
+    {
+     "uid": "U062",
+     "quote": "tab doesn't accept copilot suggestions, only intellisense"
+    },
+    {
+     "uid": "U035",
+     "quote": "The problem is probably that they use the same command."
+    },
+    {
+     "uid": "U111",
+     "quote": "the short cut to get 10 more recommendation which is \"Ctrl + Enter\" is already taken in jupyter notebooks to execute the current cell"
+    }
+   ],
+   "cited_threads": [
+    "U028",
+    "U033",
+    "U034",
+    "U042",
+    "U054",
+    "U062",
+    "U076",
+    "U109",
+    "U234",
+    "U235",
+    "U035",
+    "U100",
+    "U111",
+    "U176",
+    "U194",
+    "U239",
+    "U250",
+    "U115",
+    "U253",
+    "U255",
+    "U129",
+    "U166",
+    "U174"
+   ]
+  },
+  {
+   "id": "T09",
+   "rq": "RQ2.3",
+   "label": "Keys that accept and browse suggestions, and the Tab clashes they cause",
+   "definition": "Posters want to choose the key that commits a suggestion and the keys that step through alternatives, and they report those keys already belonging to something else - indentation, snippet tab stops, notebook cell execution, another extension - or being unusable on their keyboard layout.",
+   "include": "Requests to rebind the accept key or to get a plain Tab; next/previous and more-suggestions shortcuts that do nothing or type a bracket on Mac, Czech or German layouts; reports that Copilot's key is taken by, or takes from, another tool, snippet, notebook or markdown handler; keeping the alternatives panel reachable.",
+   "exclude": "Taking only one line or word of what is shown (\"Accept only part of a suggestion: the first line or the next word\"); ghost text and the editor's completion list hiding each other on screen (\"Side by side with IntelliSense: coexisting with the editor's own completion\").",
+   "positive_examples": [
+    "U129",
+    "U255"
+   ],
+   "negative_examples": [
+    "U055"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U129",
+     "quote": "how can I accept the Github Copilot inline suggestion with the right arrow key instead of the tab key in VSCode?"
+    },
+    {
+     "uid": "U236",
+     "quote": "I am basically trying to use the ` key instead of tab on Windows."
+    },
+    {
+     "uid": "U253",
+     "quote": "another solution would be to just configure a different trigger for accepting the suggestion (like ctrl + enter)"
+    },
+    {
+     "uid": "U235",
+     "quote": "you can try changing the GitHub copilot acceptance command to different keys without conflict issues"
+    },
+    {
+     "uid": "U100",
+     "quote": "Tab works great but I can't cycle through the previous and next code suggestion."
+    },
+    {
+     "uid": "U176",
+     "quote": "I need to use option + [, to get another suggestions from copilot."
+    }
+   ],
+   "cited_threads": [
+    "U035",
+    "U042",
+    "U109",
+    "U129",
+    "U234",
+    "U235",
+    "U236",
+    "U253",
+    "U255",
+    "U100",
+    "U176",
+    "U194",
+    "U239",
+    "U250",
+    "U028",
+    "U033",
+    "U054",
+    "U076",
+    "U115",
+    "U034",
+    "U111",
+    "U187"
+   ]
+  },
+  {
+   "id": "T10",
+   "rq": "RQ2.2",
+   "label": "Copilot overrides editor settings and breaks typing: brackets, duplicate keys, dead redo",
+   "definition": "With Copilot installed, editing features that have nothing to do with suggestions stop working or misbehave: brackets and quotes no longer auto-close, JSDoc continuation dies, keystrokes are duplicated, stray spaces appear, redo stops, the editor hangs or the extension host crashes. Copilot writes its own per-language defaults over the user's settings, and in several threads it is pinned as the culprit only after extensions are disabled one at a time or safe mode is used.",
+   "include": "Threads where an ordinary editing behaviour (auto-close, auto-indent, comment continuation, keystroke insertion, undo/redo, editor stability) breaks and Copilot is named or shown to be the cause, including per-language override answers and bisect/safe-mode diagnoses.",
+   "exclude": "Collisions over Tab, Enter or Ctrl+Enter go to 'Copilot's Tab and Ctrl+Enter collide with other keys, or can't be typed'; threads where the cause turns out not to be Copilot go to 'Copilot blamed for editor behaviour that turned out to have another cause'; the choice between removing Copilot and configuring around it goes to 'The only fix is turning Copilot off; some do, others configure around it'.",
+   "positive_examples": [
+    "U016",
+    "U009"
+   ],
+   "negative_examples": [
+    "U025"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U007",
+     "quote": "Know that it does override settings! And it's a cause!"
+    },
+    {
+     "uid": "U010",
+     "quote": "Github copilot was causing this issue. In case someone faces the same issue, disable GitHub Copilot, reload VS Code, and it should work."
+    },
+    {
+     "uid": "U016",
+     "quote": "This can become an issue as the new GitHub Copilot will override some settings in settings.json file."
+    },
+    {
+     "uid": "U019",
+     "quote": "Copilot settings are not compatible with default VSCode settings."
+    },
+    {
+     "uid": "U089",
+     "quote": "ocasionally when I press a key on the keyboard, the editor insert that same letter 2, sometimes 4 times"
+    },
+    {
+     "uid": "U107",
+     "quote": "it will just add a ton of spaces in the middle of the text wherever the cursor happens to be"
+    }
+   ],
+   "cited_threads": [
+    "U005",
+    "U006",
+    "U007",
+    "U009",
+    "U010",
+    "U012",
+    "U014",
+    "U016",
+    "U019",
+    "U061",
+    "U073",
+    "U089",
+    "U098",
+    "U099",
+    "U106",
+    "U107",
+    "U113",
+    "U128",
+    "U186",
+    "U197",
+    "U062"
+   ]
+  },
+  {
+   "id": "T11",
+   "rq": "RQ2.1",
+   "label": "Copilot's code ran and produced the right result",
+   "definition": "A benefit code: the post states that code Copilot produced actually worked - it compiled, ran, fixed the bug, or gave the correct output, including bounded well-known routines the poster ran and checked. The test is a success claim in the text about Copilot-written code; no knowledge gap and no verification request need be present.",
+   "include": "Any explicit statement by the poster or an answerer that a Copilot-written snippet, line or function worked, was correct, gave the expected output, solved the stated task, or supplied the code that was needed.",
+   "exclude": "Using Copilot to get code for a task, with no statement that it worked, goes to T36 (purpose); code produced for another member's question goes to T47; success stated as conditional on checking, or output brought to the thread to be vetted, goes to T41; success credited to a comment, name or pseudocode prompt goes to T17; success credited to Copilot reading the surrounding code or an established pattern goes to T71; an approach or data model proposed but not yet run goes to T87; praise naming no result goes to T77; a stated knowledge or documentation gap that Copilot filled goes to T42.",
+   "positive_examples": [
+    "U079",
+    "U104"
+   ],
+   "negative_examples": [
+    "U122"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U024",
+     "quote": "Thanks to GitHub CoPilot which recommended this solution."
+    },
+    {
+     "uid": "U079",
+     "quote": "out came a solution that worked but I have no idea why or what its doing"
+    },
+    {
+     "uid": "U104",
+     "quote": "What should I say? For me it works."
+    },
+    {
+     "uid": "U036",
+     "quote": "So, I've tried with some testing dates and, the result is always correct."
+    },
+    {
+     "uid": "U024",
+     "quote": "Thanks to GitHub CoPilot which recommended this solution."
+    },
+    {
+     "uid": "U031",
+     "quote": "Here is the working variant, produced by Github Copilot (verified by me):"
+    }
+   ],
+   "cited_threads": [
+    "U004",
+    "U017",
+    "U024",
+    "U029",
+    "U030",
+    "U031",
+    "U036",
+    "U043",
+    "U053",
+    "U079",
+    "U085",
+    "U103",
+    "U104",
+    "U125",
+    "U144",
+    "U147",
+    "U080",
+    "U131",
+    "U090",
+    "U155"
+   ]
+  },
+  {
+   "id": "T12",
+   "rq": "RQ2.3",
+   "label": "Available and suggesting in the editor, platform and language I work in",
+   "definition": "Posters expect Copilot to exist for whatever IDE, editor, notebook, embedded component, platform or architecture they actually use, and once installed to suggest in every language and file type rather than only in JavaScript or a limited supported set.",
+   "include": "Asking whether or how Copilot can be installed or integrated in a named IDE, editor, notebook or OS/architecture; statements that it is advertised or published only for VS Code; reports that the same working install suggests in one language or file extension and nothing in another, and answers explaining the limited language support.",
+   "exclude": "A control that exists in VS Code and is missing in another IDE (\"The control I want exists in VS Code but not Visual Studio or JetBrains\"); failures caused by a company network (\"Behind the company proxy and VPN: works at home, dies at the office\"); sign-in, licence and gate problems (\"One account should just work, yet waitlist, trial and payment decide entry\"); scoped enablement in containers and remote servers (\"Keep my code and secrets out, and let me pick where Copilot runs\").",
+   "positive_examples": [
+    "U015",
+    "U172"
+   ],
+   "negative_examples": [
+    "U104"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U015",
+     "quote": "I am looking in the marketplace but it seems only available for vscode?"
+    },
+    {
+     "uid": "U115",
+     "quote": "Can I use github-copilot strait on jupyter-lab/notebook?"
+    },
+    {
+     "uid": "U072",
+     "quote": "in visual studio extension it's not showing GitHub copilot"
+    },
+    {
+     "uid": "U084",
+     "quote": "About a month I started using GitHub Copilot and it worked well in Bash, SH, JS and others."
+    },
+    {
+     "uid": "U217",
+     "quote": "It is showing me suggestions for JS correctly as advertised there but when I try with Go, I am not getting any suggestions."
+    },
+    {
+     "uid": "U143",
+     "quote": "CoPilot works fine with Powershell scripts (.ps1), however, I'm not getting any Github Copilot suggestions"
+    }
+   ],
+   "cited_threads": [
+    "U015",
+    "U027",
+    "U065",
+    "U072",
+    "U110",
+    "U115",
+    "U136",
+    "U172",
+    "U182",
+    "U208",
+    "U251",
+    "U028",
+    "U084",
+    "U143",
+    "U216",
+    "U217",
+    "U244",
+    "U038"
+   ]
+  },
+  {
+   "id": "T13",
+   "rq": "RQ1.5",
+   "label": "Posting Copilot's code as the answer to someone else's question",
+   "definition": "Answerers run the asker's problem through Copilot and post what it produces, usually saying where it came from; other members then accept, question or object to answering that way.",
+   "include": "Answers stating the posted code was written, generated or suggested by Copilot, including disclaimers about minimal supervision, and the replies judging the practice.",
+   "exclude": "The poster's own task code goes to 'Having Copilot produce the code for a task, function or config block'; installing it to see what it can do goes to 'Installing Copilot, or its new chat, to see what it can do'; verifying the output before posting is also coded in 'Checking the suggestion, or keeping it and asking later why it works'.",
+   "positive_examples": [
+    "U104",
+    "U017"
+   ],
+   "negative_examples": [
+    "U027"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U029",
+     "quote": "Disclaimer: this code was written by Github Copilot with minimal supervision."
+    },
+    {
+     "uid": "U024",
+     "quote": "Thanks to GitHub CoPilot which recommended this solution."
+    },
+    {
+     "uid": "U052",
+     "quote": "this is what i have with copilot"
+    },
+    {
+     "uid": "U104",
+     "quote": "I put your HTML in VSCode and asked the Github Copilot to do the following:"
+    },
+    {
+     "uid": "U017",
+     "quote": "I'm testing out github copilot to see how it can solve stackoverflow issues."
+    },
+    {
+     "uid": "U029",
+     "quote": "Disclaimer: this code was written by Github Copilot with minimal supervision."
+    }
+   ],
+   "cited_threads": [
+    "U002",
+    "U004",
+    "U017",
+    "U018",
+    "U024",
+    "U029",
+    "U030",
+    "U031",
+    "U043",
+    "U046",
+    "U052",
+    "U053",
+    "U093",
+    "U104",
+    "U122",
+    "U131",
+    "U085"
+   ]
+  },
+  {
+   "id": "T14",
+   "rq": "RQ2.2",
+   "label": "Suggestions appear unasked and push the editor's own completion list aside",
+   "definition": "Copilot volunteers inline text constantly - in comments, in import paths, with a sound, ten at a time - which posters find noisy, and while the ghost text shows, the editor's own member and parameter list is suppressed or outrun. Asking for suggestions only on demand tends to disable Copilot altogether.",
+   "include": "Complaints about unsolicited, nonsensical or persistent automatic suggestions, requests for a trigger-only mode, reports that the quick-suggestion or IntelliSense widget is suppressed, replaced or corrupted by the inline hint, clashes with IntelliCode or Tabnine, and reports that turning inline suggestions off removes the shortcut too.",
+   "exclude": "The size of a single suggestion goes to 'Accept inserts the whole block when only one line was wanted'; a key being bound to two commands goes to 'Copilot's Tab and Ctrl+Enter collide with other keys, or can't be typed'; settings that do not exist at all go to 'Little can be configured, so posters edit JSON, add plugins, patch the extension'.",
+   "positive_examples": [
+    "U174",
+    "U055"
+   ],
+   "negative_examples": [
+    "U025"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U050",
+     "quote": "I really like Copilot however its comment suggestions can be nonsensical and really distracting."
+    },
+    {
+     "uid": "U062",
+     "quote": "By default, it's always on, always suggesting (and frequently getting in my way.)"
+    },
+    {
+     "uid": "U177",
+     "quote": "And started generating 10 suggestion. I found that to be quite interrupting."
+    },
+    {
+     "uid": "U134",
+     "quote": "I have been noticing that GitHub Copilot has been making a sound each time it makes a code snippet suggestion."
+    },
+    {
+     "uid": "U112",
+     "quote": "but after i leave insert mode, the hint is still visible and it cause irritating"
+    },
+    {
+     "uid": "U114",
+     "quote": "when GitHub Copilot suggests an inline hint, the quick suggestion widget will be suppressed"
+    }
+   ],
+   "cited_threads": [
+    "U050",
+    "U062",
+    "U105",
+    "U108",
+    "U112",
+    "U134",
+    "U177",
+    "U229",
+    "U055",
+    "U107",
+    "U114",
+    "U129",
+    "U162",
+    "U174",
+    "U188",
+    "U253",
+    "U197"
+   ]
+  },
+  {
+   "id": "T15",
+   "rq": "RQ1.5",
+   "label": "Wanting suggestions only when I ask, not while I type",
+   "definition": "Posters split over when Copilot should speak: some keep it always on, others keep it disabled by default and want the same engine on a keystroke, or silent while they write prose comments, work on import paths, or practise typing code by hand.",
+   "include": "Requests to trigger suggestions on demand, to stop the inline suggestion or panel appearing, to silence it in comments or another named context, to keep it off except when stuck or writing generic code, and statements of wanting to type it out themselves.",
+   "exclude": "Restricting it because code is confidential or personal goes to 'Keeping Copilot away from secrets and confidential code'; how much of a shown suggestion to accept goes to 'How much of the suggestion to take'; it hiding the IDE's completion widget goes to 'Copilot guesses, the IDE knows'; the argument that writing it yourself is the better way to learn goes to 'Arguing that docs, textbooks or your own effort should come before Copilot'.",
+   "positive_examples": [
+    "U214",
+    "U186"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U062",
+     "quote": "By default, it's always on, always suggesting (and frequently getting in my way.) I want it to be less aggressive"
+    },
+    {
+     "uid": "U108",
+     "quote": "Is there any GH Copilot configuration setting for getting suggestions only when I request them?"
+    },
+    {
+     "uid": "U105",
+     "quote": "Is there a way to only disable Copilot for import paths ?"
+    },
+    {
+     "uid": "U050",
+     "quote": "leave the code suggestions on but turn Copilot off whenever I'm editing/adding a comment"
+    },
+    {
+     "uid": "U062",
+     "quote": "I want it to be less aggressive, disabling the auto-suggestion, but still have it readily available at a keystroke."
+    },
+    {
+     "uid": "U108",
+     "quote": "Is there any GH Copilot configuration setting for getting suggestions only when I request them?"
+    }
+   ],
+   "cited_threads": [
+    "U050",
+    "U062",
+    "U105",
+    "U108",
+    "U177",
+    "U229",
+    "U241",
+    "U101",
+    "U112",
+    "U114",
+    "U179",
+    "U180",
+    "U186",
+    "U214",
+    "U219",
+    "U223",
+    "U249"
+   ]
+  },
+  {
+   "id": "T16",
+   "rq": "RQ2.2",
+   "label": "Corporate proxies, VPNs and certificates block it: works at home, not at work",
+   "definition": "On a company network, VPN or SSL-inspecting proxy the extension cannot reach the service and reports a self-signed certificate in the chain; the same laptop and account succeed at home and fail at the office, and whitelisting is out of the developer's hands. Because every completion is a round trip, anything on the path removes the feature.",
+   "include": "Proxy, VPN, firewall, DNS and certificate-chain failures, proxy-authentication prompts, CA-import and monkey-patch workarounds, home-versus-office and on-versus-off-VPN comparisons, and statements that the employer blocks the service.",
+   "exclude": "Login failures with no network condition named go to 'Signing in, authorizing or activating Copilot fails'; worries about what the service does with the code go to 'Secrets and private code are sent to GitHub and leak in suggestions'.",
+   "positive_examples": [
+    "U210",
+    "U190"
+   ],
+   "negative_examples": [
+    "U039"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U127",
+     "quote": "I'm working in a Windows10-machine and behind a corporate network including proxy, certifcates and stuff."
+    },
+    {
+     "uid": "U126",
+     "quote": "I'm behind a corporate proxy and unable to use GitHub Copilot on WebStorm."
+    },
+    {
+     "uid": "U210",
+     "quote": "show:Your current Copilot license doesn't support proxy connections with self-signed certificates."
+    },
+    {
+     "uid": "U066",
+     "quote": "Corporate VPN was the problem (same as @mark-derry's)."
+    },
+    {
+     "uid": "U066",
+     "quote": "Most corporate networks have a ‘Man-in-the-middle’ appliance that dynamically breaks open all secure SSL traffic leaving home to enter the internet."
+    },
+    {
+     "uid": "U228",
+     "quote": "GitHub Copilot transmits snippets of your code from your IDE to GitHub to provide Suggestions to you."
+    }
+   ],
+   "cited_threads": [
+    "U066",
+    "U119",
+    "U126",
+    "U127",
+    "U170",
+    "U185",
+    "U190",
+    "U195",
+    "U205",
+    "U206",
+    "U210",
+    "U248",
+    "U011",
+    "U059",
+    "U020",
+    "U118"
+   ]
+  },
+  {
+   "id": "T17",
+   "rq": "RQ2.1",
+   "label": "The written comment, name or pseudocode was filled in",
+   "definition": "A benefit code: the post reports that Copilot produced the implementation from direction the poster wrote first - a comment, a function name or pseudocode steps - including the effort or time they say this saved. The test is that the text names the written prompt and reports what came back.",
+   "include": "Comment-driven, name-driven or pseudocode-driven generation the poster says produced the code, steering conventions by asking in a comment, exchanges where the whole help given is how to prompt it or how to accept what it offers, and saved-effort or speed claims attached to that filling-in.",
+   "exclude": "Completion of ordinary code being typed goes to T21; the poster's use of a comment prompt with no result reported goes to T36 (purpose); a question or wish about whether comment-to-code works goes to T30 (expected feature); a comment echoed back, nothing generated, or output that varies with the setup goes to T70 or T65; continuation of an established pattern or adaptation to local conventions goes to T71; a bare claim that the result worked goes to T11.",
+   "positive_examples": [
+    "U144",
+    "U104"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U080",
+     "quote": "GitHub CoPilot was able to fill in the code I needed after I wrote the steps in comments."
+    },
+    {
+     "uid": "U144",
+     "quote": "I then used GitHub Copilot to write this code in about 30 seconds, just using comments and having Copilot write the rest"
+    },
+    {
+     "uid": "U060",
+     "quote": "So I gave it a prompt in the form of a comment"
+    },
+    {
+     "uid": "U058",
+     "quote": "First Add single line comment in you visual studio code that describe code you want to be written by github copilot"
+    },
+    {
+     "uid": "U144",
+     "quote": "just using comments and having Copilot write the rest:"
+    },
+    {
+     "uid": "U181",
+     "quote": "I just wrote the comment, it suggested the method name, I tabbed, it suggested the method body:"
+    }
+   ],
+   "cited_threads": [
+    "U026",
+    "U058",
+    "U060",
+    "U080",
+    "U085",
+    "U104",
+    "U144",
+    "U181",
+    "U200",
+    "U204",
+    "U093",
+    "U034",
+    "U067",
+    "U122",
+    "U143"
+   ]
+  },
+  {
+   "id": "T18",
+   "rq": "RQ1.5",
+   "label": "Churning out the repetitive parts: imports, boilerplate, long lists",
+   "definition": "Copilot is used, or recommended, to cut the mechanical work a poster would otherwise type by hand: per-struct print functions, import lines, lists of integers, repeated file paths, translated UI strings, patterns that continue obviously — framed as saving effort and time.",
+   "include": "Statements that Copilot filled in imports, generated repeated entries, continued a pattern, did bulk or boilerplate work, or is recommended because it is fast or saves writing routine code.",
+   "exclude": "One-off generation of a needed solution goes to 'Having Copilot produce the code for a task, function or config block'; expecting it to match the project's style while doing so goes to 'Counting on it to read the surrounding code, style and project'.",
+   "positive_examples": [
+    "U144",
+    "U122"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U081",
+     "quote": "I was using Github Copilot to generate integers to add to an ArrayList"
+    },
+    {
+     "uid": "U122",
+     "quote": "Then just use Copilot to get the following pattern: until 57..."
+    },
+    {
+     "uid": "U071",
+     "quote": "github- copilot inserted the Imports (using)"
+    },
+    {
+     "uid": "U052",
+     "quote": "let's consider to use https://copilot.github.com/. it's great."
+    },
+    {
+     "uid": "U052",
+     "quote": "this is what i have with copilot"
+    },
+    {
+     "uid": "U122",
+     "quote": "Github copilot detects it, and gives you the correct suggestion."
+    }
+   ],
+   "cited_threads": [
+    "U052",
+    "U071",
+    "U081",
+    "U122",
+    "U063",
+    "U130",
+    "U133",
+    "U024",
+    "U080",
+    "U131",
+    "U144",
+    "U180",
+    "U188"
+   ]
+  },
+  {
+   "id": "T19",
+   "rq": "RQ2.3",
+   "label": "Side by side with IntelliSense: expecting both completions to coexist",
+   "definition": "An expected feature: the poster asks that Copilot's ghost text and the editor's own completion list, snippet tab stops or a second assistant be usable at the same time, be told apart, or be prioritised as they choose, including argument about whether Copilot should be expected to do the deterministic completer's job. The test is a request or a stated expectation of coexistence.",
+   "include": "Asking that ghost text and the quick-suggestion widget stop hiding each other, that Copilot be prioritised over snippet tab stops or Pylance, that it run together with Tabnine, and statements of what member, property or type-aware help it should or should not be expected to give.",
+   "exclude": "Using Copilot as one's completer beside the IDE's list goes to T01 (purpose); a report that ghost text suppressed, replaced or outran the member list goes to T14 (limitation); rebinding keys or keys taken by other tools goes to T09; a verdict ranking Copilot against a named tool goes to T52 (benefit); naming a substitute to install instead goes to T83; Copilot overriding the editor's own defaults goes to T64 or T10; rebuilding the ghost text in one's own extension goes to T62.",
+   "positive_examples": [
+    "U174",
+    "U055"
+   ],
+   "negative_examples": [
+    "U033"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U162",
+     "quote": "when Vscode triggers \"regular\" auto suggestion list, it disables the copilot's inline suggestion. Any way we can keep both?"
+    },
+    {
+     "uid": "U114",
+     "quote": "Is there an option to prevent the inline hint from suppressing the suggestion widget?"
+    },
+    {
+     "uid": "U174",
+     "quote": "It would be great if there was a way to assign a specific key combo for tab complete of GitHub copilot."
+    },
+    {
+     "uid": "U253",
+     "quote": "So is there a way I can make it so Copilot suggestions will be prioritized over going to the next cursor position in the snippet?"
+    },
+    {
+     "uid": "U188",
+     "quote": "Is it possible to run Tabnine and Github Copilot together?"
+    },
+    {
+     "uid": "U197",
+     "quote": "Does Visual Studio auto-complete conflict with Copilot"
+    }
+   ],
+   "cited_threads": [
+    "U114",
+    "U162",
+    "U174",
+    "U188",
+    "U197",
+    "U253",
+    "U055",
+    "U105",
+    "U107",
+    "U121",
+    "U140",
+    "U146",
+    "U196"
+   ]
+  },
+  {
+   "id": "T20",
+   "rq": "RQ2.3",
+   "label": "Too much, too often: suggest only when I ask and stay quiet in comments, paths and normal mode",
+   "definition": "Posters find Copilot's unsolicited output excessive or distracting and want the volume to be theirs to set: automatic inline suggestion switched off while Copilot stays reachable on a trigger key or toggle, and held back or silenced in the particular places where it gets in the way - while writing comments, typing import paths, after leaving insert mode, or by making a sound - without giving up the rest of Copilot.",
+   "include": "On-demand or manual triggering requests, toggle hotkeys, disabling the auto-popping suggestion; switching off one context or behaviour (comments, import paths, the side tab, the sound, leftover ghost text) and keeping everything else; statements that it is verbose, aggressive, nonsensical in comments or inserts more than was wanted.",
+   "exclude": "Wanting longer or fuller suggestions (\"Whole blocks, finished code, and in my own quote and line-ending style\"); taking only part of what is already shown (\"Accept only part of a suggestion: the first line or the next word\"); choosing which projects or directories Copilot runs in at all (\"Keep my code and secrets out, and let me pick where Copilot runs\").",
+   "positive_examples": [
+    "U179"
+   ],
+   "negative_examples": [],
+   "representative_quotes": [
+    {
+     "uid": "U062",
+     "quote": "I want it to be less aggressive, disabling the auto-suggestion, but still have it readily available at a keystroke."
+    },
+    {
+     "uid": "U108",
+     "quote": "Is there any GH Copilot configuration setting for getting suggestions only when I request them?"
+    },
+    {
+     "uid": "U229",
+     "quote": "Is it possible to not have GitHub Copilot automatically suggest code, instead only showing its suggestions when using the \"trigger inline suggestion\" shortcut?"
+    },
+    {
+     "uid": "U177",
+     "quote": "Also would that be possible to have a hot key to toggle / trigger such behaviour?"
+    },
+    {
+     "uid": "U050",
+     "quote": "Is there any way to leave the code suggestions on but turn Copilot off whenever I'm editing/adding a comment amidst the code?"
+    },
+    {
+     "uid": "U105",
+     "quote": "Is there a way to only disable Copilot for import paths ?"
+    }
+   ],
+   "cited_threads": [
+    "U062",
+    "U108",
+    "U177",
+    "U229",
+    "U050",
+    "U105",
+    "U112",
+    "U134",
+    "U048",
+    "U089",
+    "U113",
+    "U152",
+    "U179"
+   ]
+  },
+  {
+   "id": "T21",
+   "rq": "RQ2.1",
+   "label": "The inline completion delivered: lines and function bodies arrived as you type",
+   "definition": "A benefit code: the post reports that Copilot's inline completion while typing actually delivered - it finished the line, gave several correct lines, or produced a whole function body or docstring from a name or signature. The test is a report of what arrived, not a statement that the poster keeps Copilot on for this.",
+   "include": "Descriptions of inline completions that appeared and served, from a completed expression or line to whole function bodies and docstrings produced from a name or signature.",
+   "exclude": "Keeping Copilot on as one's completer, or arranging an editor so it is available, goes to T01 (purpose); generation begun from a written comment, name or pseudocode goes to T17; a panel of several complete candidates goes to T73; a completion credited to the surrounding code or an established pattern goes to T71; a statement that the code solved the stated problem goes to T11; explanations, tests, diagrams and fixes go to T55; rebuilding the grey inline text goes to T62; a completion that arrived stunted or unclosed goes to T70.",
+   "positive_examples": [
+    "U027"
+   ],
+   "negative_examples": [
+    "U083"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U027",
+     "quote": "GitHub Copilot is an AI pair programmer which suggests line completions and entire function bodies as you type."
+    },
+    {
+     "uid": "U093",
+     "quote": "you need just type int maxBlock then GitHub Copilot generates rest of the code"
+    },
+    {
+     "uid": "U115",
+     "quote": "in Copilot 3-4 correct lines will be suggested with docstrings too"
+    },
+    {
+     "uid": "U215",
+     "quote": "the copilot is aware of the rest of the code, and can generate appropriate answers"
+    },
+    {
+     "uid": "U034",
+     "quote": "My VS Code AI or GitHub Copilot I don't know what it is but completed my code"
+    },
+    {
+     "uid": "U027",
+     "quote": "GitHub Copilot is an AI pair programmer which suggests line completions and entire function bodies as you type."
+    }
+   ],
+   "cited_threads": [
+    "U027",
+    "U034",
+    "U064",
+    "U093",
+    "U115",
+    "U215",
+    "U228",
+    "U038",
+    "U110",
+    "U140",
+    "U067",
+    "U200"
+   ]
+  },
+  {
+   "id": "T22",
+   "rq": "RQ1.4",
+   "label": "Sorting, filtering, de-duplicating and reshaping lists, objects and dataframes",
+   "definition": "Copilot wrote the code that walks a collection: sorting a vector by two keys, reducing a list to unique names, counting the most frequent element, totalling values, filtering nested employee or department fields, mapping over object keys, flattening an object, sharding keys to dodge a key limit, and dropping or iterating pandas rows.",
+   "include": "Units where the implemented code iterates, filters, maps, dedupes, aggregates or restructures a list, array, dict, JSON object or dataframe.",
+   "exclude": "Single-value computations and conversions go to 'Self-contained computations: primes, Euclid, intersection, regex scanning, value conversions'; schema or config declarations go to 'Schemas, ORM calls, routes and framework or infrastructure config'.",
+   "positive_examples": [
+    "U079",
+    "U144"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U018",
+     "quote": "Hey I used github copilot to see how it will solve this problem"
+    },
+    {
+     "uid": "U043",
+     "quote": "By collating the information of the previous two solutions and the help of GitHub Copilot, here is a working solution for a sort by two keys sorting method:"
+    },
+    {
+     "uid": "U079",
+     "quote": "So having access to github copilot I turned it on and out came a solution that worked but I have no idea why or what its doing."
+    },
+    {
+     "uid": "U124",
+     "quote": "With this basic knowledge and the use of StackOverflow and Copilot I have the following code."
+    },
+    {
+     "uid": "U144",
+     "quote": "I then used GitHub Copilot to write this code in about 30 seconds, just using comments and having Copilot write the rest"
+    },
+    {
+     "uid": "U080",
+     "quote": "GitHub CoPilot was able to fill in the code I needed after I wrote the steps in comments."
+    }
+   ],
+   "cited_threads": [
+    "U018",
+    "U043",
+    "U079",
+    "U124",
+    "U144",
+    "U080",
+    "U085",
+    "U123",
+    "U131",
+    "U017",
+    "U024",
+    "U147"
+   ]
+  },
+  {
+   "id": "T23",
+   "rq": "RQ1.4",
+   "label": "Click handlers, built page elements, CSS and font rules",
+   "definition": "Copilot produced code for what the user sees and clicks: checkboxes created from an ajax response, a cursor circle that expands on hover, click listeners that swap classes on SVG ellipses, a Compose button whose colour changes, a typing hint in a Compose text field, and the styling declarations around them such as an @font-face format value, a grid-column-end value and line-height.",
+   "include": "Units where the Copilot-written code creates interface elements, responds to user input, or declares styling for them.",
+   "exclude": "Schema, route and framework config snippets go to 'Schemas, ORM calls, routes and framework or infrastructure config'; code that builds a URL or opens a connection to a service goes to 'Service URLs, API endpoints and connections to remote services'; the invented CSS value and the broken renderer lines are also in 'Looked right but used something that does not exist'; wanting only the first styling line goes to 'One line, a whole block, or nothing at all depending on setup'.",
+   "positive_examples": [
+    "U104",
+    "U056"
+   ],
+   "negative_examples": [
+    "U049"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U003",
+     "quote": "For me, this was a case of GitHub Copilot getting its suggestion 95% correct, but incorrectly using format('otf'), which caused me to spend an hour debugging this."
+    },
+    {
+     "uid": "U045",
+     "quote": "As I was doing this GitHub copilot suggested final-column."
+    },
+    {
+     "uid": "U048",
+     "quote": "here I wanted to autocomplete only the line line-height: 1.2;, but if I press the tab it will insert the whole suggested code including a new class below."
+    },
+    {
+     "uid": "U046",
+     "quote": "Does this work? Copilot created the code xD"
+    },
+    {
+     "uid": "U090",
+     "quote": "It was written by copilot."
+    },
+    {
+     "uid": "U104",
+     "quote": "I put your HTML in VSCode and asked the Github Copilot to do the following:"
+    }
+   ],
+   "cited_threads": [
+    "U003",
+    "U045",
+    "U048",
+    "U046",
+    "U090",
+    "U104",
+    "U155",
+    "U209",
+    "U056",
+    "U071",
+    "U002"
+   ]
+  },
+  {
+   "id": "T24",
+   "rq": "RQ1.4",
+   "label": "Self-contained computations: primes, Euclid, intersection, regex scanning, value conversions",
+   "definition": "Copilot wrote a bounded routine whose job is to compute, scan, parse or convert a value: sums of primes and digit-product numbers, an extended Euclidean algorithm, line-line intersection, aspect-ratio resizing, the longest block of repeated characters, date-string comparison, a regex that pulls a URL out of HTML, and one-expression conversions such as char to int or tensor to double.",
+   "include": "Units where the Copilot-written code works over numbers, a single string or a single value and returns a computed result, including short parse, compare and cast snippets.",
+   "exclude": "Code that iterates, filters or reshapes a whole collection goes to 'Sorting, filtering, de-duplicating and reshaping lists, objects and dataframes'; encryption, process memory and struct printing go to 'Encryption, token signing, process memory, terminal capture, struct printing'; being asked what the computed snippet means goes to 'It works but I must ask here what the code means'.",
+   "positive_examples": [
+    "U036"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U029",
+     "quote": "Disclaimer: this code was written by Github Copilot with minimal supervision."
+    },
+    {
+     "uid": "U030",
+     "quote": "how to find the sum of all the prime numbers between 1 and 50 in java?"
+    },
+    {
+     "uid": "U031",
+     "quote": "Here is the working variant, produced by Github Copilot (verified by me):"
+    },
+    {
+     "uid": "U036",
+     "quote": "The GitHub Copilot has suggested I should use the following algorithm:"
+    },
+    {
+     "uid": "U053",
+     "quote": "Actaually i found this using github copilot -"
+    },
+    {
+     "uid": "U093",
+     "quote": "This code is generated by GitHub Copilot plugin for IntelliJ, you need just type int maxBlock then GitHub Copilot generates rest of the code:"
+    }
+   ],
+   "cited_threads": [
+    "U029",
+    "U030",
+    "U031",
+    "U036",
+    "U053",
+    "U093",
+    "U068",
+    "U092",
+    "U024",
+    "U057",
+    "U125"
+   ]
+  },
+  {
+   "id": "T25",
+   "rq": "RQ2.2",
+   "label": "Waitlist, trial, payment and the signed-in account decide who can use it",
+   "definition": "Whether Copilot runs is settled by commercial and administrative access state rather than by any fault: a beta invite still pending, a preview or trial that lapsed, an unpaid bill, an organisation seat, or several GitHub accounts in one editor where only one holds the entitlement and the extension picks another.",
+   "include": "Waitlist and invite replies, 'not free any more' and expired-trial notes, billing and payment checks, student-licence remarks, enabling Copilot on the GitHub side, and wrong-account or personal-versus-organisation entitlement reports.",
+   "exclude": "Technical login and activation faults with no entitlement condition go to 'Signing in, authorizing or activating Copilot fails'; naming a cheaper or open substitute goes to 'Routing around Copilot by naming another assistant'.",
+   "positive_examples": [
+    "U015",
+    "U039"
+   ],
+   "negative_examples": [
+    "U040"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U039",
+     "quote": "You’ve been added to the waitlist for the GitHub Copilot technical preview!"
+    },
+    {
+     "uid": "U062",
+     "quote": "Sadly, my copilot trial ran out, so I can't comment on the current state of that."
+    },
+    {
+     "uid": "U011",
+     "quote": "Have you got the copilot beta? If not, you cant use it!"
+    },
+    {
+     "uid": "U094",
+     "quote": "Also make sure u have successfully signed up with providing payment method"
+    },
+    {
+     "uid": "U041",
+     "quote": "I have multiple github accounts logged into my vscode."
+    },
+    {
+     "uid": "U011",
+     "quote": "On a previous try, I had logged in to the wrong GitHub account."
+    }
+   ],
+   "cited_threads": [
+    "U011",
+    "U015",
+    "U039",
+    "U041",
+    "U062",
+    "U064",
+    "U069",
+    "U074",
+    "U094",
+    "U118",
+    "U172"
+   ]
+  },
+  {
+   "id": "T26",
+   "rq": "RQ1.5",
+   "label": "Using Copilot on code that already exists: explain, document, test, diagram",
+   "definition": "A purpose code: the poster's stated reason for using Copilot, or for asking whether they can, is to have it act on code or text they already have rather than to write new application code. The test is the stated use; what came back belongs to RQ1.4 and how well it served to RQ2.1.",
+   "include": "Statements of using or wanting to use Copilot to explain a selected block, document a method, draft a commit message, generate unit tests, draw a diagram, or help with an existing SQL query.",
+   "exclude": "Turning a comment into new code goes to T36; inline completion in .md, markup or localisation files goes to T01; bulk translation of UI strings goes to T18; what the deliverable actually was goes to T55 (RQ1.4); asking the thread rather than Copilot to explain or confirm a suggestion goes to T03 or T06; wanting a chat, explain or document feature that is missing goes to T50 (expected feature); panels that error or never appear go to T69; installing the new chat out of curiosity goes to T56.",
+   "positive_examples": [
+    "U184",
+    "U189"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U184",
+     "quote": "He throws me this error when, once I generate the tests with github copilot, I give him to run test, to test them, in the same copilot."
+    },
+    {
+     "uid": "U216",
+     "quote": "when I select a line or a few of code, then click the cute little copilot icon on the left, then click \"Explain code\""
+    },
+    {
+     "uid": "U225",
+     "quote": "Is there a magic word to make it document code?"
+    },
+    {
+     "uid": "U064",
+     "quote": "I recently came across GitHub copilot which finish the code and also give a short explanation of what is happening in the function"
+    },
+    {
+     "uid": "U199",
+     "quote": "I expect it to add comments."
+    },
+    {
+     "uid": "U189",
+     "quote": "Using ChatGPT and Copilot, I've commented it to understand its functionality."
+    }
+   ],
+   "cited_threads": [
+    "U064",
+    "U184",
+    "U189",
+    "U199",
+    "U216",
+    "U225",
+    "U243",
+    "U050",
+    "U141",
+    "U251"
+   ]
+  },
+  {
+   "id": "T27",
+   "rq": "RQ2.3",
+   "label": "Keep my code and secrets out, and let me pick where Copilot runs",
+   "definition": "Posters want control over what leaves their machine - files holding secrets or personal data, proprietary company code, what is retained under which plan or telemetry setting, other people's API keys coming back as suggestions - and they want Copilot switched on only inside a boundary they own: one project, one directory, a dev container or a remote server, without imposing it through files their team shares.",
+   "include": "Does Copilot send or store local code; protecting keys after seeing them suggested; wanting code shared only within an organisation; business versus individual retention and telemetry opt-out as the condition; opt-in per project, enabling for one directory only, workspace trust, a personal default in every dev container.",
+   "exclude": "Silencing one behaviour in the file being edited (\"Too much, too often: suggest only when I ask and stay quiet in comments, paths and normal mode\"); connection problems on a company network (\"Behind the company proxy and VPN: works at home, dies at the office\").",
+   "positive_examples": [
+    "U214",
+    "U117"
+   ],
+   "negative_examples": [
+    "U083"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U101",
+     "quote": "Sometimes I edit files that contain secrets, and I don't want to accidentally send those to Microsoft/GitHub."
+    },
+    {
+     "uid": "U117",
+     "quote": "Ideally, I'd want an AI autocompletion tool to share proprietary code within an organization, and only there."
+    },
+    {
+     "uid": "U049",
+     "quote": "So, how what methods can I use to protect my keys from such happening?"
+    },
+    {
+     "uid": "U228",
+     "quote": "Does GitHub Copilot save locally developed code?"
+    },
+    {
+     "uid": "U214",
+     "quote": "I want Copilot to be activated only on that directory (and its subdirectories)."
+    },
+    {
+     "uid": "U156",
+     "quote": "So I rightclicked on my github copilot on bottom right of my VS code IDE, and saw the Workspace Trust unchecked."
+    }
+   ],
+   "cited_threads": [
+    "U049",
+    "U101",
+    "U117",
+    "U214",
+    "U228",
+    "U156",
+    "U180",
+    "U223",
+    "U186"
+   ]
+  },
+  {
+   "id": "T28",
+   "rq": "RQ1.4",
+   "label": "Schemas, ORM calls, routes and framework or infrastructure config",
+   "definition": "Copilot wrote the declarative, server-facing layer: a status field in a Mongo student schema, a Prisma update/delete include clause, a DRF viewset action mapping, a Rails render-partial options hash, a Terraform identity-provider resource, the paths in a generated GitHub Actions workflow, and the configuration that spins up an EMR cluster and adds a spark-submit step.",
+   "include": "Units where the implemented code declares data structure, framework configuration or infrastructure-as-code rather than program logic.",
+   "exclude": "Code that builds a URL, endpoint call or connection to a remote service goes to 'Service URLs, API endpoints and connections to remote services'; procedural data wrangling goes to 'Sorting, filtering, de-duplicating and reshaping lists, objects and dataframes'; interface code goes to 'Click handlers, built page elements, CSS and font rules'; the EMR job Copilot could not write is also in 'Copilot produced nothing usable, so the poster asked people'.",
+   "positive_examples": [],
+   "negative_examples": [
+    "U049"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U047",
+     "quote": "Actually, GitHub Copilot suggested me that in the Students schema I have something like this:"
+    },
+    {
+     "uid": "U150",
+     "quote": "This component of the mutation was recommended by github copilot."
+    },
+    {
+     "uid": "U183",
+     "quote": "The error is helpful enough to show how to map the get method and github copilot suggests:"
+    },
+    {
+     "uid": "U086",
+     "quote": "I've been trying to guide it to my project files as per this Microsoft example that demonstrates the paths: '**.csproj' syntax and github copilot suggestions"
+    },
+    {
+     "uid": "U153",
+     "quote": "I want to create a Dagster app that creates an EMR cluster and adds a spark-submit step, but due to a lack of documentation or examples I can't figure out how to do that (copilot also struggles with it :-))."
+    },
+    {
+     "uid": "U254",
+     "quote": "Here is my resource for the GitHub identity provider (which I came up with largely with the help from copilot):"
+    }
+   ],
+   "cited_threads": [
+    "U047",
+    "U150",
+    "U183",
+    "U086",
+    "U153",
+    "U254",
+    "U052",
+    "U057",
+    "U116"
+   ]
+  },
+  {
+   "id": "T29",
+   "rq": "RQ2.2",
+   "label": "Accept inserts the whole block when only one line was wanted",
+   "definition": "Accepting a suggestion is all or nothing: the whole multi-line block goes in when the poster wanted the first line or the next few words, so they accept and then delete, and several read the volume of generated code as serving GitHub's efficiency advertising rather than the edit in hand.",
+   "include": "Requests for line-by-line or word-by-word acceptance, statements that partial acceptance is impossible, accounts of accepting then deleting most of it, verbosity complaints about the generated block, and suspicion that the amount of code inserted serves marketing claims about efficiency.",
+   "exclude": "Suggestions that are themselves only one line, a repeated comment or unclosed go to 'Suggestions come back one line, repeated, or arrive unclosed'; semantically wrong code goes to 'Suggested code is wrong, invented, or no help at all'; how often suggestions appear goes to 'Suggestions appear unasked and push the editor's own completion list aside'; Tab being bound to the wrong action goes to 'Copilot's Tab and Ctrl+Enter collide with other keys, or can't be typed'; the advertisement cited as a reason to trust the code's correctness (U060) goes to 'No way to tell whether the code is right or what it does'.",
+   "positive_examples": [
+    "U240"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U048",
+     "quote": "here I wanted to autocomplete only the line line-height: 1.2;, but if I press the tab it will insert the whole suggested code including a new class below."
+    },
+    {
+     "uid": "U088",
+     "quote": "The autocomplete shows five lines on TAB, but I just need the first two of them."
+    },
+    {
+     "uid": "U169",
+     "quote": "But I can only get it to either accept the entire multiline suggestion (tab) or nothing."
+    },
+    {
+     "uid": "U139",
+     "quote": "The possibly biggest problem of Copilot with countless of bug/feedback/feature reports since 2021 is that it inputs tons of code when people just want a tiny part."
+    },
+    {
+     "uid": "U048",
+     "quote": "In reality accepting a solution only means that you need a fraction of it, often it's wrong redundant and a multiple of what you want."
+    },
+    {
+     "uid": "U062",
+     "quote": "I find Github Copilot very helpful in some specific situations, but fairly unhelpful in its verbosity in most situations."
+    }
+   ],
+   "cited_threads": [
+    "U048",
+    "U088",
+    "U139",
+    "U166",
+    "U169",
+    "U240",
+    "U062",
+    "U147"
+   ]
+  },
+  {
+   "id": "T30",
+   "rq": "RQ2.3",
+   "label": "Expecting a comment to produce the code it describes, in my language and editor",
+   "definition": "An expected feature: the poster asks whether, or states that, describing the wanted code in a natural-language comment should produce it, including whether the documented flow works outside JavaScript or in their editor or comment style. The test is the request or expectation; what actually came back belongs to the other questions.",
+   "include": "Comment-to-code expectations and questions, asking whether the documented natural-language flow works for a named language, editor or comment syntax, and instructions telling someone to write a comment and press Enter in answer to such a question.",
+   "exclude": "A report that comment-driven generation worked goes to T17 (benefit) and the poster's use of a comment prompt to T36 (purpose); a report that it echoed the comment, produced nothing, or varied with editor, language or waiting time goes to T70 or T65 (limitations); asking Copilot to comment or explain code that already exists goes to T50; expecting whole finished multi-line blocks or a quote style goes to T35.",
+   "positive_examples": [
+    "U190",
+    "U104"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U058",
+     "quote": "whenever i give it a comment and press tab and enter it just creates the same comment over and over again"
+    },
+    {
+     "uid": "U181",
+     "quote": "The only examples in the Copilot docs I see for natural language code suggestions are for javascript."
+    },
+    {
+     "uid": "U190",
+     "quote": "I have Github Copilot installed and enabled, but it doesn't generate any code after I type in a comment and press Enter."
+    },
+    {
+     "uid": "U200",
+     "quote": "But it doesn't generate code based in comments in kotlin or comments in XML, like in that medium article."
+    },
+    {
+     "uid": "U058",
+     "quote": "First Add single line comment in you visual studio code that describe code you want to be written by github copilot"
+    },
+    {
+     "uid": "U181",
+     "quote": "Just what you're doing in JS and it should work."
+    }
+   ],
+   "cited_threads": [
+    "U058",
+    "U181",
+    "U190",
+    "U200",
+    "U104",
+    "U204",
+    "U080",
+    "U144"
+   ]
+  },
+  {
+   "id": "T31",
+   "rq": "RQ1.4",
+   "label": "Encryption, token signing, process memory, terminal capture, struct printing",
+   "definition": "Copilot wrote code that calls security or low-level system interfaces: an AES encrypt/decrypt snippet with Base64, a shared-secret JWT encoder and decoder over HMAC-SHA256, reading memory from another process in C++, pulling terminal text out of a GNU Screen session, and printing the members of a C struct.",
+   "include": "Units where the implemented function's work is cryptographic or runs against the operating system, raw memory or C-level structures, and correctness depends on getting a library or system API right.",
+   "exclude": "Browser and interface code goes to 'Click handlers, built page elements, CSS and font rules'; the same struct printer read only as volume of predictable lines is also covered by 'Imports, class members, option names, annotations and repeated boilerplate lines'; the AES snippet that would not compile is also in 'Looked right but used something that does not exist'.",
+   "positive_examples": [
+    "U138"
+   ],
+   "negative_examples": [
+    "U055"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U032",
+     "quote": "So, I used Github copilot to generate an AES encryption/decryption snippet."
+    },
+    {
+     "uid": "U103",
+     "quote": "With the input from jps (AES is actually OK for encrypted tokens, but not signed) and Github Copilot I came up with a working solution using HMAC-SHA256:"
+    },
+    {
+     "uid": "U060",
+     "quote": "As the title suggests, I am trying to read memory from another process in C++"
+    },
+    {
+     "uid": "U138",
+     "quote": "I am puzzled because GitHub CoPilot suggest i can do"
+    },
+    {
+     "uid": "U052",
+     "quote": "let's consider to use https://copilot.github.com/. it's great."
+    },
+    {
+     "uid": "U032",
+     "quote": "So, I used Github copilot to generate an AES encryption/decryption snippet."
+    }
+   ],
+   "cited_threads": [
+    "U032",
+    "U103",
+    "U052",
+    "U060",
+    "U138",
+    "U024",
+    "U057"
+   ]
+  },
+  {
+   "id": "T32",
+   "rq": "RQ1.5",
+   "label": "Keeping Copilot away from secrets and confidential code",
+   "definition": "Posters draw a boundary around what Copilot may see: they want it opt-in per project, workspace or folder, or off entirely, because the files hold secrets, personal data or proprietary company code, and they ask what it sends, retains or learns from.",
+   "include": "Statements enabling or restricting Copilot per project, directory or organisation for confidentiality or privacy reasons, and questions about whether local code is transmitted, saved or exposed.",
+   "exclude": "Silencing suggestions because they interrupt goes to 'Wanting suggestions only when I ask, not while I type'; wanting it available in another IDE or environment goes to 'Finishing the line or function as I type'; expecting it to read project files to write better code goes to 'Counting on it to read the surrounding code, style and project'.",
+   "positive_examples": [
+    "U214",
+    "U117"
+   ],
+   "negative_examples": [
+    "U179"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U101",
+     "quote": "Sometimes I edit files that contain secrets, and I don't want to accidentally send those to Microsoft/GitHub."
+    },
+    {
+     "uid": "U214",
+     "quote": "The reason is that, in other directories, I have personal data. I don't want to use copilot on personal data."
+    },
+    {
+     "uid": "U228",
+     "quote": "in case of enterprise code development, where code must remain strictly confidential, can GitHub copilot save any sort of code"
+    },
+    {
+     "uid": "U117",
+     "quote": "Ideally, I'd want an AI autocompletion tool to share proprietary code within an organization, and only there."
+    },
+    {
+     "uid": "U180",
+     "quote": "I would like to use the Github Copilot extension each time I develop in VS Code, even when I have opened a project in a Dev Container."
+    },
+    {
+     "uid": "U223",
+     "quote": "However I have specified github.copilot which is really only my business."
+    }
+   ],
+   "cited_threads": [
+    "U049",
+    "U101",
+    "U117",
+    "U180",
+    "U214",
+    "U223",
+    "U228"
+   ]
+  },
+  {
+   "id": "T33",
+   "rq": "RQ2.3",
+   "label": "Accept only part of a suggestion: the first line or the next word",
+   "definition": "Posters want to commit one line, or one word, of a multi-line suggestion instead of taking the whole block with a single keypress. They describe the present behaviour as all-or-nothing and ask for a shortcut or setting that takes less.",
+   "include": "Requests to accept line by line or word by word; complaints that Tab inserts the whole block including code they did not want; answers reporting that partial acceptance is being explored.",
+   "exclude": "Changing which key commits the whole suggestion, or keys clashing with indentation and snippets (\"Keys that accept and browse suggestions, and the Tab clashes they cause\"); wanting longer or fuller suggestions (\"Whole blocks, finished code, and in my own quote and line-ending style\"); the evaluation that Copilot simply says too much (\"Too much, too often: suggest only when I ask and stay quiet in comments, paths and normal mode\").",
+   "positive_examples": [
+    "U240"
+   ],
+   "negative_examples": [
+    "U033"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U048",
+     "quote": "Is there a shortcut key to complete the first line only?"
+    },
+    {
+     "uid": "U088",
+     "quote": "I want to have the possibility to only accept line by line."
+    },
+    {
+     "uid": "U166",
+     "quote": "I would like to be able to accept only the next word of a github Copilot suggestion, instead of the full suggestion."
+    },
+    {
+     "uid": "U169",
+     "quote": "Is there a simple way, key shortcut or so, to accept part of a copilot suggestion?"
+    },
+    {
+     "uid": "U139",
+     "quote": "I want to press a shortcut to accept the completion word by word until finished."
+    },
+    {
+     "uid": "U240",
+     "quote": "I would like to be able to accept only the next word of a github Copilot suggestion instead of the full suggestion."
+    }
+   ],
+   "cited_threads": [
+    "U048",
+    "U088",
+    "U139",
+    "U166",
+    "U169",
+    "U240"
+   ]
+  },
+  {
+   "id": "T34",
+   "rq": "RQ2.2",
+   "label": "Secrets and private code are sent to GitHub and leak in suggestions",
+   "definition": "Copilot completes real-looking API keys drawn from other people's repositories, and posters worry that their own secrets, personal files and confidential project code are transmitted to and retained by the service, since every completion is a round trip that carries snippets out of the editor.",
+   "include": "Secret-leak observations, questions about what is sent, stored or made public, telemetry and retention worries, requests to keep Copilot away from files or directories that hold secrets, and statements that the editor ships code to the service.",
+   "exclude": "Employer networks preventing the connection go to 'Corporate proxies, VPNs and certificates block it: works at home, not at work'; keeping Copilot out of a project for convenience rather than secrecy goes to 'Little can be configured, so posters edit JSON, add plugins, patch the extension'.",
+   "positive_examples": [
+    "U117",
+    "U049"
+   ],
+   "negative_examples": [
+    "U118"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U049",
+     "quote": "I was curious and asked it to autocomplete the API url with the key open, and it listed suggestions with various API keys included."
+    },
+    {
+     "uid": "U101",
+     "quote": "Sometimes I edit files that contain secrets, and I don't want to accidentally send those to Microsoft/GitHub."
+    },
+    {
+     "uid": "U228",
+     "quote": "can GitHub copilot save any sort of code (entirely or even just snippets) and make it public with suggestions?"
+    },
+    {
+     "uid": "U214",
+     "quote": "The reason is that, in other directories, I have personal data. I don't want to use copilot on personal data."
+    },
+    {
+     "uid": "U066",
+     "quote": "Most corporate networks have a ‘Man-in-the-middle’ appliance that dynamically breaks open all secure SSL traffic leaving home to enter the internet."
+    },
+    {
+     "uid": "U228",
+     "quote": "GitHub Copilot transmits snippets of your code from your IDE to GitHub to provide Suggestions to you."
+    }
+   ],
+   "cited_threads": [
+    "U049",
+    "U101",
+    "U117",
+    "U214",
+    "U228"
+   ]
+  },
+  {
+   "id": "T35",
+   "rq": "RQ2.3",
+   "label": "Whole blocks, finished code, and in my own quote and line-ending style",
+   "definition": "Posters expect a suggestion to arrive as a complete multi-line block, syntactically finished with its closing brackets and quotes, and written in their project's conventions - single versus double quotes, a chosen line ending.",
+   "include": "Asking for multi-line or whole-block suggestions instead of one line; suggestions missing closing brackets or quotes; telling or configuring Copilot which quote style or line ending to use; expectations that it adapts to the style of the surrounding code.",
+   "exclude": "Taking only part of what is offered (\"Accept only part of a suggestion: the first line or the next word\"); the complaint that there is too much output or that it should only appear on request (\"Too much, too often: suggest only when I ask and stay quiet in comments, paths and normal mode\"); suggested identifiers that do not exist (\"Suggest code that works and uses things that really exist\").",
+   "positive_examples": [],
+   "negative_examples": [
+    "U097"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U067",
+     "quote": "But I want to see multi-line suggestions."
+    },
+    {
+     "uid": "U067",
+     "quote": "while typing it only shows one line of suggestion"
+    },
+    {
+     "uid": "U220",
+     "quote": "Copilot suggests only line by line instead of a whole block."
+    },
+    {
+     "uid": "U026",
+     "quote": "how to make Github copilot use single quotes instead of double quotes ?"
+    },
+    {
+     "uid": "U219",
+     "quote": "Copilot often suggests other line endings (CR or LF). Is there a way to configure or tell Copilot to only use a certain line ending?"
+    },
+    {
+     "uid": "U148",
+     "quote": "the auto complete suggest me some code but without closing brackets and quotes. how to fix it?"
+    }
+   ],
+   "cited_threads": [
+    "U067",
+    "U220",
+    "U026",
+    "U148",
+    "U219"
+   ]
+  },
+  {
+   "id": "T36",
+   "rq": "RQ1.5",
+   "label": "Using Copilot to produce the code for a stated task",
+   "definition": "A purpose code: the poster's reason for using Copilot was to obtain the implementation for a specific job of their own - a function, snippet, schema, config block or query - including by writing a comment, docstring, function name or pseudocode as the prompt. The test is that the text names the job Copilot was asked to do; whether the result worked belongs to another question.",
+   "include": "Statements that the poster had Copilot generate, write, suggest, find or finish the code they needed for a named task of their own, including comment-driven, name-driven and pseudocode-driven generation and partly written implementations it completed.",
+   "exclude": "A statement that the produced code worked or gave the right result goes to T11 (benefit) and one credited to the written prompt to T17; code produced for another member's question goes to T13; a stated gap in the poster's own knowledge of the language, API or task goes to T38; bulk, repetitive or boilerplate output goes to T18; pointing it at code that already fails goes to T43; work on code that already exists - explain, document, test, diagram - goes to T26; installing it to see what it can do goes to T56; the poster's checking practice goes to T03.",
+   "positive_examples": [
+    "U144",
+    "U104"
+   ],
+   "negative_examples": [
+    "U079"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U017",
+     "quote": "I'm testing out github copilot to see how it can solve stackoverflow issues."
+    },
+    {
+     "uid": "U058",
+     "quote": "First Add single line comment in you visual studio code that describe code you want to be written by github copilot"
+    },
+    {
+     "uid": "U144",
+     "quote": "I then used GitHub Copilot to write this code in about 30 seconds, just using comments and having Copilot write the rest:"
+    },
+    {
+     "uid": "U024",
+     "quote": "Thanks to GitHub CoPilot which recommended this solution."
+    },
+    {
+     "uid": "U031",
+     "quote": "Here is the working variant, produced by Github Copilot (verified by me):"
+    },
+    {
+     "uid": "U053",
+     "quote": "Actaually i found this using github copilot -"
+    }
+   ],
+   "cited_threads": [
+    "U002",
+    "U017",
+    "U018",
+    "U024",
+    "U029",
+    "U030",
+    "U031",
+    "U032",
+    "U046",
+    "U047",
+    "U053",
+    "U057",
+    "U058",
+    "U060",
+    "U068",
+    "U071",
+    "U080",
+    "U085",
+    "U090",
+    "U093",
+    "U103",
+    "U104",
+    "U122",
+    "U123",
+    "U130",
+    "U131",
+    "U138",
+    "U144",
+    "U147",
+    "U161",
+    "U165",
+    "U181",
+    "U183",
+    "U198",
+    "U200",
+    "U204",
+    "U221",
+    "U226",
+    "U238",
+    "U254",
+    "U003",
+    "U004",
+    "U036",
+    "U043",
+    "U056",
+    "U081",
+    "U124",
+    "U154",
+    "U186",
+    "U190",
+    "U070",
+    "U141"
+   ]
+  },
+  {
+   "id": "T37",
+   "rq": "RQ2.2",
+   "label": "Almost nothing can be configured, so posters hand-edit, patch and reverse-engineer",
+   "definition": "A limitation: a control, option or piece of documentation the poster wants does not exist at all - no quote style or line ending, no documented option list, no way to rebind accept or trigger on demand in a given IDE, no fine-tuning or extension API, no awareness beyond the open file - and what the thread offers instead is hand-edited settings.json or keybindings.json, third-party toggles, swapped plugin files, monkey patches or reverse engineering. The test is a control that does not exist, not one that exists and misbehaves.",
+   "include": "Requests for settings that do not exist, missing or undocumented options, the closed model and absent API, statements that only the current file is seen or that non-code output is poor, config-file, side-plugin, file-patching and reverse-engineering workarounds, and vendor or IT replies that the option does not exist, is a known limitation or is not yet available.",
+   "exclude": "A shortcut that exists but collides or cannot be typed goes to T08; the missing partial-accept control goes to T29; unasked suggestions and the absent on-demand mode go to T14, and that wish as an expectation to T20; disabling or uninstalling Copilot as the remedy goes to T45; naming a substitute tool goes to T85; the extension not existing for an IDE or platform goes to T04; a working install going silent goes to T02; a request that the advanced options be documented, stated as an expectation, goes to T64, and cross-client parity to T72.",
+   "positive_examples": [
+    "U097",
+    "U255"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U026",
+     "quote": "how to make Github copilot use single quotes instead of double quotes ?"
+    },
+    {
+     "uid": "U219",
+     "quote": "Copilot often suggests other line endings (CR or LF). Is there a way to configure or tell Copilot to only use a certain line ending?"
+    },
+    {
+     "uid": "U171",
+     "quote": "i don't find any documentation of all possible option that i can use in that section"
+    },
+    {
+     "uid": "U234",
+     "quote": "I have tried to change a few bindings from Options > Environment > Keyboard but none seems to affect this one."
+    },
+    {
+     "uid": "U180",
+     "quote": "Right now, I have to manually install Copilot in each project each time the Dev Container opens."
+    },
+    {
+     "uid": "U097",
+     "quote": "GitHub Copilot can only hold a very limited context, so even single source files longer than a few hundred lines are clipped and only the immediately preceding context is used."
+    }
+   ],
+   "cited_threads": [
+    "U026",
+    "U097",
+    "U142",
+    "U171",
+    "U180",
+    "U219",
+    "U223",
+    "U234",
+    "U236",
+    "U255",
+    "U135",
+    "U141",
+    "U229",
+    "U240",
+    "U007",
+    "U028",
+    "U035",
+    "U048",
+    "U050",
+    "U062",
+    "U088",
+    "U109",
+    "U139",
+    "U194",
+    "U066",
+    "U094",
+    "U193"
+   ]
+  },
+  {
+   "id": "T38",
+   "rq": "RQ1.5",
+   "label": "Using Copilot in a language, API or task the poster says they do not know",
+   "definition": "A purpose code: the text states a knowledge gap of the poster's own - new to the language, library, platform, crypto or maths involved, or unable to write it themselves - and that Copilot was used in that territory. Both the stated gap and the use must be in the text.",
+   "include": "Self-descriptions as new to or unable to write the language, tool, API or routine, stated alongside use of Copilot's output for it.",
+   "exclude": "Use with no stated gap goes to T36; a statement that it supplied working code, an option or a value the poster could not have written or found goes to T42 (benefit); asking the thread to explain or confirm the kept code goes to T06; the argument that a textbook or the docs should have come first goes to T79; praise naming no capability goes to T77; a comparison with another assistant goes to T52.",
+   "positive_examples": [
+    "U079",
+    "U124"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U060",
+     "quote": "Since I don't know anything about this, I decided to consult GitHub Copilot for help."
+    },
+    {
+     "uid": "U071",
+     "quote": "As for now, I Don't understand c# much yet."
+    },
+    {
+     "uid": "U138",
+     "quote": "I am puzzled because GitHub CoPilot suggest i can do"
+    },
+    {
+     "uid": "U034",
+     "quote": "I am noob to VS Code and Stack Overflow"
+    },
+    {
+     "uid": "U071",
+     "quote": "I Don't understand c# much yet"
+    },
+    {
+     "uid": "U079",
+     "quote": "I am new to react and JS in general"
+    }
+   ],
+   "cited_threads": [
+    "U024",
+    "U032",
+    "U036",
+    "U047",
+    "U057",
+    "U060",
+    "U068",
+    "U071",
+    "U092",
+    "U103",
+    "U124",
+    "U138",
+    "U254",
+    "U034",
+    "U056",
+    "U058",
+    "U079",
+    "U090",
+    "U132",
+    "U137",
+    "U140",
+    "U238"
+   ]
+  },
+  {
+   "id": "T39",
+   "rq": "RQ2.2",
+   "label": "Copilot blamed for editor behaviour that turned out to have another cause",
+   "definition": "Once Copilot is installed it becomes the default suspect for any odd editor behaviour, but in these threads the hypothesis is tested and rejected: the real cause is another plugin, an IDE parameter-name hint, a status-bar or legacy editor setting, an OS shortcut, a WSL update or a database option, or Copilot is behaving as designed and a different gesture works.",
+   "include": "Threads where an answer or the poster corrects the attribution, states that this has nothing to do with Copilot, or shows the expected behaviour is a feature of the editor rather than a Copilot fault.",
+   "exclude": "Threads where disabling or bisecting confirms Copilot as the cause go to 'Copilot overrides editor settings and breaks typing'.",
+   "positive_examples": [
+    "U156",
+    "U033"
+   ],
+   "negative_examples": [
+    "U009"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U081",
+     "quote": "This has nothing to do with copilot, it's just the IDE labelling the arguments with the parameter names"
+    },
+    {
+     "uid": "U187",
+     "quote": "It turns out this has nothing to do with Copilot."
+    },
+    {
+     "uid": "U156",
+     "quote": "This confused me as well, but it's not a feature of Copilot."
+    },
+    {
+     "uid": "U252",
+     "quote": "At first I thought it was related to suggestions from GitHub CoPilot, but disabling didn't help."
+    },
+    {
+     "uid": "U025",
+     "quote": "This issue caused by this plugin, disabled this plugin and now working fine."
+    },
+    {
+     "uid": "U081",
+     "quote": "This has nothing to do with copilot"
+    }
+   ],
+   "cited_threads": [
+    "U025",
+    "U033",
+    "U081",
+    "U113",
+    "U156",
+    "U187",
+    "U212",
+    "U252",
+    "U028",
+    "U034",
+    "U054",
+    "U058",
+    "U100",
+    "U112",
+    "U132",
+    "U143",
+    "U176",
+    "U200",
+    "U213",
+    "U237"
+   ]
+  },
+  {
+   "id": "T41",
+   "rq": "RQ2.1",
+   "label": "Useful only once checked, and the thread often does the checking",
+   "definition": "A benefit code: the text states value that is conditional on verification - the code worked after the poster checked it, or they bring working-but-not-understood output to the thread asking whether it is sound, why it works or how to improve it, and members answer or push back. The test is a value claim plus a stated condition of checking.",
+   "include": "Success stated after checking, supervision disclaimers accompanying posted Copilot code that worked, warnings that verifying can take longer than writing, posters asking the thread to vet or explain output that already works or looks right, and expert replies questioning whether Copilot substitutes for knowing the language.",
+   "exclude": "An unconditional report that it worked goes to T11; the poster's own verification habit given as how they use Copilot goes to T03 (purpose); a stated inability to tell whether the code is right or to read it, with no value claimed, goes to T06 (limitation); bare disclosure that an answer came from Copilot goes to T47; an untested proposal of approach goes to T87; the knowledge gap behind the code goes to T42.",
+   "positive_examples": [
+    "U079",
+    "U144"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U031",
+     "quote": "Here is the working variant, produced by Github Copilot (verified by me)"
+    },
+    {
+     "uid": "U133",
+     "quote": "the function might not be 100% accurate and so you'll still need to check over it"
+    },
+    {
+     "uid": "U030",
+     "quote": "Disclaimer: this code was written by Github Copilot with minimal supervision."
+    },
+    {
+     "uid": "U003",
+     "quote": "GitHub Copilot getting its suggestion 95% correct, but incorrectly using format('otf')"
+    },
+    {
+     "uid": "U031",
+     "quote": "(verified by me)"
+    },
+    {
+     "uid": "U060",
+     "quote": "I will never take a function that copilot makes and blindly use it unless I know for sure it will work"
+    }
+   ],
+   "cited_threads": [
+    "U029",
+    "U030",
+    "U031",
+    "U032",
+    "U036",
+    "U045",
+    "U060",
+    "U133",
+    "U144",
+    "U254",
+    "U003",
+    "U161",
+    "U079",
+    "U125",
+    "U155",
+    "U090",
+    "U137",
+    "U147",
+    "U154"
+   ]
+  },
+  {
+   "id": "T42",
+   "rq": "RQ2.1",
+   "label": "It helped where the poster's own knowledge or the documentation ran out",
+   "definition": "A benefit code: the post says Copilot supplied working code, an option list, a command or a value the poster could not have written themselves or could not find in the documentation or by searching. The test is a stated gap or failed search in the text together with a statement that Copilot's output served.",
+   "include": "Reports pairing an unfamiliar language, library or task, missing documentation or a fruitless search with Copilot's output being used; 'it works and I have no idea why'; choosing Copilot over the docs or a search and getting what was needed; values afterwards found documented nowhere.",
+   "exclude": "The gap stated as the reason for reaching for Copilot, with no claim that the output served, goes to T38 (purpose); a success report with no gap or failed search goes to T11; bringing the output to the thread to be vetted or explained goes to T41, and a stated inability to judge or read it to T06 (limitation); the argument that the docs should have come first goes to T79; praise with nothing supplied goes to T77.",
+   "positive_examples": [
+    "U079",
+    "U138"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U079",
+     "quote": "out came a solution that worked but I have no idea why or what its doing"
+    },
+    {
+     "uid": "U090",
+     "quote": "I really do not understand this enough, and have no idea half of what this code does honestly. It was written by copilot."
+    },
+    {
+     "uid": "U124",
+     "quote": "With this basic knowledge and the use of StackOverflow and Copilot I have the following code."
+    },
+    {
+     "uid": "U155",
+     "quote": "So magically Copilot suggested this, and it works, but I would very much appreciate if someone could explain why"
+    },
+    {
+     "uid": "U060",
+     "quote": "Since I don't know anything about this, I decided to consult GitHub Copilot for help."
+    },
+    {
+     "uid": "U060",
+     "quote": "On a normal basis, I would search the docs, but Github seems to disagree."
+    }
+   ],
+   "cited_threads": [
+    "U060",
+    "U079",
+    "U090",
+    "U124",
+    "U155",
+    "U045",
+    "U053",
+    "U116",
+    "U161",
+    "U024",
+    "U068",
+    "U092",
+    "U123",
+    "U137",
+    "U138",
+    "U145",
+    "U150",
+    "U154"
+   ]
+  },
+  {
+   "id": "T43",
+   "rq": "RQ1.5",
+   "label": "Consulting Copilot about a problem that is already failing",
+   "definition": "A purpose code: the poster took an existing bug, error or blocked problem to Copilot - often listed beside Google, the docs, ChatGPT or Bing - asking for the fix, a workaround, or confirmation that their code is right. The test is that the text names an existing problem Copilot was consulted about.",
+   "include": "Statements enumerating Copilot among the sources tried on a stuck problem, statements of using it only when stuck, and reports of asking it to fix a bug or to vouch for existing code.",
+   "exclude": "Having it write code for a task that is not yet failing goes to T36; having it explain, document, test or diagram existing code goes to T26; a report that it produced nothing usable on the problem goes to T80, and that its answer was wrong to T05 (limitations); asking the thread what the kept code means or whether it is right goes to T06; an approach or data model it proposed that the poster now discusses goes to T87 (benefit).",
+   "positive_examples": [
+    "U165",
+    "U221"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U192",
+     "quote": "I've tried using google, chatgpt, copilot, forums and read the docs."
+    },
+    {
+     "uid": "U221",
+     "quote": "Followed GitHub CoPilot hint solution. No diff."
+    },
+    {
+     "uid": "U242",
+     "quote": "I've checked myself by stepping through, I've checked with GitHub Copilot, I've checked with ChatGPT, and they all say this is correct"
+    },
+    {
+     "uid": "U238",
+     "quote": "after a week of trying to get chatgpt or copilot to fix the bugs I'm all out of ideas"
+    },
+    {
+     "uid": "U165",
+     "quote": "i tried using copilot but it didnt do anything usefull"
+    },
+    {
+     "uid": "U132",
+     "quote": "github copilot does not like that code - i don't know why"
+    }
+   ],
+   "cited_threads": [
+    "U086",
+    "U105",
+    "U153",
+    "U192",
+    "U198",
+    "U221",
+    "U226",
+    "U242",
+    "U132",
+    "U165",
+    "U231",
+    "U238",
+    "U092",
+    "U123",
+    "U138",
+    "U145",
+    "U183"
+   ]
+  },
+  {
+   "id": "T44",
+   "rq": "RQ2.3",
+   "label": "Expecting suggestions that work and that use things which really exist",
+   "definition": "An expected feature: the poster asks for, or states as what Copilot ought to do, suggestions whose identifiers, properties, APIs and values are real and documented and whose code actually solves the problem, including the wish that output be good enough for real work rather than toy cases. The test is a wish or requirement in the text, not a report about one faulty suggestion.",
+   "include": "Statements of what suggestions ought to be - correct, real, documented, usable in production - and wishes that it stop proposing members, properties or values that exist in no class or documentation.",
+   "exclude": "A report that a given suggestion was wrong, invented or useless goes to T05, and the 'looked right, one invented detail' case to T51; the poster's inability to judge or read the output goes to T06; the style, length and completeness of otherwise valid code goes to T35; expecting a comment to produce the described code goes to T30; naming another tool that does it better goes to T83.",
+   "positive_examples": [
+    "U138",
+    "U144"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U045",
+     "quote": "GitHub copilot suggested final-column. It works in Chrome, but I can't find it documented anywhere"
+    },
+    {
+     "uid": "U055",
+     "quote": "Copilot (and the like) suggest properties which usually don't even exist in classes"
+    },
+    {
+     "uid": "U060",
+     "quote": "it should at least be good enough for real-world use cases rather than simple coding cases"
+    },
+    {
+     "uid": "U003",
+     "quote": "GitHub Copilot getting its suggestion 95% correct, but incorrectly using format('otf')"
+    },
+    {
+     "uid": "U032",
+     "quote": "It looked good, so I pressed TAB."
+    },
+    {
+     "uid": "U060",
+     "quote": "I will never take a function that copilot makes and blindly use it unless I know for sure it will work"
+    }
+   ],
+   "cited_threads": [
+    "U045",
+    "U055",
+    "U060",
+    "U003",
+    "U022",
+    "U032",
+    "U056",
+    "U080",
+    "U103",
+    "U138",
+    "U144",
+    "U147",
+    "U161",
+    "U165",
+    "U183",
+    "U192",
+    "U254"
+   ]
+  },
+  {
+   "id": "T45",
+   "rq": "RQ2.2",
+   "label": "The only fix is turning Copilot off; some do, others configure around it",
+   "definition": "For a range of side effects the remedy on offer is to disable or uninstall Copilot rather than repair the conflict, so using the tool costs the feature it was installed for. Faced with that, posters split: some remove it and say they no longer use it, others refuse and pay with per-language settings, narrowed options or scoped enablement.",
+   "include": "Posts where the stated remedy is to disable, deactivate or uninstall Copilot, statements of having abandoned it, and statements of explicitly keeping it while working around the problem through settings or narrower toggles.",
+   "exclude": "The faults being remedied go to 'Copilot overrides editor settings and breaks typing'; the mechanics of writing per-language overrides go to 'Little can be configured, so posters edit JSON, add plugins, patch the extension'; moving to a different assistant goes to 'Routing around Copilot by naming another assistant'.",
+   "positive_examples": [
+    "U128",
+    "U014"
+   ],
+   "negative_examples": [
+    "U186"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U007",
+     "quote": "You can also disable copilot extension! I didn't want to!"
+    },
+    {
+     "uid": "U009",
+     "quote": "Thank you. Fixed that by removing copilot extension"
+    },
+    {
+     "uid": "U089",
+     "quote": "I'm going to try the solution to uncheck the option \"Enable for HTMLProjection\", as said in the link you sent, this way I don't have to disable CoPilot."
+    },
+    {
+     "uid": "U101",
+     "quote": "You can disable the extension and then enable for only the projects and workspaces you want it to be enabled."
+    },
+    {
+     "uid": "U062",
+     "quote": "I still have it off, haven't missed anything."
+    },
+    {
+     "uid": "U014",
+     "quote": "Fix: Disable GitHub Copilot extension if you have it"
+    }
+   ],
+   "cited_threads": [
+    "U007",
+    "U009",
+    "U012",
+    "U014",
+    "U019",
+    "U050",
+    "U062",
+    "U073",
+    "U089",
+    "U101",
+    "U109",
+    "U128",
+    "U179",
+    "U005",
+    "U061",
+    "U010",
+    "U016"
+   ]
+  },
+  {
+   "id": "T46",
+   "rq": "RQ2.3",
+   "label": "Expecting one account, once approved or paid, to work everywhere",
+   "definition": "An expected feature: the text states that being signed in, invited, approved or paying should be enough for Copilot to work in every editor, machine and remote session, and names the gate that defeats it - waitlist place, beta invite, trial expiry, billing, student status, an employer, or which of several signed-in accounts holds the seat. The test is the stated expectation of entry or of parity across clients and sessions.",
+   "include": "Statements that one signed-in or paid account should work across editors, machines and SSH sessions; waitlist, beta-invite, 'no longer free', student and payment statements framed as what should give access; repeated sign-in prompts or 'authorized on GitHub but not here' presented as a broken promise.",
+   "exclude": "An entitlement, trial or account state reported plainly as why Copilot does not run goes to T25, and a technical sign-in, authorization or activation failure to T07 (limitations); network-level blocking by proxy, VPN or certificates goes to T49; the extension not existing for an IDE, platform or language goes to T12; naming a cheaper or open substitute goes to T83; controls missing outside VS Code go to T72.",
+   "positive_examples": [
+    "U015",
+    "U118"
+   ],
+   "negative_examples": [
+    "U083"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U040",
+     "quote": "I am asked to Sign in to GitHub to enable GitHub Copilot suggestions. regardless of doing that many times."
+    },
+    {
+     "uid": "U233",
+     "quote": "Copilot works fine if I use a local workspace but it is working when I SSH connect to a server."
+    },
+    {
+     "uid": "U020",
+     "quote": "I discovered that GitHub copilot actually works on my laptop, but not on my desktop even though they are signed in to the same account that has access to use the extension."
+    },
+    {
+     "uid": "U244",
+     "quote": "I bought the monthly subscription and installed the plugin in the latest version of android studio flamingo."
+    },
+    {
+     "uid": "U039",
+     "quote": "You’ve been added to the waitlist for the GitHub Copilot technical preview!"
+    },
+    {
+     "uid": "U069",
+     "quote": "If you are trying GitHub copilot for the first time, this error indicates that you are not part of the beta invite list."
+    }
+   ],
+   "cited_threads": [
+    "U011",
+    "U020",
+    "U040",
+    "U041",
+    "U094",
+    "U106",
+    "U118",
+    "U233",
+    "U244",
+    "U015",
+    "U039",
+    "U064",
+    "U069",
+    "U072",
+    "U185",
+    "U074"
+   ]
+  },
+  {
+   "id": "T47",
+   "rq": "RQ2.1",
+   "label": "Answerers post Copilot's output as the answer, saying where it came from",
+   "definition": "On Stack Overflow the benefit shows up as answerers running someone else's problem through Copilot and posting the result, usually disclosing its origin, sometimes just pointing the asker at Copilot for this kind of task.",
+   "include": "Answers framed as Copilot experiments or as Copilot-written, with or without a note that the answerer tested it, and answers that simply recommend Copilot for the asker's job.",
+   "exclude": "Askers reporting their own Copilot-produced code go to 'Copilot's suggestion ran and solved the problem'; askers bringing Copilot output for vetting go to 'Provisional until someone who knows checks it, and the thread often does the checking'; the verification caveat itself goes to the same group.",
+   "positive_examples": [
+    "U104",
+    "U017"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U017",
+     "quote": "I'm testing out github copilot to see how it can solve stackoverflow issues."
+    },
+    {
+     "uid": "U046",
+     "quote": "Does this work? Copilot created the code xD"
+    },
+    {
+     "uid": "U133",
+     "quote": "Look at Github Copilot. They're able to generate pretty descent facsimiles of functions from API spec."
+    },
+    {
+     "uid": "U017",
+     "quote": "I'm testing out github copilot to see how it can solve stackoverflow issues."
+    },
+    {
+     "uid": "U018",
+     "quote": "Hey I used github copilot to see how it will solve this problem"
+    },
+    {
+     "uid": "U029",
+     "quote": "Disclaimer: this code was written by Github Copilot with minimal supervision."
+    }
+   ],
+   "cited_threads": [
+    "U002",
+    "U017",
+    "U018",
+    "U024",
+    "U029",
+    "U030",
+    "U031",
+    "U043",
+    "U046",
+    "U052",
+    "U104",
+    "U131",
+    "U133",
+    "U004",
+    "U093"
+   ]
+  },
+  {
+   "id": "T48",
+   "rq": "RQ1.4",
+   "label": "The implemented unit is a line or a few lines inside existing code: imports, members, option names, annotations, repeated lines",
+   "definition": "An RQ1.4 content code: what Copilot implemented is not a routine but one or a few lines continuing code that is already there - an import and the path in it, a property, constructor parameter or method name on the poster's own types, a framework option key or event name, a type annotation, a tracing or lint directive, or a run of mechanically predictable lines. The test is the size and place of the implemented unit, nothing about its quality.",
+   "include": "Units where the Copilot-written content is an import line, a member, parameter, option or event name, a declaration, a directive, a linter-silencing comment, or a repetition of predictable lines such as one print per struct member, integers added to a list or dozens of numbered image paths.",
+   "exclude": "A bounded routine that computes, parses, compares or converts goes to T24; code that iterates, filters or reshapes a collection goes to T22; declarative schema, route or infrastructure blocks go to T28; interface and styling code goes to T23; a URL, endpoint or connection line goes to T74; prose, tests, diagrams or fixes about existing code go to T55; the poster's reason of cutting repetitive typing goes to T18 (purpose); a member, property or option name that exists nowhere goes to T51 (limitation).",
+   "positive_examples": [
+    "U122",
+    "U174"
+   ],
+   "negative_examples": [
+    "U104"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U004",
+     "quote": "I see many answers importing sys and os. Here's a not mentioned yet shorter one that GitHub Copilot gave me:"
+    },
+    {
+     "uid": "U071",
+     "quote": "And github- copilot inserted the Imports (using)"
+    },
+    {
+     "uid": "U105",
+     "quote": "Copilot is suggesting relative paths that are not correct and makes a suggestion each time I write a \"/\" in my path string"
+    },
+    {
+     "uid": "U052",
+     "quote": "this is what i have with copilot"
+    },
+    {
+     "uid": "U081",
+     "quote": "I was using Github Copilot to generate integers to add to an ArrayList, but for some reason it adds e: before the argument"
+    },
+    {
+     "uid": "U122",
+     "quote": "Then just use Copilot to get the following pattern: until 57..."
+    }
+   ],
+   "cited_threads": [
+    "U004",
+    "U071",
+    "U105",
+    "U052",
+    "U081",
+    "U122",
+    "U056",
+    "U116",
+    "U145",
+    "U055",
+    "U174",
+    "U196",
+    "U057",
+    "U137",
+    "U231"
+   ]
+  },
+  {
+   "id": "T49",
+   "rq": "RQ2.3",
+   "label": "Behind the company proxy and VPN: works at home, dies at the office",
+   "definition": "Posters expect Copilot to connect from inside a corporate network - authenticating HTTP proxy, SSL-inspecting appliances, self-signed certificate chains - in every IDE they use, and report the same install working at home or with the VPN disconnected and failing at work, where the remedy belongs to an IT department rather than to the developer.",
+   "include": "Requests for proxy, no_proxy or certificate support and the patches used instead; home-vs-office and VPN-on-vs-off comparisons; getting traffic whitelisted by IT; company network and company-managed machine named as the condition.",
+   "exclude": "The plain wish that code and secrets not be sent or kept, and business-versus-individual retention (\"Keep my code and secrets out, and let me pick where Copilot runs\"); which account holds the licence, waitlist, trial and payment gates (\"One account should just work, yet waitlist, trial and payment decide entry\").",
+   "positive_examples": [
+    "U210",
+    "U118"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U126",
+     "quote": "I'm behind a corporate proxy and unable to use GitHub Copilot on WebStorm."
+    },
+    {
+     "uid": "U127",
+     "quote": "I'm working in a Windows10-machine and behind a corporate network including proxy, certifcates and stuff."
+    },
+    {
+     "uid": "U066",
+     "quote": "A fix would be to add the GitHub Copilot servers to the ssl inspection whitelist so that that traffic is not inspected."
+    },
+    {
+     "uid": "U118",
+     "quote": "We're happy to announce that the latest release of Copilot for Visual Studio Code and Copilot for IntelliJ contains preliminary support for connecting through HTTP proxy servers."
+    },
+    {
+     "uid": "U210",
+     "quote": "Your current Copilot license doesn't support proxy connections with self-signed certificates."
+    },
+    {
+     "uid": "U205",
+     "quote": "Im behind a corporate proxy but the strange thing is that i can use Copilot extension without any problem but not the Copilot labs."
+    }
+   ],
+   "cited_threads": [
+    "U066",
+    "U118",
+    "U126",
+    "U127",
+    "U170",
+    "U185",
+    "U195",
+    "U205",
+    "U210",
+    "U248",
+    "U011",
+    "U020",
+    "U190",
+    "U167"
+   ]
+  },
+  {
+   "id": "T50",
+   "rq": "RQ2.3",
+   "label": "Expecting more than line completion: whole-project context, explain, document, test, chat",
+   "definition": "An expected feature: the poster asks for, or goes looking for, capability beyond completing the open file - other project files, their libraries or schema as context, a model tuned on their own code, or acting on existing code through explain, document, make-readable, test and diagram brushes and a chat panel. The test is a request, question or search for the capability.",
+   "include": "Questions about multi-file or project-wide context and fine-tuning on one's own codebase; asking for a brush, icon or command that documents, explains, makes readable or tests a selection; asking whether it can draw diagrams; looking for the chat icon or conversation panel after being told they have access.",
+   "exclude": "Actually using Copilot on existing code goes to T26 (purpose) and what it delivered to T55 (RQ1.4); a chat, Labs or brush surface that errors, does nothing or never appears goes to T69 (limitation); the statement that only the current file is seen, as a missing capability, goes to T37; generating code from a comment just typed goes to T30; access, trial and account gates go to T46; documentation of the advanced settings or an API to build on goes to T64; naming another assistant that does it goes to T83.",
+   "positive_examples": [
+    "U213",
+    "U184"
+   ],
+   "negative_examples": [
+    "U049"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U097",
+     "quote": "Can I fine tune GitHub Copilot model?"
+    },
+    {
+     "uid": "U135",
+     "quote": "Or it only analyzes and autocompletes using the context of standalone files regardless of additional files in my project?"
+    },
+    {
+     "uid": "U215",
+     "quote": "It would work somehow like GitHub Copilot: the copilot is aware of the rest of the code, and can generate appropriate answers."
+    },
+    {
+     "uid": "U117",
+     "quote": "Especially AI Learning on proprietary Code for your organization."
+    },
+    {
+     "uid": "U251",
+     "quote": "with access to table definitions, SP's etc."
+    },
+    {
+     "uid": "U199",
+     "quote": "I expect it to add comments."
+    }
+   ],
+   "cited_threads": [
+    "U097",
+    "U117",
+    "U135",
+    "U215",
+    "U251",
+    "U064",
+    "U141",
+    "U184",
+    "U199",
+    "U216",
+    "U011",
+    "U213",
+    "U245",
+    "U225"
+   ]
+  },
+  {
+   "id": "T51",
+   "rq": "RQ2.2",
+   "label": "Looked right but used something that does not exist",
+   "definition": "A limitation: the suggestion had the right shape and compiled or looked fine, and the fault is one invented or subtly wrong detail - a font format or grid value that is no setting, a Base64 call that will not compile, an extra renderer line, a ray-ray algorithm sold as line-line, a property or API that returns nothing, a brush that replaced working code with nonsense. The test is that the text says it looked or seemed correct and then names the single thing that was not real or not right.",
+   "include": "Units where the poster or an answerer says the Copilot suggestion compiled or looked fine but named something nonexistent, was subtly the wrong routine, or broke only in use.",
+   "exclude": "Output reported as simply wrong, inefficient, incomplete or of no help, with no 'looked right' framing, goes to T05; a task where nothing usable arrived at all goes to T80; code that runs but the poster cannot read or confirm goes to T06; the expectation that suggested identifiers be real goes to T44.",
+   "positive_examples": [
+    "U138",
+    "U155"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U003",
+     "quote": "this was a case of GitHub Copilot getting its suggestion 95% correct, but incorrectly using format('otf')"
+    },
+    {
+     "uid": "U032",
+     "quote": "It looked good, so I pressed TAB."
+    },
+    {
+     "uid": "U045",
+     "quote": "I don't think 'final-column' exists as a setting for grid-column-end."
+    },
+    {
+     "uid": "U068",
+     "quote": "Line-Line Intersection algorithm generated by the Github Copilot doesn't work in some instances"
+    },
+    {
+     "uid": "U060",
+     "quote": "I will never take a function that copilot makes and blindly use it unless I know for sure it will work"
+    },
+    {
+     "uid": "U056",
+     "quote": "it turns out that this line was the problem"
+    }
+   ],
+   "cited_threads": [
+    "U003",
+    "U032",
+    "U045",
+    "U056",
+    "U060",
+    "U068",
+    "U138",
+    "U046",
+    "U155",
+    "U092",
+    "U199",
+    "U153",
+    "U226",
+    "U165"
+   ]
+  },
+  {
+   "id": "T52",
+   "rq": "RQ2.1",
+   "label": "Judged better or worse than the editor's own completion and rival assistants",
+   "definition": "A benefit code: the text places Copilot beside a named alternative - IntelliSense, IntelliCode, a language server, Tabnine, Kite, a jupyter clone, ChatGPT - and states a verdict, credit or recommendation relative to it. The test is a comparison with something named.",
+   "include": "Recommendations of Copilot as the extension that fills the gap the editor's own completion left, reports that it inferred what the language server could not, and explicit comparative verdicts for or against it beside a named tool.",
+   "exclude": "Praise or astonishment with no comparison goes to T77; describing what one completion contained goes to T21; using Copilot as one's completer beside the IDE's list goes to T01 (purpose); asking that the two coexist or be prioritised goes to T19 (expected feature); naming a substitute to install because Copilot is gated, paid or unavailable goes to T83 (expected feature) or T85 (limitation); a suggested member that does not exist goes to T05 or T51.",
+   "positive_examples": [
+    "U083",
+    "U146"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U008",
+     "quote": "But you can use Tabnine or Copilot extension"
+    },
+    {
+     "uid": "U038",
+     "quote": "after using this amazing tool it can suggest to you best sentences to complete your code"
+    },
+    {
+     "uid": "U051",
+     "quote": "You can also use github copilot by installing the extension as well"
+    },
+    {
+     "uid": "U146",
+     "quote": "You could also try GitHub's Copilot, my friend uses it"
+    },
+    {
+     "uid": "U196",
+     "quote": "interestingly, CoPilot sees right through it, but that's not a solution to my question"
+    },
+    {
+     "uid": "U038",
+     "quote": "after using this amazing tool it can suggest to you best sentences to complete your code"
+    }
+   ],
+   "cited_threads": [
+    "U008",
+    "U038",
+    "U051",
+    "U083",
+    "U146",
+    "U196",
+    "U121",
+    "U140",
+    "U064",
+    "U115",
+    "U188",
+    "U062",
+    "U141",
+    "U199"
+   ]
+  },
+  {
+   "id": "T55",
+   "rq": "RQ1.4",
+   "label": "The deliverable is about existing code: explanation, docstring, test, diagram, fix or verdict",
+   "definition": "An RQ1.4 content code: the input Copilot worked on is code or product text that already exists and what it produced is prose, a docstring or comment, a unit test, diagram markup, a localisation entry, a corrected version, or a verdict on whether the code is right - not new program logic. The test is the kind of deliverable named in the text.",
+   "include": "Units where Copilot explained a function or selection, wrote docstrings or comments for existing code, generated unit tests that were then run, drafted a commit message, produced sequence or design diagram markup or localisation strings, produced a working variant of a broken routine, or gave an opinion on whether existing code is correct, including the DOCUMENT, make-readable and make-robust brushes used that way.",
+   "exclude": "Writing the implementation from scratch goes to the other content codes T22, T23, T24, T28, T31, T48 and T74; the poster's reason for pointing Copilot at existing code goes to T26 (purpose); a wish for explain, document, test, diagram or chat capability goes to T50 (expected feature); a brush, explanation or test run that errored or changed nothing goes to T69, and one that destroyed working code to T51; a task where nothing usable came back goes to T80.",
+   "positive_examples": [
+    "U184",
+    "U189"
+   ],
+   "negative_examples": [
+    "U056"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U064",
+     "quote": "I recently came across GitHub copilot which finish the code and also give a short explanation of what is happening in the function"
+    },
+    {
+     "uid": "U115",
+     "quote": "in Copilot 3-4 correct lines will be suggested with docstrings too"
+    },
+    {
+     "uid": "U189",
+     "quote": "Using ChatGPT and Copilot, I've commented it to understand its functionality."
+    },
+    {
+     "uid": "U225",
+     "quote": "Is there a magic word to make it document code?"
+    },
+    {
+     "uid": "U216",
+     "quote": "But when I select a line or a few of code, then click the cute little copilot icon on the left, then click \"Explain code\", I always get the following error"
+    },
+    {
+     "uid": "U199",
+     "quote": "I hit the document brush it added quite nothing. It just copied and pasted the code block I had highlighted"
+    }
+   ],
+   "cited_threads": [
+    "U064",
+    "U115",
+    "U189",
+    "U199",
+    "U216",
+    "U225",
+    "U031",
+    "U238",
+    "U242",
+    "U130",
+    "U141",
+    "U184"
+   ]
+  },
+  {
+   "id": "T56",
+   "rq": "RQ1.5",
+   "label": "Trying Copilot out to see what it can do",
+   "definition": "A purpose code: the stated reason for use is curiosity or evaluation rather than a job to finish - the poster installed it, ran it on something to see what came back, worked through the beginners' tutorial, or went to try a newly released feature such as chat. The text must present the use as trying it out.",
+   "include": "Statements of installing, running or testing Copilot to see what it produces, probing its ability, playing with it, working through the tutorial, and explicit statements of trying out the chat feature.",
+   "exclude": "Use aimed at a named task of the poster's own goes to T36, and repetitive bulk work to T18; running the asker's problem through it to answer a question goes to T13; curiosity about existing code - explain, document - goes to T26; a chat or Labs panel that errors or whose icon never appears goes to T69, and wanting those features to T50; the verdict formed after trying it goes to T77 or T52; a suggestion found wrong goes to T05.",
+   "positive_examples": [
+    "U163",
+    "U017"
+   ],
+   "negative_examples": [
+    "U122"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U011",
+     "quote": "I have installed GitHub Copilot just for the sake of testing."
+    },
+    {
+     "uid": "U199",
+     "quote": "I'm trying out copilot and I feel like I am missing something."
+    },
+    {
+     "uid": "U110",
+     "quote": "I am working in Android Studio and I would like to test it."
+    },
+    {
+     "uid": "U246",
+     "quote": "I recently installed VS Code to try out the newest \"Copilot Chat\" features."
+    },
+    {
+     "uid": "U011",
+     "quote": "I have installed GitHub Copilot just for the sake of testing."
+    },
+    {
+     "uid": "U017",
+     "quote": "I'm testing out github copilot to see how it can solve stackoverflow issues."
+    }
+   ],
+   "cited_threads": [
+    "U011",
+    "U017",
+    "U018",
+    "U027",
+    "U049",
+    "U060",
+    "U104",
+    "U110",
+    "U163",
+    "U199",
+    "U246",
+    "U141"
+   ]
+  },
+  {
+   "id": "T59",
+   "rq": "RQ2.2",
+   "label": "Suggestions arrive in some languages and file types and not in others",
+   "definition": "A limitation: within one working installation the text contrasts a language, file extension or project type where Copilot suggests with one where it gives nothing, or an answer names a limited supported-language set as the cause. The test is the language-or-file-type contrast, with a working case named or shown.",
+   "include": "Within-thread contrasts between a suggesting and a silent language, file extension or project type, answers naming the supported-language set, and single-language silence reported against a named working language.",
+   "exclude": "Silence everywhere with no language contrast goes to T02; the extension missing or unable to run on an IDE, version, architecture or container goes to T04; the expectation that it suggest in every editor and language goes to T12 (expected feature); comment-to-code failing in a particular language or comment style goes to T70 or T65; an editing behaviour broken in one language goes to T10; benefit asked for in another language goes to T60.",
+   "positive_examples": [
+    "U217",
+    "U149"
+   ],
+   "negative_examples": [
+    "U025"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U084",
+     "quote": "Tried it in different files and languages - works everywhere but not Python!"
+    },
+    {
+     "uid": "U217",
+     "quote": "It is showing me suggestions for JS correctly as advertised there but when I try with Go, I am not getting any suggestions."
+    },
+    {
+     "uid": "U119",
+     "quote": "Once installed it is always \"retrieving suggestions\" forever, after I click refresh. But it never retrieves any."
+    },
+    {
+     "uid": "U200",
+     "quote": "But it doesn't generate code based in comments in kotlin or comments in XML"
+    },
+    {
+     "uid": "U058",
+     "quote": "whenever i give it a comment and press tab and enter it just creates the same comment over and over again but in same cases it works"
+    },
+    {
+     "uid": "U007",
+     "quote": "A guy had it not work for js and typescript! And work out of the box for PHP!"
+    }
+   ],
+   "cited_threads": [
+    "U028",
+    "U058",
+    "U076",
+    "U084",
+    "U143",
+    "U200",
+    "U217",
+    "U007",
+    "U010",
+    "U095",
+    "U216",
+    "U011",
+    "U020",
+    "U066",
+    "U094",
+    "U106",
+    "U115",
+    "U126",
+    "U149",
+    "U159",
+    "U172",
+    "U205",
+    "U206",
+    "U227",
+    "U233",
+    "U244",
+    "U248"
+   ]
+  },
+  {
+   "id": "T60",
+   "rq": "RQ2.1",
+   "label": "Worth rearranging work for: editors changed and the same help asked for elsewhere",
+   "definition": "A benefit code: the value shows in what the poster changed or asks for because of it - switching or upgrading IDE or version, moving notebooks into another editor, wanting it in dev containers and every project, asking whether the same help exists for another editor or language, or saying its absence is keenly felt. The text must present this as the worth of Copilot rather than as an installation fault.",
+   "include": "Statements that Copilot is a reason to use or upgrade a particular editor, that work or tooling was arranged around having it, that its absence is keenly felt, and requests that the same benefit be available in another IDE or programming language framed as wanting the value.",
+   "exclude": "Choosing or changing an editor so the completion is available where one types, stated as use, goes to T01 (purpose); restricting where Copilot runs for confidentiality goes to T32 (purpose) or T27 (expected feature); the extension not existing for an IDE, platform or language goes to T04 or T59 (limitations) and the expectation that it exist to T12; missing settings, no API or controls absent outside VS Code go to T37 or T72; praise with no change or request behind it goes to T77.",
+   "positive_examples": [
+    "U186"
+   ],
+   "negative_examples": [
+    "U017"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U078",
+     "quote": "there are reasons I'd like to be able to open it with v2022 (such as GitHub Copilot)"
+    },
+    {
+     "uid": "U098",
+     "quote": "It is so darn convenient."
+    },
+    {
+     "uid": "U115",
+     "quote": "I've been using vscode to run notebooks on those servers because it was the easiest way I could find to develop while using copilot"
+    },
+    {
+     "uid": "U223",
+     "quote": "I pay for Copilot and when I load this project I want Copilot in it."
+    },
+    {
+     "uid": "U256",
+     "quote": "the actual coding, building and running works great. Especially in combination with GitHub Copilot."
+    },
+    {
+     "uid": "U110",
+     "quote": "Is it possible to use the new Copilot plugin from GitHub in Android Studio?"
+    }
+   ],
+   "cited_threads": [
+    "U078",
+    "U098",
+    "U115",
+    "U175",
+    "U180",
+    "U186",
+    "U223",
+    "U244",
+    "U256",
+    "U110",
+    "U181"
+   ]
+  },
+  {
+   "id": "T62",
+   "rq": "RQ1.5",
+   "label": "Rebuilding Copilot's grey inline suggestion in my own editor or control",
+   "definition": "These posters are not using Copilot on a task at all: its grey ghost text, decoration styling, suggestion panel or editor look is the specification for an extension, plugin or input control they are building, and they ask which API or styling reproduces it.",
+   "include": "Posts whose stated goal is to reproduce, imitate or match a Copilot interface behaviour — grey inline text, preview text, highlighted proposals, multiple inline hints, visual style — in another editor, extension API or web control.",
+   "exclude": "Using Copilot to write, complete or explain code (all the use groups); asking for Copilot itself in another IDE goes to 'Finishing the line or function as I type'; mentions of Copilot only as a credit line or as proof an editor API exists are not coded here.",
+   "positive_examples": [
+    "U044",
+    "U209"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U021",
+     "quote": "I'm trying to make a extension for VSCode similar to Github Copilot as in it predicts and autofills text directly into the active text editor."
+    },
+    {
+     "uid": "U193",
+     "quote": "I am trying to create copilot like ghost snippet suggestion using vs code TextEditorDecoration"
+    },
+    {
+     "uid": "U232",
+     "quote": "Basically, I am searching for a suggestion metodology similar to GitHub Copilot, where different lines in different points of the code are shown in a grey color."
+    },
+    {
+     "uid": "U013",
+     "quote": "I would like to make a control similar to the used by github copilot. I mean highlighting the proposed text."
+    },
+    {
+     "uid": "U247",
+     "quote": "what I want is REAL INLINE just the text with transperent concat to the input just like Co-Pilot"
+    },
+    {
+     "uid": "U151",
+     "quote": "The well-known completion tool Copilot also uses this mode."
+    }
+   ],
+   "cited_threads": [
+    "U013",
+    "U021",
+    "U044",
+    "U096",
+    "U151",
+    "U191",
+    "U193",
+    "U209",
+    "U232",
+    "U247"
+   ]
+  },
+  {
+   "id": "T64",
+   "rq": "RQ2.3",
+   "label": "Document the settings, let me build on it, stop overriding my editor",
+   "definition": "Posters expect the advanced options that shape Copilot's behaviour to be documented and an interface they can build their own extension on top of, and they expect Copilot not to redefine the editor's own defaults such as bracket closing - control they take back through per-language settings.",
+   "include": "Asking for documentation of the github.copilot.advanced options; tuning length or token limits; asking whether a plugin can build upon Copilot or whether the model can be tuned; statements that Copilot defines or overwrites editor default settings, and fixes that re-assert them in language-specific settings.json.",
+   "exclude": "Ordinary keybinding changes (\"Keys that accept and browse suggestions, and the Tab clashes they cause\"); reproducing Copilot's inline look in one's own extension (\"Copilot's grey inline ghost text as the thing I want to rebuild\").",
+   "positive_examples": [
+    "U097",
+    "U016"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U171",
+     "quote": "I find the advanced setting in the setting option but i don't find any documentation of all possible option that i can use in that section"
+    },
+    {
+     "uid": "U088",
+     "quote": "These settings can be affected by tuning the github.copilot.advanced settings of Copilot."
+    },
+    {
+     "uid": "U142",
+     "quote": "Is it possible to write a plugin that builds upon the original plugin, or do I have to use the OpenAI API to recreate the functionality of the plugin to add my Gamification elements?"
+    },
+    {
+     "uid": "U016",
+     "quote": "In order to take back control from the GitHub Copilot extension you must specify some rules like editor.autoClosingBrackets on a per lang basis."
+    },
+    {
+     "uid": "U007",
+     "quote": "Copilot is defining these default language settings that can be overwritten only using language specific settings."
+    },
+    {
+     "uid": "U019",
+     "quote": "Copilot settings are not compatible with default VSCode settings."
+    }
+   ],
+   "cited_threads": [
+    "U088",
+    "U142",
+    "U171",
+    "U007",
+    "U010",
+    "U016",
+    "U019",
+    "U237",
+    "U097"
+   ]
+  },
+  {
+   "id": "T65",
+   "rq": "RQ2.2",
+   "label": "One line, a whole block, or nothing at all depending on setup",
+   "definition": "Posters disagree about how much function arrives and whether any arrives: some get five lines or a whole class and want only the first two, others say it will only ever give one line when they want a body, and others report that a comment yields nothing, only comments or only repeats, depending on editor, comment syntax, language, waiting time or settings.",
+   "include": "Units where the poster takes a position on the amount of code a suggestion delivers, or reports that comment-to-code generation fails or varies with the editor or configuration.",
+   "exclude": "Successful comment-driven generation with no stated condition goes to 'A comment, pseudocode or the function name brings the body'; wrong content rather than wrong amount goes to 'Looked right but used something that does not exist'.",
+   "positive_examples": [
+    "U190"
+   ],
+   "negative_examples": [
+    "U027"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U088",
+     "quote": "The autocomplete shows five lines on TAB, but I just need the first two of them."
+    },
+    {
+     "uid": "U220",
+     "quote": "Copilot suggests only line by line instead of a whole block."
+    },
+    {
+     "uid": "U139",
+     "quote": "it inputs tons of code when people just want a tiny part"
+    },
+    {
+     "uid": "U169",
+     "quote": "But I can only get it to either accept the entire multiline suggestion (tab) or nothing."
+    },
+    {
+     "uid": "U058",
+     "quote": "in Jetbrains GoLand I have the same issue as @Maybe Lindow"
+    },
+    {
+     "uid": "U190",
+     "quote": "it doesn't generate any code after I type in a comment and press Enter"
+    }
+   ],
+   "cited_threads": [
+    "U048",
+    "U067",
+    "U088",
+    "U139",
+    "U169",
+    "U220",
+    "U058",
+    "U190",
+    "U200"
+   ]
+  },
+  {
+   "id": "T67",
+   "rq": "RQ1.5",
+   "label": "Using Copilot on the assumption it reads the surrounding file, style and project",
+   "definition": "A purpose code: the poster uses Copilot expecting it to take the rest of the file or project into account - their quoting, line endings, libraries, naming habits and the patterns already there - and the text states that expectation, including where the poster is testing it or reports that it did not hold.",
+   "include": "Statements that Copilot adapts to the poster's coding practices, learns from their code, continues an established pattern or uses local files as context, and the poster's questions or complaints that it does not look across files or does not follow local conventions.",
+   "exclude": "A report that a suggestion did fit because of the file, the established pattern or the training data goes to T71 (benefit); a request for project-wide context, multi-file awareness or fine-tuning goes to T50 (expected feature); the statement that only the current file is seen, offered as a missing capability, goes to T37 (limitation); getting repetitive code out of it goes to T18; plain typing-time completion goes to T01; limits on which files it may read for confidentiality go to T32; asking that both completion lists coexist goes to T19.",
+   "positive_examples": [
+    "U097",
+    "U122"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U135",
+     "quote": "Or it only analyzes and autocompletes using the context of standalone files regardless of additional files in my project?"
+    },
+    {
+     "uid": "U026",
+     "quote": "GitHub copilot adapt to your coding practices,so, just keep writing code and it will start suggesting single quotes after some lines"
+    },
+    {
+     "uid": "U219",
+     "quote": "Copilot often suggests other line endings (CR or LF). Is there a way to configure or tell Copilot to only use a certain line ending?"
+    },
+    {
+     "uid": "U215",
+     "quote": "the copilot is aware of the rest of the code, and can generate appropriate answers"
+    },
+    {
+     "uid": "U097",
+     "quote": "I wonder if the GitHub team might also develop a way of perhaps fine-tuning GitHub Copilot to specific use-cases."
+    },
+    {
+     "uid": "U026",
+     "quote": "GitHub copilot adapt to your coding practices"
+    }
+   ],
+   "cited_threads": [
+    "U026",
+    "U097",
+    "U122",
+    "U135",
+    "U215",
+    "U219",
+    "U196",
+    "U228"
+   ]
+  },
+  {
+   "id": "T68",
+   "rq": "RQ1.5",
+   "label": "How much of the suggestion to take: a word, a line, a whole block",
+   "definition": "Posters disagree about the size of what gets inserted from one suggestion: some want only the next word, the current line or the first two lines and resent the block that arrives with Tab; others complain Copilot offers one line when they wanted the whole function or block.",
+   "include": "Requests to accept part of a suggestion (next word, one line, first lines); complaints that only single lines are offered when a multi-line block was wanted.",
+   "exclude": "Choosing among several whole candidate implementations, cycling next/previous or opening the ten-solutions panel goes to 'Finishing the line or function as I type'; simply having suggestions appear while typing also goes there; turning the suggestions off or making them on-demand goes to 'Wanting suggestions only when I ask, not while I type'.",
+   "positive_examples": [
+    "U240"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U166",
+     "quote": "I would like to be able to accept only the next word of a github Copilot suggestion, instead of the full suggestion."
+    },
+    {
+     "uid": "U048",
+     "quote": "here I wanted to autocomplete only the line line-height: 1.2;, but if I press the tab it will insert the whole suggested code"
+    },
+    {
+     "uid": "U088",
+     "quote": "The autocomplete shows five lines on TAB, but I just need the first two of them."
+    },
+    {
+     "uid": "U067",
+     "quote": "But I want to see multi-line suggestions."
+    },
+    {
+     "uid": "U169",
+     "quote": "Is there a simple way, key shortcut or so, to accept part of a copilot suggestion?"
+    },
+    {
+     "uid": "U139",
+     "quote": "it inputs tons of code when people just want a tiny part"
+    }
+   ],
+   "cited_threads": [
+    "U048",
+    "U067",
+    "U088",
+    "U139",
+    "U166",
+    "U169",
+    "U220",
+    "U240"
+   ]
+  },
+  {
+   "id": "T69",
+   "rq": "RQ2.2",
+   "label": "Labs and Chat panels never appear or return errors",
+   "definition": "The newer surfaces - Labs brushes, explain-code, test generation, the chat panel and Nightly builds - either return an error, do nothing useful, or their icon never shows in the side bar even after the instructions are followed, in several threads while ordinary inline suggestions work fine.",
+   "include": "Failures specific to Copilot Labs, Copilot Chat, Nightly or the brushes: missing icons, 'error generating Copilot response', brushes that change nothing, test generation that fails.",
+   "exclude": "Core activation and sign-in faults go to 'Signing in, authorizing or activating Copilot fails'; inline suggestions going silent goes to 'A working Copilot stops suggesting, with no error, and fixes are rituals'.",
+   "positive_examples": [
+    "U213",
+    "U184"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U199",
+     "quote": "I hit the document brush it added quite nothing. It just copied and pasted the code block I had highlighted"
+    },
+    {
+     "uid": "U216",
+     "quote": "Error generating Copilot response, please try again."
+    },
+    {
+     "uid": "U213",
+     "quote": "but I do not see the icon for the extension in my side panel to be able to engage the chat function"
+    },
+    {
+     "uid": "U245",
+     "quote": "I followed the instructions to enable it on my VSCode, but I still don't see it on my activity bar."
+    },
+    {
+     "uid": "U216",
+     "quote": "Error generating Copilot response, please try again."
+    },
+    {
+     "uid": "U213",
+     "quote": "I do not see the icon for the extension in my side panel to be able to engage the chat function."
+    }
+   ],
+   "cited_threads": [
+    "U184",
+    "U199",
+    "U205",
+    "U206",
+    "U213",
+    "U216",
+    "U245"
+   ]
+  },
+  {
+   "id": "T70",
+   "rq": "RQ2.2",
+   "label": "Suggestions come back one line, repeated, or arrive unclosed",
+   "definition": "Output arrives but is stunted or malformed: only a single line where a block was wanted, the same comment echoed back again and again, nothing generated from a comment prompt in a file where suggestions otherwise appear, or an insertion that stops before its closing brackets and quotes.",
+   "include": "Reports of one-line-only completions, repeated-comment output, comment-to-code generation that never fires, and structurally incomplete insertions missing brackets or quotes.",
+   "exclude": "Code that runs but is semantically wrong or invented goes to 'Suggested code is wrong, invented, or no help at all'; wanting to take only part of a correct multi-line suggestion goes to 'Accept inserts the whole block when only one line was wanted'; no suggestion of any kind arriving goes to 'A working Copilot stops suggesting, with no error, and fixes are rituals'; silence confined to one language against a named working language goes to 'Suggestions come in some languages and file types but not others'.",
+   "positive_examples": [
+    "U190"
+   ],
+   "negative_examples": [
+    "U055"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U067",
+     "quote": "while typing it only shows one line of suggestion"
+    },
+    {
+     "uid": "U220",
+     "quote": "Copilot suggests only line by line instead of a whole block."
+    },
+    {
+     "uid": "U148",
+     "quote": "the auto complete suggest me some code but without closing brackets and quotes"
+    },
+    {
+     "uid": "U058",
+     "quote": "it just creates the same comment over and over again"
+    },
+    {
+     "uid": "U067",
+     "quote": "while typing it only shows one line of suggestion"
+    },
+    {
+     "uid": "U220",
+     "quote": "Copilot suggests only line by line instead of a whole block."
+    }
+   ],
+   "cited_threads": [
+    "U067",
+    "U148",
+    "U220",
+    "U058",
+    "U190",
+    "U200",
+    "U225"
+   ]
+  },
+  {
+   "id": "T71",
+   "rq": "RQ2.1",
+   "label": "The suggestion fitted because of what Copilot had seen: this file, the established pattern, public code",
+   "definition": "A benefit code: the post credits a suggestion to the material Copilot had in view - the surrounding file, a pattern the poster had already written out, the project's conventions, or the public code it was trained on. The text must name that source and treat the output as useful or as explained by it.",
+   "include": "Reports that Copilot detected a repeated shape and supplied the remaining instances after a few hand-written examples, that it followed the poster's quoting, naming or style conventions, that it produced an appropriate suggestion because it was aware of the surrounding code, and accounts by a poster or answerer that a suggestion came from the open file's context or from the public training corpus.",
+   "exclude": "An assumption or requirement that Copilot read the file or project, stated while using it, goes to T67 (purpose); asking for project-wide context, multi-file awareness or fine-tuning goes to T50 (expected feature); the statement that only the current file is seen, offered as a missing capability, goes to T37 (limitation); a leaked key or a deprecated usage reported as a problem goes to T34 or T05; plain inline completion with no context claim goes to T21; code filled in from a written comment goes to T17.",
+   "positive_examples": [
+    "U122"
+   ],
+   "negative_examples": [
+    "U027"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U052",
+     "quote": "let's consider to use https://copilot.github.com/. it's great."
+    },
+    {
+     "uid": "U122",
+     "quote": "Github copilot detects it, and gives you the correct suggestion."
+    },
+    {
+     "uid": "U026",
+     "quote": "GitHub copilot adapt to your coding practices,so, just keep writing code and it will start suggesting single quotes"
+    },
+    {
+     "uid": "U196",
+     "quote": "CoPilot sees right through it"
+    },
+    {
+     "uid": "U215",
+     "quote": "the copilot is aware of the rest of the code, and can generate appropriate answers."
+    },
+    {
+     "uid": "U228",
+     "quote": "yet it can still provide you tailored results."
+    }
+   ],
+   "cited_threads": [
+    "U052",
+    "U122",
+    "U026",
+    "U196",
+    "U215",
+    "U228",
+    "U027",
+    "U048",
+    "U049",
+    "U097"
+   ]
+  },
+  {
+   "id": "T72",
+   "rq": "RQ2.3",
+   "label": "Expecting the same control in Visual Studio or JetBrains that VS Code documents",
+   "definition": "An expected feature stated as parity between clients: the text names a specific setting, shortcut or documented capability that exists in one IDE and reports it absent in the IDE the poster uses, or states they have no control over completions in that IDE. The test is the explicit cross-client comparison.",
+   "include": "Explicit comparisons naming a setting, shortcut or documented capability present in VS Code and missing in Visual Studio, PyCharm or another JetBrains product, and complaints of having no control over completions in a named IDE.",
+   "exclude": "The substance of the control itself, with no cross-client comparison, goes to T09 (accept and browse keys), T33 (partial accept), T20 (on-demand and quiet contexts) or T64 (documented options); Copilot not being installable at all in an IDE, or silent in a language, goes to T12 (expectation) and T04 or T59 (limitations); a control that exists nowhere goes to T37; comment-driven generation working only in some editors goes to T30.",
+   "positive_examples": [
+    "U240"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U240",
+     "quote": "This is possible with VS Code as documented here. Is there a way to do this in PyCharm too?"
+    },
+    {
+     "uid": "U236",
+     "quote": "I have found solutions for VSCode, but nothing for Visual Studio."
+    },
+    {
+     "uid": "U166",
+     "quote": "I wish this existed for Visual Studio too as it's a great feature."
+    },
+    {
+     "uid": "U236",
+     "quote": "I have found solutions for VSCode, but nothing for Visual Studio."
+    },
+    {
+     "uid": "U229",
+     "quote": "but can't find any way to do this in Visual Studio"
+    },
+    {
+     "uid": "U240",
+     "quote": "This is possible with VS Code as documented here."
+    }
+   ],
+   "cited_threads": [
+    "U048",
+    "U062",
+    "U166",
+    "U229",
+    "U236",
+    "U240"
+   ]
+  },
+  {
+   "id": "T73",
+   "rq": "RQ2.1",
+   "label": "Offers up to ten alternative solutions to pick from",
+   "definition": "On demand Copilot opens a tab of several complete suggestions, or lets the poster cycle between them, and they take whichever one fits their intent.",
+   "include": "Mentions of the solutions tab, the ten suggestions shortcut, or next/previous cycling being useful.",
+   "exclude": "The single inline ghost-text completion while typing goes to 'Completes whole lines and function bodies as you type'; complaints that the shortcut is broken are not a benefit claim.",
+   "positive_examples": [],
+   "negative_examples": [
+    "U027"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U048",
+     "quote": "copilot usually suggest upto 10 solutions at a go, once you click that, you can accept anyone that fit your intent"
+    },
+    {
+     "uid": "U111",
+     "quote": "It is working great so far, but the short cut to get 10 more recommendation"
+    },
+    {
+     "uid": "U187",
+     "quote": "Copilot correctly opens a new tab with multiple suggestions"
+    },
+    {
+     "uid": "U048",
+     "quote": "copilot usually suggest upto 10 solutions at a go"
+    },
+    {
+     "uid": "U111",
+     "quote": "the short cut to get 10 more recommendation which is"
+    },
+    {
+     "uid": "U187",
+     "quote": "Copilot correctly opens a new tab with multiple suggestions."
+    }
+   ],
+   "cited_threads": [
+    "U048",
+    "U111",
+    "U187",
+    "U100",
+    "U176"
+   ]
+  },
+  {
+   "id": "T74",
+   "rq": "RQ1.4",
+   "label": "Service URLs, API endpoints and connections to remote services",
+   "definition": "What Copilot implemented is the code that reaches out to something over the network: an absolute URL built with EL in a JSP, an API url autocompleted complete with a key, the callable function URL for an emulator, and the async websocket connect line.",
+   "include": "Units where the suggestion's content is a URL, an endpoint call, or the line that opens a connection to a remote service.",
+   "exclude": "Schema, ORM, route and infrastructure declarations go to 'Schemas, ORM calls, routes and framework or infrastructure config'; that the suggested keys came from other people's repositories is also read in 'It only writes what it has already seen: my file, public code'; page and styling code goes to 'Click handlers, built page elements, CSS and font rules'.",
+   "positive_examples": [
+    "U049"
+   ],
+   "negative_examples": [
+    "U027"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U002",
+     "quote": "I'm quite surprised when the GitHub Copilot just suggested the code snippet."
+    },
+    {
+     "uid": "U049",
+     "quote": "I was curious and asked it to autocomplete the API url with the key open, and it listed suggestions with various API keys included"
+    },
+    {
+     "uid": "U154",
+     "quote": "copilot originally added it in, and indeed, when I remove it I get the error"
+    },
+    {
+     "uid": "U161",
+     "quote": "This URL was written by Github Copilot!"
+    },
+    {
+     "uid": "U154",
+     "quote": "async with websockets.connect(url) as ws:"
+    }
+   ],
+   "cited_threads": [
+    "U002",
+    "U049",
+    "U154",
+    "U161"
+   ]
+  },
+  {
+   "id": "T77",
+   "rq": "RQ2.1",
+   "label": "Praise or a positive verdict with no capability and no result named",
+   "definition": "Benefit stated as an evaluation of Copilot rather than as an outcome: it is called helpful, great, useful, convenient or amazing, met with astonishment or job-replacement humour, or endorsed only for certain situations ('good when I'm stuck', 'fine for generic code, in the way while I write comments'). The test is that the text names no particular suggestion, output or solved problem, whether the praise is hedged or unconditional.",
+   "include": "Evaluative praise of Copilot stated by a poster or answerer, expressions of surprise at what it managed, job-replacement jokes, and hedged or conditional endorsements that name the situations where it helps and where it gets in the way without reporting a specific suggestion or result.",
+   "exclude": "Praise attached to a specific suggestion that worked goes to T11; a ranking against IntelliSense or a named rival assistant goes to T52; changing editor, version or workflow because it is worth it goes to T60; a request to silence it in a named context goes to T20 (expected feature) or T15 (purpose); a reported problem about the size or frequency of suggestions goes to T29 or T14; a knowledge gap it filled goes to T42.",
+   "positive_examples": [
+    "U017",
+    "U174"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U098",
+     "quote": "It is so darn convenient."
+    },
+    {
+     "uid": "U141",
+     "quote": "it is great for coding and other."
+    },
+    {
+     "uid": "U177",
+     "quote": "I found the suggestion quite useful."
+    },
+    {
+     "uid": "U111",
+     "quote": "It is working great so far"
+    },
+    {
+     "uid": "U174",
+     "quote": "I also am using github copilot, which is great"
+    },
+    {
+     "uid": "U050",
+     "quote": "I really like Copilot"
+    }
+   ],
+   "cited_threads": [
+    "U038",
+    "U050",
+    "U052",
+    "U098",
+    "U100",
+    "U111",
+    "U141",
+    "U174",
+    "U177",
+    "U256",
+    "U002",
+    "U017",
+    "U024",
+    "U144",
+    "U062",
+    "U105",
+    "U048",
+    "U088",
+    "U122",
+    "U139",
+    "U166",
+    "U240"
+   ]
+  },
+  {
+   "id": "T79",
+   "rq": "RQ1.5",
+   "label": "Arguing that docs, textbooks or your own effort should come before Copilot",
+   "definition": "Posters and commenters dispute whether leaning on Copilot as the source of knowledge or solutions is legitimate at all. Some use it in place of the documentation; others answer that the docs, a textbook or writing the code yourself should come first, or that verifying its output costs more than doing the work.",
+   "include": "Explicit statements setting Copilot against documentation, textbooks or learning by hand, including objections to solving a problem by asking Copilot and remarks that verification costs more than writing it oneself.",
+   "exclude": "Checking or disclosing a particular suggestion goes to 'Checking the suggestion, or keeping it and asking later why it works'; a poster's inexperience as the reason for using it goes to 'Getting code for a language, API or task I don't know'; wanting suggestions off so as to practise typing code goes to 'Wanting suggestions only when I ask, not while I type'.",
+   "positive_examples": [
+    "U144",
+    "U017"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U161",
+     "quote": "I would never expect Copilot to generate the correct code under any circumstance. It's better to lean on the documentation to tell you what to do."
+    },
+    {
+     "uid": "U125",
+     "quote": "\"github copilot\" is not a replacement for a C++ textbook."
+    },
+    {
+     "uid": "U144",
+     "quote": "Seems like Copilot is not appropriate when it takes you longer to verify the solution it generated than to write the code yourself."
+    },
+    {
+     "uid": "U017",
+     "quote": "Instead of solving the problem, you are just asking Github Copilot to solve"
+    },
+    {
+     "uid": "U060",
+     "quote": "is quite the opposite of what Copilot is supposed to help users with"
+    },
+    {
+     "uid": "U241",
+     "quote": "though I can use copilot to complete the line with a 'tab' but I'm trying to learn it manually"
+    }
+   ],
+   "cited_threads": [
+    "U017",
+    "U060",
+    "U116",
+    "U125",
+    "U144",
+    "U161",
+    "U241"
+   ]
+  },
+  {
+   "id": "T80",
+   "rq": "RQ2.2",
+   "label": "Copilot produced nothing usable, so the poster asked people",
+   "definition": "The poster reports trying Copilot on the task and getting nothing that helped, and says so while asking humans: an EMR/Dagster job, a jQuery submit handler, a cross-table schema reference, a Compose list that must refresh, constrained random numbers, bug fixes, a controller routing fix.",
+   "include": "Units where the poster explicitly says Copilot was tried on this function and produced nothing useful.",
+   "exclude": "Suggestions that arrived but were wrong go to 'Looked right but used something that does not exist'; failures to run Copilot at all are not about any function.",
+   "positive_examples": [
+    "U165",
+    "U221"
+   ],
+   "negative_examples": [
+    "U036"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U165",
+     "quote": "i tried using copilot but it didnt do anything usefull"
+    },
+    {
+     "uid": "U192",
+     "quote": "I've tried using google, chatgpt, copilot, forums and read the docs. Can't seem to find any way to do this."
+    },
+    {
+     "uid": "U198",
+     "quote": "I've searched around, tried using GitHub CoPilot, New Bing, and read documentation. But I can't see what I'm doing wrong"
+    },
+    {
+     "uid": "U226",
+     "quote": "ChatGpt has failed both on its openai website and through github copilot."
+    },
+    {
+     "uid": "U221",
+     "quote": "Followed GitHub CoPilot hint solution. No diff."
+    },
+    {
+     "uid": "U153",
+     "quote": "(copilot also struggles with it :-))"
+    }
+   ],
+   "cited_threads": [
+    "U153",
+    "U165",
+    "U192",
+    "U198",
+    "U221",
+    "U226",
+    "U238"
+   ]
+  },
+  {
+   "id": "T83",
+   "rq": "RQ2.3",
+   "label": "Copilot as one slot among assistants: an alternative named in its place",
+   "definition": "Posters and answerers treat Copilot as one interchangeable provider of the same function and name a substitute - Tabnine, IntelliCode, Kite, CodeGeeX and other engines - when Copilot is unavailable, gated, paid or unsuitable, so the expectation is stated as a choice between tools rather than as a request to Copilot.",
+   "include": "Recommending Copilot inside a list of AI autocomplete tools; asking for or naming an alternative when Copilot is unavailable or paid; weighing one engine against another as the thing to install instead.",
+   "exclude": "Having two completers active together on screen and deciding which one speaks (\"Side by side with IntelliSense: coexisting with the editor's own completion\"); Copilot not existing for a given IDE (\"Available and suggesting in the editor, platform and language I work in\"); rebuilding Copilot's inline presentation oneself (\"Copilot's grey inline ghost text as the thing I want to rebuild\").",
+   "positive_examples": [
+    "U083",
+    "U146"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U008",
+     "quote": "But you can use Tabnine or Copilot extension"
+    },
+    {
+     "uid": "U083",
+     "quote": "also there are some AI powered auto complete tools :"
+    },
+    {
+     "uid": "U146",
+     "quote": "You could also try GitHub's Copilot, my friend uses it but for reasons mentioned earlier, I didn't try it."
+    },
+    {
+     "uid": "U188",
+     "quote": "Can one override the other?"
+    },
+    {
+     "uid": "U064",
+     "quote": "So I want to ask is there any more alternative which can do that for us?"
+    }
+   ],
+   "cited_threads": [
+    "U008",
+    "U064",
+    "U083",
+    "U146",
+    "U188"
+   ]
+  },
+  {
+   "id": "T85",
+   "rq": "RQ2.2",
+   "label": "Routing around Copilot by naming another assistant",
+   "definition": "Where the limit is not going to be lifted - the cost, the waitlist, the privacy posture, a platform Copilot does not reach - posters and answerers name a substitute instead: CodeGeeX, FauxPilot, starcoder, self-hosted Tabnine or a home-made GPT wrapper. The resolution offered is to leave the tool rather than to fix, configure or wait for it.",
+   "include": "Naming, recommending or announcing an alternative code assistant in place of Copilot, including open-source models and self-hosted or self-built substitutes, and the reason given for reaching for one.",
+   "exclude": "Vendor or IT ownership of the fix and later-version reversals go to 'Only GitHub or IT can lift the limit, and later answers report it lifted'; the entitlement and payment gates themselves go to 'Waitlist, trial, payment and the signed-in account decide who can use it'; head-to-head quality verdicts on tools already in use and recommendations of Copilot itself are outside this question.",
+   "positive_examples": [
+    "U117",
+    "U097"
+   ],
+   "negative_examples": [
+    "U015"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U064",
+     "quote": "There is another open-source alternatives to it called CodeGeeX."
+    },
+    {
+     "uid": "U117",
+     "quote": "The project FauxPilot is working on a opensource copilot but I have no idea how far they are."
+    },
+    {
+     "uid": "U115",
+     "quote": "You can us starcoder and open source alternative to copilot"
+    },
+    {
+     "uid": "U097",
+     "quote": "There is another open-source alternatives to Codex called CodeGeeX."
+    },
+    {
+     "uid": "U041",
+     "quote": "There is another open-source alternatives to it called CodeGeeX."
+    }
+   ],
+   "cited_threads": [
+    "U041",
+    "U064",
+    "U097",
+    "U115",
+    "U117"
+   ]
+  },
+  {
+   "id": "T87",
+   "rq": "RQ2.1",
+   "label": "Copilot proposed the approach, algorithm or data model",
+   "definition": "Copilot put forward how to do something - an algorithm, a schema field, a typing pattern - rather than the next few tokens, and the poster brings that proposal into the thread as the thing being discussed.",
+   "include": "Reports that Copilot recommended a method, an algorithm, a schema or a design, stated as a proposal the poster is working from rather than as a finished accepted result.",
+   "exclude": "Finished working code goes to 'Copilot's suggestion ran and solved the problem'; a function body produced from a name goes to 'Completes whole lines and function bodies as you type'; asking others whether unverified output is sound or why it works goes to 'Provisional until someone who knows checks it, and the thread often does the checking'; a non-logic declaration or value goes to 'Output that is not new program logic: explanations, docstrings, tests, diagrams, values'.",
+   "positive_examples": [
+    "U036"
+   ],
+   "negative_examples": [
+    "U079"
+   ],
+   "representative_quotes": [
+    {
+     "uid": "U036",
+     "quote": "The GitHub Copilot has suggested I should use the following algorithm"
+    },
+    {
+     "uid": "U047",
+     "quote": "Actually, GitHub Copilot suggested me that in the Students schema I have something like this"
+    },
+    {
+     "uid": "U057",
+     "quote": "Also, CoPilot recommended this to me"
+    }
+   ],
+   "cited_threads": [
+    "U036",
+    "U047",
+    "U057"
+   ]
+  }
+ ]
+}
